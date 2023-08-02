@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>MBA degree</title>
+  </head>
+  <body>
+    <!-- ------------------- Navbar with Dropdown ------------------------- -->
+    <div class="topnav" id="myTopnav">
+      <a href="/home.html" class="navbar_active">Home</a>
+      <div class="navbar_dropdown">
+        <button class="dropbtn">
+          Education
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="education-1.html"
+            >Saint-Petersburg State Marine Technical University</a
+          >
+          <a href="education-2.html">The Urals-Siberia Institute of Business</a>
+          <a href="education-3.html">Training Cources</a>
+        </div>
+      </div>
+      <a href="assignments.html">Long-Term Assignments</a>
+      <a href="assignments_st.html">Short-Term Assignments</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    <div class="usib-backround-image">
+      <div class="usib-logo">
+        <img src="images_education\usib-logo.jpg" alt="" />
+      </div>
+      <div class="usib-title">The Urals-Siberia Institute of Business</div>
+      <div class="usib-faculty">Master of Business Administration</div>
+      <div class="usib-year">2001-2003, Ekaterinburg, Russia</div>
+      <div class="dropdown usib-diploma">
+        <img
+          src="images_education/MBA-diploma.jpg"
+          alt="diploma main"
+          width="220"
+          height="150"
+        />
+        <span class="click_on_image">
+          <br />Move the mouse over the image below <br />
+          to open the dropdown content.</span
+        >
+        <div class="dropdown-content">
+          <img
+            src="images_education/MBA-diploma.jpg"
+            alt="diploma main"
+            width="865"
+            height="604"
+          />
+          <div class="desc">Diploma of Master of Business Administration</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // ---------------- Script for Navbar with Dropdown ----------------
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      // -------------------------------------------------------------------
+    </script>
+  </body>
+</html>

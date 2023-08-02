@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {% load static %}
+    <link
+      rel="icon"
+      href="../../static/cv/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="{% static 'cv/css/main_styles.css' %}"
+    />
+
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <div class="overlay overlay--show"></div> -->
+      <!-- <div class="header">
+        <a class="burger" href="#">
+          <span></span>
+        </a>
+        <div class="header__top header__top--open">
+          <div class="container">
+            <div class="header__inner">
+              <a class="header__logo" href="#">
+              </a>
+
+              <div class="header__drop">
+                <div class="header__dropdown">
+                  <button class="header__dropbtn">Навигация</button>
+                  <div class="header__dropdown-content">
+                    {% block mainmenu %} {% for m in menu %}
+                    <a href="{% url m.url_name %}">{{m.title}}</a>
+                    {% endfor %}{% endblock mainmenu %}
+                  </div>
+                </div>
+                <div class="header__burger-menu">
+                  <div class="header__burger-item">
+                    {% block burgermenu %} {% for m in menu %}
+                    <a href="{% url m.url_name %}">{{m.title}}</a>
+                    {% endfor %}{% endblock burgermenu %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- ======================================================== -->
+      <main>{% block content %} {% endblock content %}</main>
+      <!-- ======================================================== -->
+      <!-- <div class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__drop">
+              <div class="footer__dropup">
+                <button class="footer__dropbtn">Навигация</button>
+                <div class="footer__dropup-content">
+                  {% block footmenu %} {% for m in menu %}
+                  <a href="{% url m.url_name %}">{{m.title}}</a>
+                  {% endfor %}{% endblock footmenu %}
+                </div>
+              </div>
+            </div>
+
+            <div class="footer__menu-item">© Copyright 2023</div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="{% static 'cv/js/main.js' %}"></script>
+</html>
