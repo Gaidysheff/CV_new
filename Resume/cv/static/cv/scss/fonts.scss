@@ -1,46 +1,142 @@
 @font-face {
-  font-family: Astra;
+  font-family: "Arial Narrow";
   font-weight: normal;
   font-style: normal;
-  src: local("Astra"),
-    url("../fonts/PT-Astra-Sans_Regular.woff2") format("woff2"),
-    url("../fonts/PT-Astra-Sans_Regular.woff") format("woff"),
-    url("../fonts/PT-Astra-Sans_Regular.eot") format("eot"),
-    url("../fonts/PT-Astra-Sans_Regular.ttf") format("ttf");
+  src: local("arialnarrow"), url("../fonts/arialnarrow.woff2") format("woff2"),
+    url("../fonts/arialnarrow.woff") format("woff"),
+    url("../fonts/arialnarrow.eot") format("eot"),
+    url("../fonts/arialnarrow.ttf") format("ttf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: Astra;
+  font-family: "Arial Narrow";
   font-weight: bold;
   font-style: normal;
-  src: local("Astra"), url("../fonts/PT-Astra-Sans_Bold.woff2") format("woff2"),
-    url("../fonts/PT-Astra-Sans_Bold.woff") format("woff"),
-    url("../fonts/PT-Astra-Sans_Bold.eot") format("eot"),
-    url("../fonts/PT-Astra-Sans_Bold.ttf") format("ttf");
+  src: local("arialnarrow_bold"),
+    url("../fonts/arialnarrow_bold.woff2") format("woff2"),
+    url("../fonts/arialnarrow_bold.woff") format("woff"),
+    url("../fonts/arialnarrow_bold.eot") format("eot"),
+    url("../fonts/arialnarrow_bold.ttf") format("ttf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: Astra;
+  font-family: "Arial Narrow";
   font-weight: bold;
   font-style: italic;
-  src: local("Astra"),
-    url("../fonts/PT-Astra-Sans_Bold-Italic.woff2") format("woff2"),
-    url("../fonts/PT-Astra-Sans_Bold-Italic.woff") format("woff"),
-    url("../fonts/PT-Astra-Sans_Bold-Italic.eot") format("eot"),
-    url("../fonts/PT-Astra-Sans_Bold-Italic.ttf") format("ttf");
+  src: local("arialnarrow_bolditalic"),
+    url("../fonts/arialnarrow_bolditalic.woff2") format("woff2"),
+    url("../fonts/arialnarrow_bolditalic.woff") format("woff"),
+    url("../fonts/arialnarrow_bolditalic.eot") format("eot"),
+    url("../fonts/arialnarrow_bolditalic.ttf") format("ttf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: Astra;
+  font-family: "Arial Narrow";
   font-weight: normal;
   font-style: italic;
-  src: local("Astra"),
-    url("../fonts/PT-Astra-Sans_Italic.woff2") format("woff2"),
-    url("../fonts/PT-Astra-Sans_Italic.woff") format("woff"),
-    url("../fonts/PT-Astra-Sans_Italic.eot") format("eot"),
-    url("../fonts/PT-Astra-Sans_Italic.ttf") format("ttf");
+  src: local("arialnarrow_italic"),
+    url("../fonts/arialnarrow_italic.woff2") format("woff2"),
+    url("../fonts/arialnarrow_italic.woff") format("woff"),
+    url("../fonts/arialnarrow_italic.eot") format("eot"),
+    url("../fonts/arialnarrow_italic.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fredericka the Great";
+  font-weight: normal;
+  font-style: normal;
+  src: local("FrederickatheGreat-Regular"),
+    url("../fonts/FrederickatheGreat-Regular.woff2") format("woff2"),
+    url("../fonts/FrederickatheGreat-Regular.woff") format("woff"),
+    url("../fonts/FrederickatheGreat-Regular.eot") format("eot"),
+    url("../fonts/FrederickatheGreat-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KiwiMaru";
+  font-weight: light;
+  font-style: normal;
+  src: local("KiwiMaru-Light"),
+    url("../fonts/KiwiMaru-Light.woff2") format("woff2"),
+    url("../fonts/KiwiMaru-Light.woff") format("woff"),
+    url("../fonts/KiwiMaru-Light.eot") format("eot"),
+    url("../fonts/KiwiMaru-Light.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KiwiMaru";
+  font-weight: normal;
+  font-style: normal;
+  src: local("KiwiMaru-Regular"),
+    url("../fonts/KiwiMaru-Regular.woff2") format("woff2"),
+    url("../fonts/KiwiMaru-Regular.woff") format("woff"),
+    url("../fonts/KiwiMaru-Regular.eot") format("eot"),
+    url("../fonts/KiwiMaru-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KiwiMaru";
+  font-weight: bold;
+  font-style: normal;
+  src: local("KiwiMaru-Medium"),
+    url("../fonts/KiwiMaru-Medium.woff2") format("woff2"),
+    url("../fonts/KiwiMaru-Medium.woff") format("woff"),
+    url("../fonts/KiwiMaru-Medium.eot") format("eot"),
+    url("../fonts/KiwiMaru-Medium.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marck Script";
+  font-weight: normal;
+  font-style: normal;
+  src: local("MarckScript-Regular"),
+    url("../fonts/MarckScript-Regular.woff2") format("woff2"),
+    url("../fonts/MarckScript-Regular.woff") format("woff"),
+    url("../fonts/MarckScript-Regular.eot") format("eot"),
+    url("../fonts/MarckScript-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pattaya";
+  font-weight: normal;
+  font-style: normal;
+  src: local("Pattaya-Regular"),
+    url("../fonts/Pattaya-Regular.woff2") format("woff2"),
+    url("../fonts/Pattaya-Regular.woff") format("woff"),
+    url("../fonts/Pattaya-Regular.eot") format("eot"),
+    url("../fonts/Pattaya-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik Marker Hatch";
+  font-weight: normal;
+  font-style: normal;
+  src: local("RubikMarkerHatch-Regular"),
+    url("../fonts/RubikMarkerHatch-Regular.woff2") format("woff2"),
+    url("../fonts/RubikMarkerHatch-Regular.woff") format("woff"),
+    url("../fonts/RubikMarkerHatch-Regular.eot") format("eot"),
+    url("../fonts/RubikMarkerHatch-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Suez One";
+  font-weight: normal;
+  font-style: normal;
+  src: local("SuezOne-Regular"),
+    url("../fonts/SuezOne-Regular.woff2") format("woff2"),
+    url("../fonts/SuezOne-Regular.woff") format("woff"),
+    url("../fonts/SuezOne-Regular.eot") format("eot"),
+    url("../fonts/SuezOne-Regular.ttf") format("ttf");
   font-display: swap;
 }
