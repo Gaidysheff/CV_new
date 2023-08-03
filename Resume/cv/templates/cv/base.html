@@ -22,37 +22,51 @@
   <body>
     <div class="wrapper">
       <!-- <div class="overlay overlay--show"></div> -->
-      <!-- <div class="header">
+      <div class="header">
         <a class="burger" href="#">
           <span></span>
         </a>
         <div class="header__top header__top--open">
           <div class="container">
             <div class="header__inner">
-              <a class="header__logo" href="#">
-              </a>
-
               <div class="header__drop">
-                <div class="header__dropdown">
-                  <button class="header__dropbtn">Навигация</button>
-                  <div class="header__dropdown-content">
-                    {% block mainmenu %} {% for m in menu %}
-                    <a href="{% url m.url_name %}">{{m.title}}</a>
-                    {% endfor %}{% endblock mainmenu %}
+                <div class="topnav" id="myTopnav">
+                  <a href="{% url 'home' %}" class="navbar_active">Home</a>
+                  <div class="navbar_dropdown">
+                    <button class="dropbtn">
+                      Education
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="{% url 'home' %}"
+                        >Saint-Petersburg State Marine Technical University</a
+                      >
+                      <a href="{% url 'home' %}"
+                        >The Urals-Siberia Institute of Business</a
+                      >
+                      <a href="{% url 'home' %}">Training Cources</a>
+                    </div>
                   </div>
+                  <a href="{% url 'home' %}">Long-Term Assignments</a>
+                  <a href="{% url 'home' %}">Short-Term Assignments</a>
+                  <a
+                    href="javascript:void(0);"
+                    style="font-size: 15px"
+                    class="icon"
+                    onclick="myFunction()"
+                    >&#9776;</a
+                  >
                 </div>
                 <div class="header__burger-menu">
                   <div class="header__burger-item">
-                    {% block burgermenu %} {% for m in menu %}
-                    <a href="{% url m.url_name %}">{{m.title}}</a>
-                    {% endfor %}{% endblock burgermenu %}
+                    <a href="{% url 'home' %}" class="navbar_active">Home</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- ======================================================== -->
       <main>{% block content %} {% endblock content %}</main>

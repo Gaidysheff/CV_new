@@ -6,9 +6,8 @@
 
 html,
 body {
-  font-family: Astra, sans-serif;
+  font-family: sans-serif;
   font-size: 1rem;
-  color: #163e6c;
   background: #ebe6d6;
   line-height: 160%;
 }
@@ -27,12 +26,9 @@ main {
 .container {
   max-width: 1960px;
   margin: 0px auto;
-  padding: 0px 20px;
+  padding: 30px;
+  padding-bottom: 0;
   height: auto;
-}
-
-.container-inner {
-  padding-top: 100px;
 }
 
 .overlay {
@@ -57,176 +53,199 @@ main {
   display: none;
 }
 
-// =====================================================================
+// ====================== COVER PAGE =================================
 
 /* -------------- CV Title -------------- */
 
 .CV_title {
   background: rgb(255, 48, 48);
-  margin: 20px 0 10px 0;
   height: 80px;
+  margin-bottom: 20px;
 }
 
 h1 {
+  font-family: "Pattaya", Times;
+  font-size: 50px;
   text-align: center;
-  color: white;
+  color: #ebe6d6;
   line-height: 80px;
   margin: 0;
   text-shadow: 2px 2px 4px #000000, 20px 20px 1rem rgb(88, 0, 0);
 }
+
 /* ------------------------------------------- */
 
-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-article:first-child {
-  padding: 10px;
-  margin: 10px 0 0 0;
-  background: rgb(65, 65, 65);
-  flex: 1 100px;
-}
-
-article:nth-of-type(2) {
-  padding: 10px;
-  margin: 10px 0 0 10px;
-  background: rgb(235, 235, 235);
-  flex: 2 100px;
-}
-
-/* ___________LEFT SIDE____________ */
-
-.left_side > img {
-  width: 340px;
-}
-
-.subsection {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 50px 0 0 0;
-  background-color: rgb(106, 105, 105);
-}
-.red-box {
-  width: 20px;
-  height: 32px;
-  background-color: rgb(255, 48, 48);
-  margin: 0 10px 0 0;
-}
-
-article:first-child h4 {
-  margin: 30px 0 5px 0;
-  color: white;
-}
-article:first-child p {
-  margin: 0 0 0 0;
-  color: white;
-}
-
-/* ______________EDUCATION__________________ */
-article:first-child a {
-  color: white;
-}
-
-article:first-child a:hover {
-  color: rgb(255, 48, 48);
-  text-decoration: underline;
-  font-weight: bolder;
-  text-shadow: 1px 1px 2px red, 0 0 1.5rem white;
-}
-article:first-child a:active {
-  background: rgb(255, 48, 48);
-  color: white;
-  text-decoration: underline;
-}
-
-.line_flag {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.small_flag {
-  width: 30px;
-}
-
-/* ___________________________________ */
-.languages {
+.cover {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 5px;
-  column-gap: 5px;
-  /* justify-items: center; */
-}
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
 
-.grid-item {
-  min-height: 25px;
-  justify-items: center;
-  font-size: 10px;
-  color: white;
-  align-self: center;
-  /* background-color: blue; */
-}
+  &__left_side {
+    padding: 10px;
+    background: rgb(65, 65, 65);
+    // flex: 1 100px;
+  }
 
-/* Container for skill bars */
-.contain {
-  width: 100%; /* Full width */
-  background-color: rgb(175, 174, 174); /* Grey background */
-}
+  &__right_side {
+    padding: 10px;
+    background: #ebe6d6;
+    // flex: 2 100px;
+  }
 
-.skills {
-  text-align: right; /* Right-align text */
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-top: 5px; /* Add top padding */
-  padding-bottom: 5px; /* Add bottom padding */
-  color: white; /* White text color */
+  &__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__subsection {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0 0 0;
+    background-color: rgb(106, 105, 105);
+  }
+  &__red-box {
+    width: 20px;
+    height: 32px;
+    background-color: rgb(255, 48, 48);
+    margin: 0 10px 0 0;
+  }
+
+  &__red_heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ebe6d6;
+  }
+
+  &__item-title {
+    margin: 30px 0 5px 0;
+    font-weight: bold;
+    color: #ebe6d6;
+  }
+
+  &__item-value {
+    margin: 0;
+    color: #ebe6d6;
+  }
+
+  &__line_flag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__small_flag {
+    width: 30px;
+  }
+
+  &__links-education {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__education {
+    color: #ebe6d6;
+    margin-top: 30px;
+
+    &:hover {
+      color: rgb(255, 48, 48);
+      text-decoration: underline;
+      font-weight: bolder;
+      text-shadow: 1px 1px 2px red, 0 0 1.5rem white;
+    }
+
+    &:active {
+      background: rgb(255, 48, 48);
+      color: #ebe6d6;
+      text-decoration: underline;
+    }
+  }
+
+  &__languages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    margin-top: 30px;
+  }
+
+  &__grid-item {
+    min-height: 25px;
+    justify-items: center;
+    font-size: 10px;
+    color: #ebe6d6;
+    align-self: center;
+  }
+
+  &__subtitles {
+    font-size: 0.7rem;
+    color: #ebe6d6;
+  }
+
+  &__skills {
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    color: #ebe6d6;
+  }
+
+  &__contain {
+    width: 100%;
+    background-color: rgb(175, 174, 174);
+    font-size: 0.7rem;
+    color: #ebe6d6;
+  }
+
+  &__profile {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
 }
 
 .Russian {
-  width: 78%;
+  width: 100%;
   background-color: #920000;
-  padding-right: 20px;
+  text-align: center;
 }
+
 .English {
   width: 70%;
   background-color: #fc2828;
-  padding-right: 5px;
+  text-align: center;
 }
+
 .English_understand {
   width: 85%;
   background-color: #fc2828;
-  padding-right: 5px;
+  text-align: center;
 }
+
 .German {
   width: 25%;
   background-color: #f35c5c;
-  padding-right: 5px;
+  text-align: center;
 }
 
 /* __________MAIN SECTION____________ */
 
 #myName {
-  margin-left: 50px;
+  text-align: center;
   font-family: "Pattaya", Times;
   font-size: 100px;
+  line-height: 1.2;
   color: rgb(85, 20, 20);
   text-shadow: 1px 1px 2px black, 0 0 1em red; /* Параметры тени */
 }
 
 /* __________PROFILE BOX____________ */
-
-#red_heading {
-  margin: 5px 0;
-  /* font-size: 20px; */
-  color: white;
-}
-
-.profile {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
 
 .red_start::first-letter {
   color: red;
@@ -238,49 +257,8 @@ article:first-child a:active {
 
 /* __________EXPERIENCE BOX____________ */
 
-.experience {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.experience_fild:nth-child(1) {
-  flex: 1;
-  margin: 5px 5px 5px 0;
-}
-
-.experience_fild:nth-child(2) {
-  flex: 4;
-  margin: 5px 0 5px 5px;
-}
-
 a {
   text-decoration: none; /* Убираем подчёркивание */
-}
-
-.position_in_company {
-  color: white;
-}
-/* .position_in_company:visited {
-  color: rgb(255, 48, 48);
-} */
-.position_in_company:hover {
-  color: rgb(255, 48, 48);
-  text-decoration: underline;
-  text-shadow: 1px 1px 2px black, 0 0 1em red;
-}
-.position_in_company:active {
-  background: rgb(255, 48, 48);
-  color: white;
-  text-decoration: underline;
-}
-.under_construction {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-#under_construction-1 {
-  width: 300px;
 }
 
 /* ___________________Returning Button ____________ */
@@ -295,7 +273,7 @@ a {
   border: none;
   outline: none;
   background-color: red;
-  color: white;
+  color: #ebe6d6;
   cursor: pointer;
   padding: 15px;
   border-radius: 5px;
@@ -307,75 +285,95 @@ a {
 
 /* ___________TIMELINE_________________ */
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 500px;
-  margin: 0 auto;
-}
+.cover {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  background-color: rgb(255, 0, 0);
-  top: 0;
-  bottom: 0;
-  left: 0%;
-  margin-left: -3px;
-}
-.container {
-  padding: 10px 0px 0px 40px;
-  position: relative;
-  /* background-color: inherit; */
-  width: 90%;
-}
+  &__timeline {
+    position: relative;
+    margin: 0 auto;
 
-/* The circles on the timeline */
-.container::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: rgb(65, 65, 65);
-  border: 4px solid red;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      background-color: rgb(255, 0, 0);
+      top: 0;
+      bottom: 0;
+      left: 9px;
+      margin-left: -3px;
+    }
+  }
+
+  &__box {
+    padding: 10px 0px 0px 40px;
+    position: relative;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: rgb(65, 65, 65);
+      border: 4px solid red;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+
+  /* The actual content */
+  &__content {
+    padding: 20px 30px;
+    background-color: rgb(65, 65, 65);
+    position: relative;
+    color: #ebe6d6;
+    border-radius: 6px;
+  }
+
+  &__position {
+    color: #ebe6d6;
+
+    &:hover {
+      color: rgb(255, 48, 48);
+      text-decoration: underline;
+      text-shadow: 1px 1px 2px black, 0 0 1em red;
+    }
+
+    &:active {
+      background: rgb(255, 48, 48);
+      color: #ebe6d6;
+      text-decoration: underline;
+    }
+  }
 }
 
 .right {
   left: 0;
+
+  &::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid rgb(65, 65, 65);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(65, 65, 65) transparent transparent;
+  }
+
+  /* Fix the circle for containers on the right side */
+  &::after {
+    left: -2px;
+  }
 }
 
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid rgb(65, 65, 65);
-  border-width: 10px 10px 10px 0;
-  border-color: transparent rgb(65, 65, 65) transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: rgb(65, 65, 65);
-  position: relative;
-  color: white;
-  border-radius: 6px;
-}
+// =======================================================
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 500px) {
@@ -385,14 +383,14 @@ a {
   }
 
   /* Full-width containers */
-  .container {
+  .box {
     width: 100%;
     padding-left: 50px;
     padding-right: 25px;
   }
 
   /* Make sure that all arrows are pointing leftwards */
-  .container::before {
+  .box::before {
     left: 60px;
     border: medium solid rgb(65, 65, 65);
     border-width: 10px 10px 10px 0;

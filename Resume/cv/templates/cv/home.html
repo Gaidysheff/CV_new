@@ -1,492 +1,379 @@
-{% extends 'cv/base.html' %}
-{% block content %}
+{% extends 'cv/base.html' %} {% block content %}
 
-    <header>
-      <div class="topnav" id="myTopnav">
-        <a href="/home.html" class="navbar_active">Home</a>
-        <div class="navbar_dropdown">
-          <button class="dropbtn">
-            Education
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="Resume_Gaidysheff\education-1.html"
-              >Saint-Petersburg State Marine Technical University</a
-            >
-            <a href="Resume_Gaidysheff\education-2.html"
-              >The Urals-Siberia Institute of Business</a
-            >
-            <a href="Resume_Gaidysheff\education-3.html">Training Cources</a>
-          </div>
-        </div>
-        <a href="Resume_Gaidysheff\assignments_st.html"
-          >Long-Term Assignments</a
-        >
-        <a href="Resume_Gaidysheff\assignments_st.html"
-          >Short-Term Assignments</a
-        >
-        <a
-          href="javascript:void(0);"
-          style="font-size: 15px"
-          class="icon"
-          onclick="myFunction()"
-          >&#9776;</a
-        >
+<div class="container">
+  <div class="CV_title">
+    <h1>Curriculum Vitae</h1>
+  </div>
+  <section class="cover">
+    <!-- __________________LEFT SIDE_______________________ -->
+
+    <article class="cover__left_side">
+      <div class="cover__image">
+        <img src="../../static/cv/images/images/EUGENE-3.jpg" alt="EUGENE-3" />
       </div>
-      <div class="CV_title">
-        <h1>Curriculum Vitae</h1>
+
+      <div class="cover__subsection">
+        <div class="cover__red-box"></div>
+        <div class="cover__red_heading">General</div>
       </div>
-    </header>
-    <section>
-      <!-- __________________LEFT SIDE_______________________ -->
+      <div class="cover__item-title">Date of Birth:</div>
+      <div class="cover__item-value">the 1 <sup>st</sup> of December, 1970</div>
+      <div class="cover__item-title">Place of Birth:</div>
+      <div class="cover__line_flag">
+        <img
+          src="../../static/cv/images/images/icons8-ссср-48.png"
+          alt="USSR"
+          class="cover__small_flag"
+        />
+        <div class="cover__item-value">Kuibyshev, the USSR</div>
+      </div>
+      <div class="cover__item-title">Nationality(ies) at birth:</div>
+      <div class="cover__line_flag">
+        <img
+          src="../../static/cv/images/images/icons8-ссср-48.png"
+          alt="USSR"
+          class="cover__small_flag"
+        />
+        <div class="cover__item-value">the USSR</div>
+      </div>
+      <div class="cover__item-title">Present nationality(ies):</div>
+      <div class="cover__line_flag">
+        <img
+          src="../../static/cv/images/images/icons8-россия-48.png"
+          alt="Russia"
+          class="cover__small_flag"
+        />
+        <div class="cover__item-value">the Russian Federation</div>
+      </div>
+      <div class="cover__item-title">Sex:</div>
+      <div class="cover__item-value">Male</div>
+      <div class="cover__item-title">Marital status:</div>
+      <div class="cover__item-value">Married</div>
+      <div class="cover__item-title">Permanent address:</div>
+      <div class="cover__item-value">ul. Radischeva 10-27</div>
+      <div class="cover__item-value">Ekaterinburg, 620014</div>
+      <div class="cover__item-value">the Russian Federation</div>
 
-      <article class="left_side">
-        <img src="Resume_Gaidysheff\images\EUGENE-3.jpg" alt="EUGENE-3" />
+      <div class="cover__subsection">
+        <div class="cover__red-box"></div>
+        <div class="cover__red_heading">Contacts</div>
+      </div>
+      <div class="cover__item-title">Phone:</div>
+      <div class="cover__item-value">+7-912-24-13937</div>
+      <div class="cover__item-title">E-mail:</div>
+      <div class="cover__item-value">gaidysheff@mail.ru</div>
 
-        <div class="subsection">
-          <div class="red-box"></div>
-          <h3 id="red_heading">General</h3>
-        </div>
-        <h4>Date of Birth:</h4>
-        <p>the 1 <sup>st</sup> of December, 1970</p>
-        <h4>Place of Birth:</h4>
-        <div class="line_flag">
-          <img
-            class="small_flag"
-            src="Resume_Gaidysheff\images\icons8-ссср-48.png"
-            alt="USSR"
-          />
-          <p>Kuibyshev, the USSR</p>
-        </div>
-        <h4>Nationality(ies) at birth:</h4>
-        <div class="line_flag">
-          <img
-            class="small_flag"
-            src="Resume_Gaidysheff\images\icons8-ссср-48.png"
-            alt="USSR"
-          />
-          <p>the USSR</p>
-        </div>
-
-        <h4>Present nationality(ies):</h4>
-        <div class="line_flag">
-          <img
-            class="small_flag"
-            src="Resume_Gaidysheff\images\icons8-россия-48.png"
-            alt="Russia"
-          />
-          <p>the Russian Federation</p>
-        </div>
-
-        <h4>Sex:</h4>
-        <p>Male</p>
-        <h4>Marital status:</h4>
-        <p>Married</p>
-        <h4>Permanent address:</h4>
-        <p>ul. Radischeva 10-27</p>
-        <p>Ekaterinburg, 620014</p>
-        <p>the Russian Federation</p>
-
-        <div class="subsection">
-          <div class="red-box"></div>
-          <h3 id="red_heading">Contacts</h3>
-        </div>
-        <h4>Phone:</h4>
-        <p>+7-912-24-13937</p>
-        <h4>E-mail:</h4>
-        <p>gaidysheff@mail.ru</p>
-
-        <div class="subsection">
-          <div class="red-box"></div>
-          <h3 id="red_heading">Education</h3>
-        </div>
-        <br /><br />
-        <a href="Resume_Gaidysheff\education-1.html"
+      <div class="cover__subsection">
+        <div class="cover__red-box"></div>
+        <div class="cover__red_heading">Education</div>
+      </div>
+      <div class="cover__links-education">
+        <a class="cover__education" href="#"
           >Diploma “Suma Cum Laude”, <br />Master of Economy and Management of
           Enterprises
         </a>
-        <br /><br />
-        <a href="Resume_Gaidysheff\education-2.html"
+        <a class="cover__education" href="#"
           >Diploma of Master of Business Administration</a
         >
-        <br /><br />
-        <a href="Resume_Gaidysheff\education-3.html">Training Cources</a>
-
-        <div class="subsection">
-          <div class="red-box"></div>
-          <h3 id="red_heading">Languages</h3>
-        </div>
-        <br /><br />
-        <div class="languages">
-          <div class="grid-item">READ</div>
-          <div class="grid-item">WRITE</div>
-          <div class="grid-item">SPEAK</div>
-          <div class="grid-item">UNDERSTAND</div>
-          <div class="grid-item">
-            <p>Russian</p>
-            <div class="contain">
-              <div class="skills Russian">native</div>
-            </div>
-
-            <p>English</p>
-            <div class="contain">
-              <div class="skills English">70%</div>
-            </div>
-
-            <p>German</p>
-            <div class="contain">
-              <div class="skills German">25%</div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <p>Russian</p>
-            <div class="contain">
-              <div class="skills Russian">native</div>
-            </div>
-
-            <p>English</p>
-            <div class="contain">
-              <div class="skills English">70%</div>
-            </div>
-
-            <p>German</p>
-            <div class="contain">
-              <div class="skills German">25%</div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <p>Russian</p>
-            <div class="contain">
-              <div class="skills Russian">native</div>
-            </div>
-
-            <p>English</p>
-            <div class="contain">
-              <div class="skills English">70%</div>
-            </div>
-
-            <p>German</p>
-            <div class="contain">
-              <div class="skills German">25%</div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <p>Russian</p>
-            <div class="contain">
-              <div class="skills Russian">native</div>
-            </div>
-
-            <p>English</p>
-            <div class="contain">
-              <div class="skills English English_understand">90%</div>
-            </div>
-
-            <p>German</p>
-            <div class="contain">
-              <div class="skills German">25%</div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- __________________MAIN PART_______________________ -->
-
-      <article>
-        <h2 id="myName">Eugene Gaidyshev</h2>
-
-        <div class="subsection">
-          <div class="red-box"></div>
-          <h3 id="red_heading">Profile</h3>
-        </div>
-        <ul>
-          <li class="profile red_start">
-            Direct experience in Project Cycle Management, Project Proposal
-            Assessment, Project Monitoring and Evaluation.
-          </li>
-          <li class="profile red_start">
-            Institutional capacity building of Local Governments in the field of
-            project identification, formulation and implementation.
-          </li>
-          <li class="profile red_start">
-            Experience in Business Support and Market Scanning for foreign
-            companies willing to enter the emergency market.
-          </li>
-          <li class="profile">
-            29 years experience as an Expert/Consultant/Manager in various
-            international projects, and commercial enterprises.
-          </li>
-          <li class="profile red_start">
-            Human resource development of local beneficiaries of the EU funded
-            projects for ensuring sustainability and continuation of
-            after-project activities.
-          </li>
-          <li class="profile red_start">
-            Advanced development of training manuals and execution of training
-            seminars and workshops.
-          </li>
-          <li class="profile red_start">
-            Relevant experience in various Management fields: Development
-            Strategies; Budgeting; Team building; Action Plans; Planning and
-            Monitoring.
-          </li>
-          <li class="profile red_start">
-            Distant learning and obtaining a new profession and knowledge as
-            Fullstack Developer based on Phyton.
-          </li>
-        </ul>
-        <div class="subsection">
-          <div class="red-box"></div>
-          <h3 id="red_heading">Experience</h3>
-        </div>
-
-        <!-- __________________EXPERIENCE_______________________ -->
-
-        <div class="timeline">
-          <div class="container right">
-            <div class="content">
-              <h3>2018 - ...</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments.html"
-              >
-                Freelancer
-                <br /><br />
-                (click for more information about Positions and Duties)
-              </a>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h3>2014 - ...</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments.html"
-              >
-                Manager
-                <br /><br />
-                Optima Group (Ekaterinburg, Russia)
-              </a>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h3>2012 - 2022</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments.html"
-              >
-                Rater
-                <br /><br />
-                Lionbridge Global Sourcing Solutions, Inc. (the USA)
-              </a>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h3>2011 - 2013</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments.html"
-              >
-                Regional Business Development Director
-                <br /><br />
-                Clear Light UN Limited (Hong Kong) in Ekaterinburg, Russia
-              </a>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h3>2010 - 2011</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments.html"
-              >
-                Deputy Representative
-                <br /><br />
-                Netherlands Business Support Office (NBSO finded by the
-                Government of the Netherlands) in Ekaterinburg, Russia
-              </a>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h3>2009 - 2010</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments.html"
-              >
-                Director of Fundraising Department
-                <br /><br />
-                Non-commercial organisation “International Foundation – Legacy”
-                in Ekaterinburg, Russia
-              </a>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h3>2003 - 2005</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments.html"
-              >
-                General Director
-                <br /><br />
-                JSC “SAMIX Ekaterinburg”, Russia
-              </a>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h3>2000 - 2008</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments.html"
-              >
-                Regional Director
-                <br /><br />
-                The Tacis Local Support Office (LSO finded by the EU) in
-                Ekaterinburg, Russia
-              </a>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h3>1997 - 2000</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments.html"
-              >
-                Project Cycle Management Expert / Team Leader’s Counterpartner
-                <br /><br />
-                The Urals Tacis Technical Office, (Tacis TO finded by the EU) in
-                Ekaterinburg, Russia
-              </a>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h3>1994 - 1997</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments.html"
-              >
-                Management and Economic assistant of Managing Director / <br />
-                Co-ordinator of Experts’ Pool (division) in MPS / <br />
-                Director of MPS Consulting and Investment Project Preparation
-                Department <br /><br />
-                Management and Production Systems MPS Ltd. in Samara, Russia
-              </a>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h3>1995 - 2011 (... meanwhile in between ...)</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments_st.html"
-              >
-                Various international short-term assignments
-              </a>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h3>1993 - 1994</h3>
-              <a
-                class="position_in_company"
-                href="Resume_Gaidysheff\assignments.html"
-              >
-                Counterpart to the EU Management Training Expert <br /><br />
-                Tacis “EC Food Distribution Study” project in Samara, Russia
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ______________________________________________ -->
-        <div class="subsection">
-          <div class="red-box"></div>
-          <h3 id="red_heading">Skills</h3>
-        </div>
-        <div class="skill-logos">
-          <img
-            class="python"
-            src="Resume_Gaidysheff\images\python.png"
-            alt="python logo"
-            />
-          
-          <img
-            class="django"
-            src="Resume_Gaidysheff\images\django.png"
-            alt="django logo"
-          />
-          <img
-            class="trinity"
-            src="Resume_Gaidysheff\images\html-js-css.png"
-            alt="html-css-js logos"
-          />
-
-        </div>
-        <div class="under_construction">
-          <img
-            id="under_construction-1"
-            src="Resume_Gaidysheff\images\under-construction-sign.jpg"
-            alt="UNDER CONSTRUCTION"
-          />
-
-      </article>
-    </section>
-    <footer>
-      <div class="front_footer">
-        <p class="slogan">
-          Have you found my <span class="tooltip-bottom">Slogan
-            <span class="tooltiptext-bottom">Spoiler: DIE HARD</span>
-          </span> being encrypted right here, on the Front page
-          ???
-        </p>
+        <a class="cover__education" href="#">Training Cources</a>
+        <a class="cover__education" href="#"
+          >Full Stack Web Development Course</a
+        >
       </div>
-    </footer>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      Return to the Top
-    </button>
-    <script>
-      // Get the button
-      let mybutton = document.getElementById("myBtn");
+      <div class="cover__subsection">
+        <div class="cover__red-box"></div>
+        <div class="cover__red_heading">Languages</div>
+      </div>
+      <div class="cover__languages">
+        <div class="cover__grid-item">READ</div>
+        <div class="cover__grid-item">WRITE</div>
+        <div class="cover__grid-item">SPEAK</div>
+        <div class="cover__grid-item">UNDERSTAND</div>
+        <div class="cover__grid-item">
+          <div class="cover__subtitles">Russian</div>
+          <div class="cover__contain">
+            <div class="cover__skills Russian">native</div>
+          </div>
+          <div class="cover__subtitles">English</div>
+          <div class="cover__contain">
+            <div class="cover__skills English">70%</div>
+          </div>
+          <div class="cover__subtitles">German</div>
+          <div class="cover__contain">
+            <div class="cover__skills German">25%</div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="cover__subtitles">Russian</div>
+          <div class="cover__contain">
+            <div class="cover__skills Russian">native</div>
+          </div>
+          <div class="cover__subtitles">English</div>
+          <div class="cover__contain">
+            <div class="cover__skills English">70%</div>
+          </div>
+          <div class="cover__subtitles">German</div>
+          <div class="cover__contain">
+            <div class="cover__skills German">25%</div>
+          </div>
+        </div>
+        <div class="cover__grid-item">
+          <div class="cover__subtitles">Russian</div>
+          <div class="cover__contain">
+            <div class="cover__skills Russian">native</div>
+          </div>
+          <div class="cover__subtitles">English</div>
+          <div class="cover__contain">
+            <div class="cover__skills English">70%</div>
+          </div>
+          <div class="cover__subtitles">German</div>
+          <div class="cover__contain">
+            <div class="cover__skills German">25%</div>
+          </div>
+        </div>
+        <div class="cover__grid-item">
+          <div class="cover__subtitles">Russian</div>
+          <div class="cover__contain">
+            <div class="cover__skills Russian">native</div>
+          </div>
+          <div class="cover__subtitles">English</div>
+          <div class="cover__contain">
+            <div class="cover__skills English English_understand">90%</div>
+          </div>
+          <div class="cover__subtitles">German</div>
+          <div class="cover__contain">
+            <div class="cover__skills German">25%</div>
+          </div>
+        </div>
+      </div>
 
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
+      <div class="cover__subsection">
+        <div class="cover__red-box"></div>
+        <div class="cover__red_heading">Skills in Web Development</div>
+      </div>
+    </article>
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
+    <!-- __________________MAIN PART_______________________ -->
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
+    <article class="cover__right_side">
+      <div id="myName">
+        Eugene <br />
+        Gaidyshev
+      </div>
+      <div class="cover__subsection">
+        <div class="cover__red-box"></div>
+        <div class="cover__red_heading">Profile</div>
+      </div>
+      <ul>
+        <li class="cover__profile red_start">
+          Direct experience in Project Cycle Management, Project Proposal
+          Assessment, Project Monitoring and Evaluation.
+        </li>
+        <li class="cover__profile red_start">
+          Institutional capacity building of Local Governments in the field of
+          project identification, formulation and implementation.
+        </li>
+        <li class="cover__profile red_start">
+          Experience in Business Support and Market Scanning for foreign
+          companies willing to enter the emergency market.
+        </li>
+        <li class="cover__profile">
+          29 years experience as an Expert/Consultant/Manager in various
+          international projects, and commercial enterprises.
+        </li>
+        <li class="cover__profile red_start">
+          Human resource development of local beneficiaries of the EU funded
+          projects for ensuring sustainability and continuation of after-project
+          activities.
+        </li>
+        <li class="cover__profile red_start">
+          Advanced development of training manuals and execution of training
+          seminars and workshops.
+        </li>
+        <li class="cover__profile red_start">
+          Relevant experience in various Management fields: Development
+          Strategies; Budgeting; Team building; Action Plans; Planning and
+          Monitoring.
+        </li>
+        <li class="cover__profile red_start">
+          Distant learning and obtaining a new profession and knowledge as
+          Fullstack Developer based on Phyton.
+        </li>
+      </ul>
+      <div class="cover__subsection">
+        <div class="cover__red-box"></div>
+        <div class="cover__red_heading">Experience</div>
+      </div>
 
-      // ---------------- Script for Navbar with Dropdown ----------------
+      <!-- __________________EXPERIENCE_______________________ -->
 
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      // -------------------------------------------------------------------
-    </script>
+      <div class="cover__timeline">
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>2018 - ...</h3>
+            <a class="cover__position" href="#">
+              Freelancer
+              <br /><br />
+              (click for more information about Positions and Duties)
+            </a>
+          </div>
+        </div>
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>2014 - ...</h3>
+            <a class="cover__position" href="#">
+              Manager
+              <br /><br />
+              Optima Group (Ekaterinburg, Russia)
+            </a>
+          </div>
+        </div>
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>2012 - 2022</h3>
+            <a class="cover__position" href="#">
+              Rater
+              <br /><br />
+              Lionbridge Global Sourcing Solutions, Inc. (the USA)
+            </a>
+          </div>
+        </div>
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>2011 - 2013</h3>
+            <a class="cover__position" href="#">
+              Regional Business Development Director
+              <br /><br />
+              Clear Light UN Limited (Hong Kong) in Ekaterinburg, Russia
+            </a>
+          </div>
+        </div>
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>2010 - 2011</h3>
+            <a class="cover__position" href="#">
+              Deputy Representative
+              <br /><br />
+              Netherlands Business Support Office (NBSO finded by the Government
+              of the Netherlands) in Ekaterinburg, Russia
+            </a>
+          </div>
+        </div>
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>2009 - 2010</h3>
+            <a class="cover__position" href="#">
+              Director of Fundraising Department
+              <br /><br />
+              Non-commercial organisation “International Foundation – Legacy” in
+              Ekaterinburg, Russia
+            </a>
+          </div>
+        </div>
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>2003 - 2005</h3>
+            <a class="cover__position" href="#">
+              General Director
+              <br /><br />
+              JSC “SAMIX Ekaterinburg”, Russia
+            </a>
+          </div>
+        </div>
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>2000 - 2008</h3>
+            <a class="cover__position" href="#">
+              Regional Director
+              <br /><br />
+              The Tacis Local Support Office (LSO finded by the EU) in
+              Ekaterinburg, Russia
+            </a>
+          </div>
+        </div>
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>1997 - 2000</h3>
+            <a class="cover__position" href="#">
+              Project Cycle Management Expert / Team Leader’s Counterpartner
+              <br /><br />
+              The Urals Tacis Technical Office, (Tacis TO finded by the EU) in
+              Ekaterinburg, Russia
+            </a>
+          </div>
+        </div>
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>1994 - 1997</h3>
+            <a class="cover__position" href="#">
+              Director of MPS Consulting and Investment Project Preparation
+              Department <br /><br />
+              Management and Production Systems MPS Ltd. in Samara, Russia
+            </a>
+          </div>
+        </div>
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>1995 - 2011 (... meanwhile in between ...)</h3>
+            <a class="cover__position" href="#">
+              Various international short-term assignments
+            </a>
+          </div>
+        </div>
+        <div class="cover__box right">
+          <div class="cover__content">
+            <h3>1993 - 1994</h3>
+            <a class="cover__position" href="#">
+              Counterpart to the EU Management Training Expert <br /><br />
+              Tacis “EC Food Distribution Study” project in Samara, Russia
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ______________________________________________ -->
+      <div class="subsection">
+        <div class="red-box"></div>
+        <h3 id="red_heading">Skills</h3>
+      </div>
+      <div class="skill-logos">
+        <img
+          class="python"
+          src="../../static/cv/images/images/python.png"
+          alt="python logo"
+        />
+
+        <img
+          class="django"
+          src="../../static/cv/images/images/django.png"
+          alt="django logo"
+        />
+        <img
+          class="trinity"
+          src="../../static/cv/images/images/html-js-css.png"
+          alt="html-css-js logos"
+        />
+      </div>
+    </article>
+  </section>
+</div>
+
+<footer>
+  <div class="front_footer">
+    <p class="slogan">
+      Have you found my
+      <span class="tooltip-bottom"
+        >Slogan
+        <span class="tooltiptext-bottom">Spoiler: DIE HARD</span>
+      </span>
+      being encrypted right here, on the Front page ???
+    </p>
+  </div>
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  Return to the Top
+</button>
 
 {% endblock content %}
