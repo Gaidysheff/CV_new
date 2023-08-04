@@ -1,0 +1,497 @@
+/* -----UNIVERSITY - Box with background image -------- */
+
+.university {
+  &__head-box {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../cv/images/images_education/СПГМТУ-02.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 900px;
+    margin-bottom: 20px;
+  }
+
+  &__heading {
+    padding-left: 500px;
+  }
+
+  .university-name {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    color: #ebe6d6;
+    font-family: "Rubik Marker Hatch", Arial;
+    text-shadow: 10px 10px 5px rgb(180, 0, 0), 0 0 1.5rem rgb(0, 0, 0);
+  }
+
+  .faculty-name {
+    margin-top: 50px;
+    font-family: "Pattaya", Times;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: 3.8rem;
+    color: #ebe6d6;
+    text-shadow: 10px 10px 7px rgb(181, 0, 0), 0 0 1.5rem rgb(0, 0, 0);
+  }
+
+  &__diploma {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+  }
+
+  &__diploma-icon {
+    margin-left: 130px;
+    line-height: 1;
+
+    > img {
+      width: 220px;
+      height: 150px;
+    }
+
+    .click_on_image {
+      color: white;
+      font-size: 0.75rem;
+      background-color: #920000;
+    }
+  }
+
+  &__specialization {
+    margin-left: 150px;
+    font-family: "Pattaya", Times;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #ebe6d6;
+    text-shadow: 10px 10px 7px rgb(181, 0, 0), 0 0 1.5rem rgb(0, 0, 0);
+  }
+
+  &__desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+#diploma-extended {
+  width: 865px;
+  height: 604px;
+}
+
+.box_with_background-image {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  background-image: url("../../cv/images/images_education/СПГМТУ-02.jpg");
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.heading_university {
+  margin-top: 40px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  font-family: "Rubik Marker Hatch", Arial;
+  text-shadow: 10px 10px 5px rgb(180, 0, 0), 0 0 1.5rem rgb(0, 0, 0);
+}
+
+// ======================== MEDIA ========================
+
+@media screen and (max-width: 1800px) {
+  .university {
+    &__heading {
+      padding-left: 450px;
+    }
+
+    .university-name {
+      font-size: 2.6rem;
+    }
+
+    &__diploma-icon {
+      margin-left: 120px;
+    }
+
+    &__specialization {
+      margin-left: 90px;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .university {
+    &__head-box {
+      height: 870px;
+    }
+
+    &__heading {
+      padding-left: 430px;
+    }
+
+    .university-name {
+      font-size: 2.5rem;
+    }
+
+    &__diploma {
+      margin-top: 70px;
+    }
+
+    &__diploma-icon {
+      margin-left: 90px;
+    }
+
+    &__specialization {
+      margin-left: 110px;
+      font-size: 2.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .university {
+    &__head-box {
+      height: 780px;
+    }
+
+    &__heading {
+      padding-left: 340px;
+    }
+
+    .faculty-name {
+      font-size: 3.4rem;
+    }
+
+    &__diploma {
+      margin-top: 10px;
+    }
+
+    &__diploma-icon {
+      margin-left: 70px;
+    }
+
+    &__specialization {
+      margin-left: 50px;
+      font-size: 2.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .university {
+    &__head-box {
+      height: 660px;
+    }
+
+    &__heading {
+      padding-left: 290px;
+    }
+
+    .university-name {
+      font-size: 2.2rem;
+    }
+
+    .faculty-name {
+      line-height: 1.3;
+      font-size: 2.8rem;
+    }
+
+    &__diploma-icon {
+      margin-left: 40px;
+    }
+
+    &__specialization {
+      margin-left: 30px;
+      font-size: 2.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .university {
+    &__head-box {
+      height: 520px;
+    }
+
+    &__heading {
+      padding-left: 240px;
+    }
+
+    .university-name {
+      font-size: 2rem;
+      line-height: 1.3;
+    }
+
+    .faculty-name {
+      margin-top: 30px;
+      line-height: 1.2;
+      font-size: 2.5rem;
+    }
+
+    &__diploma-icon {
+      margin-left: 45px;
+
+      img {
+        width: 165px;
+        height: 113px;
+      }
+
+      .click_on_image {
+        font-size: 0.6rem;
+      }
+    }
+
+    &__specialization {
+      margin-left: 30px;
+      font-size: 2rem;
+    }
+  }
+
+  #diploma-extended {
+    width: calc(865px * 0.7);
+    height: calc(604px * 0.7);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .university {
+    &__head-box {
+      height: 460px;
+    }
+
+    &__heading {
+      padding-left: 210px;
+    }
+
+    .university-name {
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .faculty-name {
+      font-size: 1.9rem;
+    }
+
+    &__diploma {
+      margin-top: 40px;
+    }
+
+    &__diploma-icon {
+      margin-left: 55px;
+      line-height: 0.7;
+
+      img {
+        width: 110px;
+        height: 75px;
+      }
+
+      .click_on_image {
+        font-size: 0.5rem;
+      }
+    }
+
+    &__specialization {
+      margin-left: 15px;
+      font-size: 1.4rem;
+    }
+
+    &__desc {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .university {
+    &__head-box {
+      height: 370px;
+    }
+
+    &__heading {
+      padding-left: 170px;
+    }
+
+    .university-name {
+      font-size: 1.2rem;
+      line-height: 1.1;
+    }
+
+    .faculty-name {
+      font-size: 1.5rem;
+    }
+
+    &__diploma-icon {
+      margin-left: 50px;
+      line-height: 0.5;
+
+      img {
+        width: 77px;
+        height: 53px;
+      }
+
+      .click_on_image {
+        font-size: 0.4rem;
+      }
+    }
+
+    &__specialization {
+      margin-left: 10px;
+      font-size: 1rem;
+    }
+  }
+
+  #diploma-extended {
+    width: calc(865px * 0.5);
+    height: calc(604px * 0.5);
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .university {
+    &__head-box {
+      height: 300px;
+    }
+
+    &__heading {
+      padding-left: 140px;
+    }
+
+    .university-name {
+      font-size: 1rem;
+    }
+
+    .faculty-name {
+      font-size: 1.3rem;
+    }
+
+    &__diploma-icon {
+      margin-left: 35px;
+      line-height: 0.3;
+
+      .click_on_image {
+        font-size: 0.3rem;
+      }
+    }
+
+    &__specialization {
+      margin-left: 25px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .university {
+    &__head-box {
+      height: 250px;
+    }
+
+    &__heading {
+      padding-left: 120px;
+    }
+
+    .university-name {
+      font-size: 0.8rem;
+    }
+
+    .faculty-name {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+
+    &__diploma-icon {
+      margin-left: 25px;
+    }
+
+    &__specialization {
+      margin-left: 12px;
+      font-size: 0.7rem;
+    }
+
+    &__desc {
+      font-size: 0.5rem;
+    }
+  }
+
+  #diploma-extended {
+    width: calc(865px * 0.3);
+    height: calc(604px * 0.3);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .university {
+    &__head-box {
+      height: 210px;
+    }
+
+    &__heading {
+      padding-left: 100px;
+    }
+
+    .university-name {
+      font-size: 0.6rem;
+    }
+
+    .faculty-name {
+      margin-top: 10px;
+      font-size: 0.6rem;
+    }
+
+    &__diploma-icon {
+      margin-left: 20px;
+
+      img {
+        width: 55px;
+        height: 37px;
+      }
+    }
+
+    &__specialization {
+      margin-left: 0;
+      font-size: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .university {
+    &__head-box {
+      height: 180px;
+    }
+
+    &__heading {
+      padding-left: 70px;
+    }
+
+    .university-name {
+      font-size: 0.5rem;
+    }
+
+    .faculty-name {
+      margin-top: 5px;
+      font-size: 0.7rem;
+    }
+
+    &__diploma-icon {
+      margin-left: 10px;
+      line-height: 0.2;
+
+      .click_on_image {
+        font-size: 0.2rem;
+      }
+    }
+
+    &__specialization {
+      margin-left: 5px;
+      font-size: 0.4rem;
+    }
+
+    &__desc {
+      font-size: 0.3rem;
+    }
+  }
+
+  #diploma-extended {
+    width: calc(865px * 0.2);
+    height: calc(604px * 0.2);
+  }
+}
