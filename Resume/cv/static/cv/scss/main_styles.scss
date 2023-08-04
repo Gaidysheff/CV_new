@@ -208,6 +208,13 @@ h1 {
     font-size: 1.2rem;
     margin: 10px 0;
   }
+
+  &__skill-logos {
+    margin: 50px 0 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+  }
 }
 
 .Russian {
@@ -409,37 +416,18 @@ a {
   }
 }
 
-/* --------------------Skills------------------------ */
-
-.skill-logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.python {
-  width: 15%;
-}
-
-.django {
-  width: 30%;
-}
-
-.trinity {
-  width: 25%;
-}
 /* _______________Footer____________________________ */
 
 .front_footer {
   display: flex;
   justify-content: center;
-}
+  color: #ebe6d6;
+  background: black;
 
-.front_footer .slogan {
-  /* font-family: "Amatic SC"; */
-  font-family: "Marck Script";
-  font-size: 20px;
+  .slogan {
+    font-family: "Marck Script";
+    font-size: 20px;
+  }
 }
 
 /* __________ DROPDOWN (for education and ST assignments)___________ */
