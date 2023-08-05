@@ -70,6 +70,57 @@
     text-align: center;
     font-size: 1rem;
   }
+
+  &__gridbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    align-items: center;
+  }
+
+  &__grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 1150px;
+  }
+
+  &__note-for-slider {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-self: center;
+    color: grey;
+    font-style: italic;
+    text-decoration: underline rgb(103, 185, 232);
+  }
+
+  &__subtitle-left,
+  &__subtitle-right {
+    text-align: center;
+    font-family: "Kiwi Maru";
+    font-size: 1.9rem;
+  }
+
+  &__subtitle-left {
+    color: rgb(2, 0, 143);
+  }
+
+  &__subtitle-right {
+    color: #920000;
+  }
+
+  &__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 #diploma-extended {
@@ -77,21 +128,21 @@
   height: 604px;
 }
 
-.box_with_background-image {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 20px;
-  background-image: url("../../cv/images/images_education/СПГМТУ-02.jpg");
-  background-repeat: no-repeat;
-  margin: auto;
+/* ------- Cube Slider ---------- */
+.swiper {
+  width: 500px;
+  height: 500px;
+  z-index: 0;
 }
 
-.heading_university {
-  margin-top: 40px;
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
-  font-family: "Rubik Marker Hatch", Arial;
-  text-shadow: 10px 10px 5px rgb(180, 0, 0), 0 0 1.5rem rgb(0, 0, 0);
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }
 
 // ======================== MEDIA ========================
@@ -113,6 +164,10 @@
     &__specialization {
       margin-left: 90px;
       font-size: 2.4rem;
+    }
+
+    &__grid-item {
+      min-height: 1100px;
     }
   }
 }
@@ -172,6 +227,10 @@
       margin-left: 50px;
       font-size: 2.2rem;
     }
+
+    &__grid-item {
+      min-height: 980px;
+    }
   }
 }
 
@@ -201,6 +260,24 @@
     &__specialization {
       margin-left: 30px;
       font-size: 2.1rem;
+    }
+
+    &__subtitle-left,
+    &__subtitle-right {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .swiper {
+    width: 400px;
+    height: 400px;
+  }
+
+  .university {
+    &__grid-item {
+      min-height: 790px;
     }
   }
 }
@@ -242,6 +319,11 @@
     &__specialization {
       margin-left: 30px;
       font-size: 2rem;
+    }
+
+    &__subtitle-left,
+    &__subtitle-right {
+      font-size: 1.5rem;
     }
   }
 
@@ -296,6 +378,19 @@
     &__desc {
       font-size: 0.8rem;
     }
+
+    &__gridbox {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__grid-item:first-child {
+      margin-bottom: 50px;
+    }
+
+    &__grid-item:last-child {
+      margin-bottom: -50px;
+    }
   }
 }
 
@@ -335,6 +430,10 @@
     &__specialization {
       margin-left: 10px;
       font-size: 1rem;
+    }
+
+    &__note-for-slider {
+      font-size: 0.7rem;
     }
   }
 
@@ -409,11 +508,34 @@
     &__desc {
       font-size: 0.5rem;
     }
+
+    &__subtitle-left,
+    &__subtitle-right {
+      font-size: 1.3rem;
+    }
+
+    &__note-for-slider {
+      font-size: 0.5rem;
+      line-height: 1.2;
+    }
   }
 
   #diploma-extended {
     width: calc(865px * 0.3);
     height: calc(604px * 0.3);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .swiper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .university {
+    &__grid-item {
+      min-height: 600px;
+    }
   }
 }
 
@@ -448,6 +570,11 @@
     &__specialization {
       margin-left: 0;
       font-size: 0.5rem;
+    }
+
+    &__subtitle-left,
+    &__subtitle-right {
+      font-size: 1rem;
     }
   }
 }
@@ -488,6 +615,20 @@
     &__desc {
       font-size: 0.3rem;
     }
+
+    &__subtitle-left,
+    &__subtitle-right {
+      font-size: 0.8rem;
+    }
+
+    &__grid-item {
+      min-height: 440px;
+    }
+  }
+
+  .swiper {
+    width: 200px;
+    height: 200px;
   }
 
   #diploma-extended {
