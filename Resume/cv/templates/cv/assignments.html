@@ -1,56 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="styles_for_assignments.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Solway:wght@800&display=swap" rel="stylesheet" />
-  <style>
-
- /* ----------------for sign "Under Construction" ------------------------------ */
-    .sign {
-      display: flex;
-      justify-content: center;
-    }
-
-    .sign:first-child {
-      margin: 100px;
-    }
-
-    .sign > img {
-      width: 300px;
-    }
-
-
-  </style>
-</head>
-
-<body>
-
-<header>
-
-    <div class="topnav" id="myTopnav">
-      <a href="/home.html" class="navbar_active">Home</a>
-      <div class="navbar_dropdown">
-        <button class="dropbtn">Education 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="education-1.html">Saint-Petersburg State Marine Technical University</a>
-          <a href="education-2.html">The Urals-Siberia Institute of Business</a>
-          <a href="education-3.html">Training Cources</a>
-        </div>
-      </div> 
-      <a href="assignments.html">Long-Term Assignments</a>
-      <a href="assignments_st.html">Short-Term Assignments</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-
-  </header>
+{% extends 'cv/base.html' %} {% block content %}
 
 
   <!-- ----------------Assignment No.1 ------------------------------ -->
@@ -1489,7 +1437,7 @@ let slideIndex = 1;
 
 </footer>
 
-</body>
+
 
 <!-- --------------------------------- Return Button ------------------------------ -->
 
@@ -1525,4 +1473,4 @@ let slideIndex = 1;
   }
 </script>
 
-</html>
+{% endblock content %}

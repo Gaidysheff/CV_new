@@ -62,15 +62,11 @@ main {
   background: rgb(255, 48, 48);
   height: 80px;
   margin-bottom: 20px;
-}
-
-h1 {
   font-family: "Pattaya", Times;
-  font-size: 50px;
+  font-size: 3.2rem;
   text-align: center;
   color: #ebe6d6;
   line-height: 80px;
-  margin: 0;
   text-shadow: 2px 2px 4px #000000, 20px 20px 1rem rgb(88, 0, 0);
 }
 
@@ -84,6 +80,8 @@ h1 {
   &__left_side {
     padding: 10px;
     background: rgb(65, 65, 65);
+    display: flex;
+    flex-direction: column;
     // flex: 1 100px;
   }
 
@@ -127,12 +125,14 @@ h1 {
 
   &__item-title {
     margin: 30px 0 5px 0;
+    font-size: 1rem;
     font-weight: bold;
     color: #ebe6d6;
   }
 
   &__item-value {
     margin: 0;
+    font-size: 1rem;
     color: #ebe6d6;
   }
 
@@ -154,6 +154,7 @@ h1 {
   &__education {
     color: #ebe6d6;
     margin-top: 30px;
+    font-size: 1rem;
 
     &:hover {
       color: rgb(255, 48, 48);
@@ -247,10 +248,14 @@ h1 {
 #myName {
   text-align: center;
   font-family: "Pattaya", Times;
-  font-size: 100px;
+  font-size: 6.25rem;
   line-height: 1.2;
   color: rgb(85, 20, 20);
   text-shadow: 1px 1px 2px black, 0 0 1em red; /* Параметры тени */
+}
+
+#myName-smaller {
+  display: none;
 }
 
 /* __________PROFILE BOX____________ */
@@ -344,6 +349,10 @@ a {
 
   &__position {
     color: #ebe6d6;
+
+    > span {
+      font-size: 1.5rem;
+    }
 
     &:hover {
       color: rgb(255, 48, 48);
@@ -794,9 +803,146 @@ a {
 
 // ======================== MEDIA ========================
 
+@media screen and (max-width: 1300px) {
+  .cover {
+    &__position {
+      > span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .container {
     padding: 20px;
+  }
+
+  #myName {
+    font-size: 5rem;
+  }
+
+  .cover {
+    &__red_heading {
+      font-size: 1rem;
+    }
+
+    &__profile {
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    &__item-title {
+      font-size: 0.9rem;
+    }
+
+    &__item-value {
+      font-size: 0.9rem;
+    }
+
+    &__education {
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+    // &__content {
+    //   font-size: 0.8rem;
+    //   line-height: 1.4;
+    // }
+
+    // &__position {
+    //   > span {
+    //     font-size: 1rem;
+    //   }
+    // }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .cover {
+    &__red_heading {
+      font-size: 0.8rem;
+    }
+
+    &__profile {
+      font-size: 0.8rem;
+      line-height: 1.1;
+    }
+
+    &__education {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #myName {
+    font-size: 4rem;
+  }
+  // .cover {
+  //   &__content {
+  //     font-size: 0.7rem;
+  //     line-height: 1.3;
+  //   }
+
+  //   &__position {
+  //     > span {
+  //       font-size: 0.9rem;
+  //     }
+  //   }
+  // }
+}
+
+@media screen and (max-width: 700px) {
+  .cover {
+    grid-template-columns: 1fr;
+
+    &__red_heading {
+      font-size: 1.2rem;
+    }
+
+    &__profile {
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+
+    &__item-title {
+      font-size: 1rem;
+    }
+
+    &__item-value {
+      font-size: 1rem;
+    }
+
+    &__education {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    // &__content {
+    //   font-size: 0.8rem;
+    //   line-height: 1.4;
+    // }
+
+    // &__position {
+    //   > span {
+    //     font-size: 1rem;
+    //   }
+    // }
+  }
+
+  #myName-smaller {
+    display: flex;
+    margin: 10px auto;
+    text-align: center;
+    font-family: "Pattaya", Times;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #ebe6d6;
+    text-shadow: 2px 2px 4px #fafafa, 20px 20px 1rem rgb(88, 0, 0);
+  }
+
+  #myName {
+    display: none;
   }
 }
 
@@ -804,10 +950,103 @@ a {
   .container {
     padding: 10px;
   }
+
+  .cover {
+    &__red_heading {
+      font-size: 1rem;
+    }
+
+    &__profile {
+      font-size: 1rem;
+      line-height: 1.1;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .CV_title {
+    font-size: 2.5rem;
+  }
+
+  #myName-smaller {
+    font-size: 4rem;
+  }
+
+  .cover {
+    &__red_heading {
+      font-size: 0.9rem;
+    }
+
+    &__profile {
+      font-size: 0.8rem;
+      line-height: 1;
+    }
+
+    &__item-title {
+      font-size: 0.8rem;
+    }
+
+    &__item-value {
+      font-size: 0.8rem;
+      line-height: 1.2;
+    }
+
+    &__education {
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+  }
+
+  .red_start::first-letter {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .CV_title {
+    font-size: 2rem;
+  }
+
+  #myName-smaller {
+    font-size: 3rem;
+  }
+
+  .cover {
+    &__red_heading {
+      font-size: 0.8rem;
+    }
+
+    &__profile {
+      font-size: 0.6rem;
+    }
+
+    &__education {
+      font-size: 0.7rem;
+      line-height: 1.1;
+    }
+  }
+
+  .red_start::first-letter {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 300px) {
   .container {
     padding: 5px;
+  }
+
+  #myName-smaller {
+    font-size: 2rem;
+  }
+
+  .cover {
+    &__profile {
+      font-size: 0.5rem;
+    }
+  }
+
+  .red_start::first-letter {
+    font-size: 0.9rem;
   }
 }

@@ -12,3 +12,27 @@ def educationOne(request):
         'title': 'University'
     }
     return render(request, 'cv/education-1.html', context=context)
+
+def educationTwo(request):
+    context = {
+        'title': 'MBA'
+    }
+    return render(request, 'cv/education-2.html', context=context)
+
+def educationThree(request):
+    context = {
+        'title': 'Training Courses'
+    }
+    return render(request, 'cv/education-3.html', context=context)
+
+def assignmentsLT(request):
+    context = {
+        'title': 'Long-Term Assignment'
+    }
+    return render(request, 'cv/assignments.html', context=context)
+
+def assignmentsST(request):
+    context = {
+        'title': 'Short-Term Assignment'
+    }
+    return render(request, 'cv/assignments_st.html', context=context)

@@ -44,17 +44,19 @@
                       <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                      <a href="{% url 'home' %}"
+                      <a href="{% url 'university' %}"
                         >Saint-Petersburg State Marine Technical University</a
                       >
-                      <a href="{% url 'home' %}"
+                      <a href="{% url 'mba' %}"
                         >The Urals-Siberia Institute of Business</a
                       >
-                      <a href="{% url 'home' %}">Training Cources</a>
+                      <a href="{% url 'courses' %}">Training Cources</a>
                     </div>
                   </div>
-                  <a href="{% url 'home' %}">Long-Term Assignments</a>
-                  <a href="{% url 'home' %}">Short-Term Assignments</a>
+                  <a href="{% url 'assignments' %}">Long-Term Assignments</a>
+                  <a href="{% url 'assignments_st' %}"
+                    >Short-Term Assignments</a
+                  >
                   <a
                     href="javascript:void(0);"
                     style="font-size: 15px"
