@@ -1,21 +1,16 @@
-footer {
-  background-color: #f59500;
-}
-
 /* _____________Assignment Table________________________ */
 
 .text_box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* align-items: stretch; */
 }
 
 .shadow {
-  background: #f7f7f7;
+  background: rgb(249, 247, 243);
   margin-top: 30px;
-  border: 1px solid #ccc;
-  padding: 20px;
+  border: 1px solid #c1c1c1;
+  padding: 0 20px;
   position: relative;
 }
 
@@ -49,6 +44,323 @@ footer {
   /* Восстанавливаем положение слева */
 }
 
+hr {
+  border: 1px solid #c1c1c1;
+}
+
+// ===========================================================
+
+.assignments {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__grid_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 4fr;
+  }
+
+  &__grid_item {
+    padding: 10px 0px;
+    line-height: 1.1;
+  }
+
+  // &__grid_item:nth-child(2n + 1) {
+  //   background-color: #fdbe33;
+  // }
+
+  &__grid_sub_item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+
+  &__image {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__item_inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__entity {
+    line-height: 1.1;
+    margin-top: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__sub-entity {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.flag {
+  margin-right: 10px;
+}
+
+.table_head {
+  font-weight: bold;
+  align-self: center;
+  text-align: center;
+  font-family: "Solway";
+  font-size: 1rem;
+}
+
+/* _________________Collapsible Content________________ */
+
+.collapsible {
+  background-color: #878686;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible_content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #ebe6d6;
+  z-index: 11;
+  font-size: 1rem;
+}
+
+.collapsible_ol {
+  margin-left: 10px;
+}
+
+.collapsible_ol li {
+  margin-top: 10px;
+}
+
+// --------------------------------------------------------
+
+// ======================== MEDIA ========================
+
+@media screen and (max-width: 1200px) {
+  .assignments {
+    &__grid_sub_item,
+    &__entity {
+      font-size: 0.8rem;
+    }
+
+    &__image {
+      width: 20px;
+    }
+  }
+
+  .table_head {
+    font-size: 0.8rem;
+  }
+
+  .collapsible {
+    font-size: 0.8rem;
+  }
+
+  .collapsible_content {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .assignments {
+    &__grid_sub_item,
+    &__entity {
+      font-size: 0.7rem;
+    }
+  }
+
+  .table_head {
+    font-size: 0.7rem;
+  }
+
+  .collapsible {
+    font-size: 0.7rem;
+  }
+
+  .collapsible_content {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .assignments {
+    &__grid_sub_item,
+    &__entity {
+      font-size: 0.6rem;
+    }
+  }
+
+  .table_head {
+    font-size: 0.6rem;
+  }
+
+  .collapsible {
+    font-size: 0.6rem;
+  }
+
+  .collapsible_content {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .assignments {
+    &__inner {
+      flex-direction: row;
+    }
+
+    &__grid_box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item_inner {
+      align-items: center;
+      text-align: center;
+    }
+
+    &__grid_sub_item,
+    &__entity {
+      font-size: 1rem;
+    }
+
+    &__image {
+      width: 30px;
+    }
+  }
+
+  .table_head {
+    font-size: 1rem;
+  }
+
+  .collapsible {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .collapsible_content {
+    font-size: 1rem;
+  }
+
+  .underline {
+    border-bottom: 1px dotted #878686;
+  }
+
+  .height_3_lines {
+    height: 80px;
+  }
+
+  .extra_height_1 {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .assignments {
+    &__grid_sub_item,
+    &__entity {
+      font-size: 0.8rem;
+    }
+
+    &__image {
+      width: 20px;
+    }
+  }
+
+  .table_head {
+    font-size: 0.8rem;
+  }
+
+  .collapsible {
+    height: 30px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .collapsible_content {
+    font-size: 0.8rem;
+  }
+
+  .height_3_lines {
+    height: 50px;
+  }
+
+  .extra_height_1 {
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .assignments {
+    &__grid_sub_item,
+    &__entity {
+      font-size: 0.6rem;
+    }
+  }
+
+  .table_head {
+    font-size: 0.6rem;
+  }
+
+  .collapsible {
+    font-size: 0.6rem;
+  }
+
+  .collapsible_content {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .assignments {
+    &__grid_sub_item,
+    &__entity {
+      font-size: 0.5rem;
+    }
+  }
+
+  .table_head {
+    font-size: 0.5rem;
+  }
+
+  .collapsible {
+    font-size: 0.5rem;
+  }
+
+  .collapsible_content {
+    font-size: 0.5rem;
+  }
+}
+
+// ===========================================================
 .sub-box {
   /* flex: 1 40px; */
   margin: 0px 5px 5px 5px;
@@ -84,24 +396,16 @@ footer {
   flex: 5 40px;
 }
 
-.table_head {
-  font-weight: 600;
-  align-self: center;
-  text-align: center;
-  font-family: "Solway";
-  font-size: 16px;
-}
+// .sub-box:nth-of-type(2) .text_in_duties {
+//   align-self: center;
+// }
 
-.sub-box:nth-of-type(2) .text_in_duties {
-  align-self: center;
-}
-
-.sub-box .flag_company,
-.flag_location {
-  flex: 1;
-  width: 30px;
-  align-self: flex-start;
-}
+// .sub-box .flag_company,
+// .flag_location {
+//   flex: 1;
+//   width: 30px;
+//   align-self: flex-start;
+// }
 
 .sub-box:nth-of-type(3) .company_in_duties {
   flex: 5;
@@ -124,41 +428,6 @@ footer {
 .make_bold {
   font-weight: 800;
   text-decoration: wavy underline;
-}
-
-/* ________________________Collapsible Content_____________________________________ */
-
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  border-radius: 10px;
-}
-
-.active,
-.collapsible:hover {
-  background-color: #555;
-}
-
-.collapsible_content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
-.collapsible_ol {
-  margin-left: -30px;
-}
-
-.collapsible_ol li {
-  margin-top: 10px;
 }
 
 /* ------------------------------------------------------- */

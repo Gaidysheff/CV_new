@@ -140,3 +140,14 @@
     url("../fonts/SuezOne-Regular.ttf") format("ttf");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Solway";
+  font-weight: bold;
+  font-style: normal;
+  src: local("Solway-Bold"), url("../fonts/Solway-Bold.woff2") format("woff2"),
+    url("../fonts/Solway-Bold.woff") format("woff"),
+    url("../fonts/Solway-Bold.eot") format("eot"),
+    url("../fonts/Solway-Bold.ttf") format("ttf");
+  font-display: swap;
+}
