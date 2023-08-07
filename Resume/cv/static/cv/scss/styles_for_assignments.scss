@@ -51,6 +51,11 @@ hr {
 // ===========================================================
 
 .assignments {
+  padding-bottom: 100px;
+  &__wrapper {
+    padding-bottom: 100px;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -58,7 +63,7 @@ hr {
 
   &__grid_box {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 2fr 4fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 4fr;
   }
 
   &__grid_item {
@@ -66,23 +71,19 @@ hr {
     line-height: 1.1;
   }
 
-  // &__grid_item:nth-child(2n + 1) {
-  //   background-color: #fdbe33;
-  // }
-
   &__grid_sub_item {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding: 0px 5px;
     font-size: 1rem;
     line-height: 1.1;
   }
 
   &__image {
-    width: 30px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    flex: 0 0 30px;
 
     img {
       width: 100%;
@@ -107,6 +108,7 @@ hr {
   &__sub-entity {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
   }
 }
 
@@ -120,6 +122,26 @@ hr {
   text-align: center;
   font-family: "Solway";
   font-size: 1rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.inline_box {
+  display: block;
+}
+
+.centralised {
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  text-align: center;
+  color: #ebe6d6;
+  background: rgb(65, 65, 65);
+  padding: 10px 0;
 }
 
 /* _________________Collapsible Content________________ */
@@ -149,6 +171,10 @@ hr {
   background-color: #ebe6d6;
   z-index: 11;
   font-size: 1rem;
+
+  > p {
+    margin-top: 20px;
+  }
 }
 
 .collapsible_ol {
@@ -159,11 +185,34 @@ hr {
   margin-top: 10px;
 }
 
-// --------------------------------------------------------
+ul li {
+  list-style: disc;
+}
+
+// ---------------------- DropUp ---------------------------
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #ebe6d6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  bottom: 70px;
+  z-index: 1;
+}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
 
 // ======================== MEDIA ========================
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .assignments {
     &__grid_sub_item,
     &__entity {
@@ -171,7 +220,7 @@ hr {
     }
 
     &__image {
-      width: 20px;
+      flex: 0 0 20px;
     }
   }
 
@@ -252,7 +301,7 @@ hr {
     }
 
     &__image {
-      width: 30px;
+      flex: 0 0 30px;
     }
   }
 
@@ -290,7 +339,7 @@ hr {
     }
 
     &__image {
-      width: 20px;
+      flex: 0 0 20px;
     }
   }
 
@@ -395,17 +444,6 @@ hr {
 .sub-box:nth-of-type(5) {
   flex: 5 40px;
 }
-
-// .sub-box:nth-of-type(2) .text_in_duties {
-//   align-self: center;
-// }
-
-// .sub-box .flag_company,
-// .flag_location {
-//   flex: 1;
-//   width: 30px;
-//   align-self: flex-start;
-// }
 
 .sub-box:nth-of-type(3) .company_in_duties {
   flex: 5;
