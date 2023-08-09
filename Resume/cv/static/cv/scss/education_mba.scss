@@ -1,0 +1,331 @@
+.usib {
+  &__head-box {
+    display: flex;
+    background-image: url("../../cv/images/images_education/usib.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1150px;
+    margin-bottom: 20px;
+  }
+
+  &__images {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__titles {
+    width: 80%;
+    padding: 20px 20px 20px 50px;
+  }
+
+  &__logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    font-size: 4rem;
+    line-height: 1.3;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-family: "Suez One", Arial;
+    text-shadow: 10px 10px 5px rgb(180, 0, 0), 0 0 1.5rem rgb(0, 0, 0);
+  }
+
+  &__faculty {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    color: rgb(249, 249, 249);
+    font-family: "Pattaya", Times;
+    text-shadow: 10px 10px 7px rgb(181, 0, 0), 0 0 1.5rem rgb(0, 0, 0);
+  }
+  &__year {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    color: rgb(249, 249, 249);
+    font-family: "Pattaya", Times;
+    text-shadow: 10px 10px 7px rgb(181, 0, 0), 0 0 1.5rem rgb(0, 0, 0);
+  }
+
+  &__diploma {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__dropup {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #ebe6d6;
+    width: 865px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    bottom: 70px;
+    z-index: 1;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__dropup:hover &__dropup-content {
+    display: block;
+  }
+
+  &__description {
+    text-align: center;
+    color: #ebe6d6;
+    background: rgb(65, 65, 65);
+    padding: 10px 0;
+  }
+}
+
+.click_on_image {
+  display: flex;
+  align-items: start;
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  background-color: #920000;
+}
+
+// ======================== MEDIA ========================
+
+@media screen and (max-width: 1600px) {
+  .usib {
+    &__head-box {
+      height: 1000px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .usib {
+    &__head-box {
+      height: 850px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .usib {
+    &__head-box {
+      height: 700px;
+    }
+  }
+
+  .click_on_image {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .usib {
+    &__dropup-content {
+      width: 600px;
+    }
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .usib {
+    &__head-box {
+      height: 600px;
+    }
+
+    &__title {
+      font-size: 3.5rem;
+      line-height: 1.2;
+      margin-bottom: 50px;
+    }
+
+    &__faculty {
+      font-size: 2.5rem;
+      line-height: 1.3;
+      margin-bottom: 50px;
+    }
+
+    &__year {
+      font-size: 2rem;
+      line-height: 1.3;
+      margin-bottom: 50px;
+    }
+
+    &__description {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .usib {
+    &__head-box {
+      height: 460px;
+    }
+
+    &__title {
+      font-size: 2rem;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+
+    &__faculty {
+      font-size: 1.5rem;
+      line-height: 1.3;
+      margin-bottom: 30px;
+    }
+    &__year {
+      font-size: 1rem;
+      line-height: 1.3;
+      margin-bottom: 30px;
+    }
+  }
+
+  .click_on_image {
+    font-size: 0.5rem;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .usib {
+    &__head-box {
+      height: 390px;
+    }
+
+    &__title {
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+
+    &__faculty {
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+
+    &__year {
+      font-size: 0.8rem;
+      line-height: 1.3;
+    }
+
+    &__dropup-content {
+      width: 400px;
+    }
+
+    &__description {
+      font-size: 0.6rem;
+    }
+  }
+
+  .click_on_image {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .usib {
+    &__head-box {
+      height: 300px;
+    }
+
+    &__titles {
+      width: 80%;
+      padding: 10px 10px 10px 20px;
+    }
+
+    &__dropup-content {
+      width: 300px;
+      bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .usib {
+    &__head-box {
+      height: 240px;
+    }
+
+    &__title {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    &__faculty {
+      font-size: 0.8rem;
+      margin-bottom: 15px;
+    }
+    &__year {
+      font-size: 0.6rem;
+      margin-bottom: 15px;
+    }
+  }
+
+  .click_on_image {
+    font-size: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .usib {
+    &__dropup-content {
+      width: 200px;
+      bottom: 10px;
+    }
+
+    &__description {
+      font-size: 0.4rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .usib {
+    &__head-box {
+      height: 190px;
+    }
+    //   &__title {
+    //     font-size: 0.9rem;
+    //     margin-bottom: 15px;
+    //   }
+
+    //   &__faculty {
+    //     font-size: 0.8rem;
+    //     margin-bottom: 15px;
+    //   }
+    //   &__year {
+    //     font-size: 0.6rem;
+    //     margin-bottom: 15px;
+    //   }
+    // }
+
+    // .click_on_image {
+    //   font-size: 0.3rem;
+    // }
+  }
+}

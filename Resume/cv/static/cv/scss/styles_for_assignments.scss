@@ -326,8 +326,113 @@ ul li {
     height: 80px;
   }
 
-  .extra_height_1 {
+  .assignment_n01 {
+    height: 140px;
+  }
+
+  .assignment_n02 {
+    height: 150px;
+  }
+
+  .assignment_n03 {
+    height: 190px;
+  }
+
+  .assignment_n04 {
+    height: 240px;
+  }
+
+  .assignment_n05,
+  .assignment_n06 {
+    height: 180px;
+  }
+
+  .assignment_n07 {
+    height: 280px;
+  }
+
+  .assignment_n08 {
+    height: 250px;
+  }
+
+  .assignment_n09 {
+    height: 300px;
+  }
+
+  .assignment_n10 {
+    height: 170px;
+  }
+
+  .assignment_n11 {
+    height: 300px;
+  }
+
+  .assignment_n12 {
+    height: 315px;
+  }
+
+  .assignment_n13 {
+    height: 200px;
+  }
+
+  .assignment_n14 {
+    height: 175px;
+  }
+
+  .assignment_n14_position {
+    height: 50px;
+  }
+
+  .assignment_n15 {
+    height: 175px;
+  }
+
+  .assignment_n16 {
+    height: 260px;
+  }
+
+  .assignment_n17 {
+    height: 260px;
+  }
+
+  .short-term_n01_com {
+    height: 210px;
+  }
+
+  .short-term_n02_com {
     height: 120px;
+  }
+
+  .short-term_n02_pos {
+    height: 230px;
+  }
+
+  .short-term_n03_loc {
+    height: 150px;
+  }
+
+  .short-term_n03_com {
+    height: 210px;
+  }
+
+  .short-term_n03_pos {
+    height: 240px;
+  }
+
+  .short-term_n04_com {
+    height: 210px;
+  }
+
+  .short-term_n04_pos {
+    height: 240px;
+  }
+
+  .short-term_n05_com {
+    height: 210px;
+  }
+
+  .short-term_n05_pos {
+    height: 230px;
   }
 }
 
@@ -359,11 +464,120 @@ ul li {
   }
 
   .height_3_lines {
-    height: 50px;
+    height: 60px;
   }
 
-  .extra_height_1 {
-    height: 90px;
+  .assignment_n01 {
+    height: 115px;
+  }
+
+  .assignment_n02 {
+    height: 135px;
+  }
+
+  .assignment_n03 {
+    height: 175px;
+  }
+
+  .assignment_n04 {
+    height: 260px;
+  }
+
+  .assignment_n05,
+  .assignment_n06 {
+    height: 195px;
+  }
+
+  .assignment_n07 {
+    height: 255px;
+  }
+
+  .assignment_n08 {
+    height: 210px;
+  }
+
+  .assignment_n09 {
+    height: 270px;
+  }
+
+  .assignment_n10 {
+    height: 165px;
+  }
+
+  .assignment_n11 {
+    height: 270px;
+  }
+
+  .assignment_n12 {
+    height: 290px;
+  }
+
+  .assignment_n13 {
+    height: 165px;
+  }
+
+  .assignment_n13_position {
+    height: 40px;
+  }
+
+  .assignment_n14 {
+    height: 165px;
+  }
+
+  .assignment_n14_position {
+    height: 40px;
+  }
+
+  .assignment_n15 {
+    height: 165px;
+  }
+
+  .assignment_n16 {
+    height: 240px;
+  }
+
+  .assignment_n17 {
+    height: 240px;
+  }
+
+  .short-term_n01_com {
+    height: 195px;
+  }
+
+  .short-term_n02_com {
+    height: 125px;
+  }
+
+  .short-term_n02_pos {
+    height: 230px;
+  }
+
+  .short-term_n03_loc {
+    height: 115px;
+  }
+
+  .short-term_n03_com {
+    height: 190px;
+  }
+
+  .short-term_n03_pos {
+    height: 230px;
+  }
+
+  .short-term_n04_com {
+    height: 190px;
+  }
+
+  .short-term_n04_pos {
+    height: 240px;
+  }
+
+  .short-term_n05_com {
+    height: 190px;
+  }
+
+  .short-term_n05_pos {
+    height: 220px;
   }
 }
 
@@ -372,6 +586,22 @@ ul li {
     &__grid_sub_item,
     &__entity {
       font-size: 0.6rem;
+    }
+
+    &__entity {
+      margin-top: 5px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &__sub-entity {
+      margin-bottom: 0;
+    }
+
+    &__grid_item {
+      padding: 5px 0px;
     }
   }
 
@@ -385,6 +615,123 @@ ul li {
 
   .collapsible_content {
     font-size: 0.6rem;
+  }
+
+  .height_3_lines {
+    height: 47px;
+  }
+
+  .assignment_n01 {
+    height: 70px;
+  }
+
+  .assignment_n02 {
+    height: 85px;
+  }
+
+  .assignment_n03 {
+    height: 115px;
+  }
+
+  .assignment_n04 {
+    height: 150px;
+  }
+
+  .assignment_n05,
+  .assignment_n06 {
+    height: 105px;
+  }
+
+  .assignment_n07 {
+    height: 160px;
+  }
+
+  .assignment_n08 {
+    height: 130px;
+  }
+
+  .assignment_n09 {
+    height: 160px;
+  }
+
+  .assignment_n10 {
+    height: 95px;
+  }
+
+  .assignment_n11 {
+    height: 160px;
+  }
+
+  .assignment_n12 {
+    height: 165px;
+  }
+
+  .assignment_n13 {
+    height: 95px;
+  }
+
+  .assignment_n13_position {
+    height: 20px;
+  }
+
+  .assignment_n14 {
+    height: 90px;
+  }
+
+  .assignment_n14_position {
+    height: 30px;
+  }
+
+  .assignment_n15 {
+    height: 95px;
+  }
+
+  .assignment_n16 {
+    height: 135px;
+  }
+
+  .assignment_n17 {
+    height: 135px;
+  }
+
+  .short-term_n01_com {
+    height: 125px;
+  }
+
+  .short-term_n02_com {
+    height: 80px;
+  }
+
+  .short-term_n02_pos {
+    height: 190;
+  }
+
+  .short-term_n03_loc {
+    height: 90px;
+  }
+
+  .short-term_n03_com {
+    height: 125px;
+  }
+
+  .short-term_n03_pos {
+    height: 200px;
+  }
+
+  .short-term_n04_com {
+    height: 125px;
+  }
+
+  .short-term_n04_pos {
+    height: 200px;
+  }
+
+  .short-term_n05_com {
+    height: 115px;
+  }
+
+  .short-term_n05_pos {
+    height: 190px;
   }
 }
 
@@ -406,6 +753,106 @@ ul li {
 
   .collapsible_content {
     font-size: 0.5rem;
+  }
+
+  .height_3_lines {
+    height: 42px;
+  }
+
+  .assignment_n01 {
+    height: 65px;
+  }
+
+  .assignment_n02 {
+    height: 75px;
+  }
+
+  .assignment_n03 {
+    height: 100px;
+  }
+
+  .assignment_n07 {
+    height: 150px;
+  }
+
+  .assignment_n08 {
+    height: 125px;
+  }
+
+  .assignment_n10 {
+    height: 85px;
+  }
+
+  .assignment_n12 {
+    height: 175px;
+  }
+
+  .assignment_n13 {
+    height: 100px;
+  }
+
+  .assignment_n13_position {
+    height: 25px;
+  }
+
+  .assignment_n14 {
+    height: 100px;
+  }
+
+  .assignment_n14_position {
+    height: 25px;
+  }
+
+  .assignment_n15 {
+    height: 100px;
+  }
+
+  .assignment_n16 {
+    height: 130px;
+  }
+
+  .assignment_n17 {
+    height: 130px;
+  }
+
+  .short-term_n01_com {
+    height: 110px;
+  }
+
+  .short-term_n02_com {
+    height: 75px;
+  }
+
+  .short-term_n02_pos {
+    height: 170;
+  }
+
+  .short-term_n03_loc {
+    height: 85px;
+  }
+
+  .short-term_n03_com {
+    height: 110px;
+  }
+
+  .short-term_n03_pos {
+    height: 190px;
+  }
+
+  .short-term_n04_com {
+    height: 110px;
+  }
+
+  .short-term_n04_pos {
+    height: 200px;
+  }
+
+  .short-term_n05_com {
+    height: 115px;
+  }
+
+  .short-term_n05_pos {
+    height: 190px;
   }
 }
 
