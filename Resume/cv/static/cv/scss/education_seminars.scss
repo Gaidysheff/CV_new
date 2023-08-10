@@ -1,0 +1,55 @@
+/* -------------Education-3 section (Seminars)--------------------- */
+
+.title {
+  background-color: rgb(94, 23, 23);
+  color: #ebe6d6;
+  font-family: "Fredericka the Great";
+  margin-top: 10px;
+  font-size: 1.25rem;
+}
+
+.seminars {
+  display: flex;
+  background-color: rgb(94, 23, 23);
+  height: 85vh;
+  align-items: center;
+  justify-content: space-around;
+
+  &__card-one,
+  &__card-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__card-two,
+  &__card-three {
+    display: flex;
+    justify-content: center;
+    width: 340px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__taken {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    margin: auto;
+    border: 1px solid red;
+    width: 100%;
+    padding: 10px;
+    color: #f2f2f2;
+    background-color: rgb(94, 23, 23);
+    box-shadow: 30px 20px 40px 5px rgb(195, 195, 195);
+  }
+}

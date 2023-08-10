@@ -4,6 +4,7 @@
 @import "./styles_for_assignments.scss";
 @import "./education_mba.scss";
 @import "./education_university.scss";
+@import "./education_seminars.scss";
 
 /* ============================== GLOBAL ============================== */
 
@@ -381,103 +382,6 @@ a {
 }
 
 // =======================================================
-
-/* -------------Education-3 section (Seminars)--------------------- */
-
-.seminars {
-  /* height: 300px; */
-  display: flex;
-  direction: row;
-  background-color: #ffffff;
-  /* padding: 30px; */
-}
-
-.seminars_taken {
-  display: grid;
-  grid-template-columns: repeat(1fr);
-  margin: auto;
-  margin-top: 50px;
-  border: 1px solid red;
-  width: 980px;
-  padding: 10px;
-  color: #f2f2f2;
-  background-color: rgb(94, 23, 23);
-  box-shadow: 30px 20px 40px 5px rgb(195, 195, 195);
-}
-
-.seminars_given {
-  display: grid;
-  grid-template-columns: repeat(1fr);
-  margin: auto;
-  margin-top: 50px;
-  border: 1px solid red;
-  width: 980px;
-  padding: 10px;
-  color: #f2f2f2;
-  background-color: rgb(182, 48, 48);
-  box-shadow: 30px 20px 40px 5px rgb(195, 195, 195);
-}
-
-.box-title {
-  font-family: "Fredericka the Great";
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.box-title-including {
-  font-family: "Fredericka the Great";
-  margin-top: 40px;
-  font-size: 20px;
-  justify-self: center;
-}
-
-.certificate_icon {
-  margin-top: 20px;
-  justify-self: center;
-  border: 1px solid brown;
-}
-
-.span2 {
-  grid-column: auto / span 2;
-}
-.span3 {
-  grid-column: auto / span 3;
-}
-.span4 {
-  grid-column: auto / span 4;
-}
-.span5 {
-  grid-column: auto / span 5;
-}
-.span6 {
-  grid-column: auto / span 6;
-}
-.span7 {
-  grid-column: auto / span 7;
-}
-.span8 {
-  grid-column: auto / span 8;
-}
-.span9 {
-  grid-column: auto / span 9;
-}
-.span10 {
-  grid-column: auto / span 10;
-}
-.span11 {
-  grid-column: auto / span 11;
-}
-.span12 {
-  grid-column: auto / span 12;
-}
-
-.box_left {
-  justify-self: end;
-}
-
-.box_right {
-  justify-self: start;
-}
 
 /* ------- tooltips ------ */
 
