@@ -110,6 +110,67 @@ hr {
     align-items: center;
     margin-bottom: 10px;
   }
+
+  &__dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__dropdown-content-center {
+    display: none;
+    position: absolute;
+    background-color: #ebe6d6;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    left: -200px;
+    z-index: 1;
+  }
+
+  &__dropdown:hover &__dropdown-content-center {
+    display: block;
+  }
+
+  &__dropup {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__dropup-content-center {
+    display: none;
+    position: absolute;
+    background-color: #ebe6d6;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    bottom: 70px;
+    left: -200px;
+    z-index: 1;
+  }
+
+  &__dropup:hover &__dropup-content-center {
+    display: block;
+  }
+
+  &__dropup-content-right {
+    display: none;
+    position: absolute;
+    background-color: #ebe6d6;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    bottom: 70px;
+    left: -200px;
+    z-index: 1;
+  }
+
+  &__dropup:hover &__dropup-content-right {
+    display: block;
+  }
+
+  &__description {
+    text-align: center;
+    color: #ebe6d6;
+    background: rgb(65, 65, 65);
+    padding: 10px 0;
+  }
 }
 
 .flag {
@@ -213,9 +274,6 @@ ul li {
 // ========================== SEMINARS ===========================
 
 .training {
-  display: flex;
-  flex-direction: column;
-
   &__given {
     display: grid;
     grid-template-columns: repeat(1fr);
@@ -227,6 +285,19 @@ ul li {
     color: #f2f2f2;
     background-color: rgb(182, 48, 48);
     box-shadow: 30px 20px 40px 5px rgb(195, 195, 195);
+  }
+
+  &__box-title {
+    font-family: "Fredericka the Great";
+    margin-top: 10px;
+    font-size: 1.25rem;
+  }
+
+  &__box-title-including {
+    font-family: "Fredericka the Great";
+    margin-top: 40px;
+    font-size: 1.25rem;
+    justify-self: center;
   }
 
   &__dropup {
@@ -284,19 +355,6 @@ ul li {
     font-style: italic;
     text-align: center;
   }
-}
-
-.box-title {
-  font-family: "Fredericka the Great";
-  margin-top: 10px;
-  font-size: 1.25rem;
-}
-
-.box-title-including {
-  font-family: "Fredericka the Great";
-  margin-top: 40px;
-  font-size: 1.25rem;
-  justify-self: center;
 }
 
 .certificate_icon {
@@ -361,6 +419,13 @@ ul li {
     }
   }
 
+  .training {
+    &__box-title,
+    &__box-title-including {
+      font-size: 0.9rem;
+    }
+  }
+
   .table_head {
     font-size: 0.8rem;
   }
@@ -379,6 +444,14 @@ ul li {
     &__grid_sub_item,
     &__entity {
       font-size: 0.7rem;
+    }
+  }
+
+  .training {
+    &__box-title,
+    &__box-title-including {
+      font-size: 0.7rem;
+      line-height: 1.2;
     }
   }
 
@@ -439,6 +512,12 @@ ul li {
 
     &__image {
       flex: 0 0 30px;
+    }
+
+    &__dropup-content-center,
+    &__dropup-content-right,
+    &__dropdown-content-center {
+      left: -260px;
     }
   }
 
@@ -573,6 +652,39 @@ ul li {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .assignments {
+    &__dropup-content-center,
+    &__dropup-content-right,
+    &__dropdown-content-center {
+      left: -80px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__description {
+      font-size: 0.6rem;
+    }
+
+    &__dropdown-content-center {
+      left: -80px;
+    }
+
+    &__dropup-content-right {
+      left: -125px;
+    }
+  }
+
+  .training {
+    &__dropup-content-center {
+      left: -155px;
+    }
+  }
+}
+
 @media screen and (max-width: 500px) {
   .assignments {
     &__grid_sub_item,
@@ -582,6 +694,22 @@ ul li {
 
     &__image {
       flex: 0 0 20px;
+    }
+  }
+
+  .training {
+    &__dropup-content-center {
+      bottom: 75px;
+      left: -55px;
+    }
+  }
+
+  .certificate_icon {
+    width: 50px;
+    height: 75px;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -739,6 +867,22 @@ ul li {
 
     &__grid_item {
       padding: 5px 0px;
+    }
+  }
+
+  .training {
+    &__box-title,
+    &__box-title-including {
+      font-size: 0.5rem;
+    }
+  }
+
+  .certificate_icon {
+    width: 40px;
+    height: 60px;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -1118,9 +1262,7 @@ a.button_ST-Assignments:active {
 
 /* ------------------ PhotoSlider ------------------------ */
 /* 
- * {
-  box-sizing: border-box;
-} */
+
 
 /* Slideshow container */
 .slideshow-container {
