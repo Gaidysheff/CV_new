@@ -1,0 +1,133 @@
+.skillfactory {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  // flex-direction: column;
+  background-image: url("../../cv/images/images_education/SkillfactoryMirrow.png");
+  // background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 90vh;
+  // margin-bottom: 20px;
+
+  &__image {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__course {
+    width: 80%;
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: "Pattaya";
+    font-size: 2rem;
+    line-height: 1.6;
+    color: rgb(4, 57, 51);
+    margin-bottom: 50px;
+
+    li {
+      margin-left: 30px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 4rem;
+  }
+}
+
+// ======================== MEDIA ========================
+
+@media screen and (max-width: 1400px) {
+  .skillfactory {
+    &__course {
+      font-size: 1.5rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .skillfactory {
+    &__course {
+      font-size: 1.3rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .skillfactory {
+    &__course {
+      font-size: 1.1rem;
+    }
+
+    &__title {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skillfactory {
+    &__course {
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+
+    &__title {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skillfactory {
+    &__course {
+      padding: 10px 10px;
+      font-size: 0.7rem;
+
+      li {
+        margin-left: 10px;
+        padding-left: 10px;
+      }
+    }
+
+    &__title {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .skillfactory {
+    &__course {
+      font-size: 0.5rem;
+    }
+
+    &__title {
+      font-size: 0.7rem;
+    }
+  }
+}

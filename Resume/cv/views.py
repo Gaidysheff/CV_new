@@ -25,6 +25,12 @@ def educationThree(request):
     }
     return render(request, 'cv/education-3.html', context=context)
 
+def educationFour(request):
+    context = {
+        'title': 'IT Skills'
+    }
+    return render(request, 'cv/education-4.html', context=context)
+
 def assignmentsLT(request):
     context = {
         'title': 'Long-Term Assignment'

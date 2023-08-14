@@ -65,22 +65,24 @@
       <div class="cover__item-title">Phone:</div>
       <div class="cover__item-value">+7-912-24-13937</div>
       <div class="cover__item-title">E-mail:</div>
-      <div class="cover__item-value">gaidysheff@mail.ru</div>
+      <div class="cover__item-value">gaidysheff@yandex.ru</div>
 
       <div class="cover__subsection">
         <div class="cover__red-box"></div>
         <div class="cover__red_heading">Education</div>
       </div>
       <div class="cover__links-education">
-        <a class="cover__education" href="#"
+        <a class="cover__education" href="{% url 'university' %}"
           >Diploma “Suma Cum Laude”, <br />Master of Economy and Management of
           Enterprises
         </a>
-        <a class="cover__education" href="#"
+        <a class="cover__education" href="{% url 'mba' %}"
           >Diploma of Master of Business Administration</a
         >
-        <a class="cover__education" href="#">Training Cources</a>
-        <a class="cover__education" href="#"
+        <a class="cover__education" href="{% url 'courses' %}"
+          >Training Cources</a
+        >
+        <a class="cover__education" href="{% url 'it' %}"
           >Full Stack Web Development Course</a
         >
       </div>
@@ -257,7 +259,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>2018 - ...</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments' %}">
               <span>Freelancer</span>
               <br /><br />
               (click for more information about Positions and Duties)
@@ -267,7 +269,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>2014 - ...</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments' %}">
               <span>Manager</span>
               <br /><br />
               Optima Group (Ekaterinburg, Russia)
@@ -277,7 +279,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>2012 - 2022</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments' %}">
               <span>Rater</span>
               <br /><br />
               Lionbridge Global Sourcing Solutions, Inc. (the USA)
@@ -287,7 +289,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>2011 - 2013</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments' %}">
               <span>Regional Business Development Director</span>
               <br /><br />
               Clear Light UN Limited (Hong Kong) in Ekaterinburg, Russia
@@ -297,7 +299,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>2010 - 2011</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments' %}">
               <span>Deputy Representative</span>
               <br /><br />
               Netherlands Business Support Office (NBSO finded by the Government
@@ -308,7 +310,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>2009 - 2010</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments' %}">
               <span>Director of Fundraising Department</span>
               <br /><br />
               Non-commercial organisation “International Foundation – Legacy” in
@@ -319,7 +321,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>2003 - 2005</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments' %}">
               <span>General Director</span>
               <br /><br />
               JSC “SAMIX Ekaterinburg”, Russia
@@ -329,7 +331,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>2000 - 2008</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments' %}">
               <span>Regional Director</span>
               <br /><br />
               The Tacis Local Support Office (LSO finded by the EU) in
@@ -340,7 +342,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>1997 - 2000</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments' %}">
               <span
                 >Project Cycle Management Expert / Team Leader’s
                 Counterpartner</span
@@ -354,7 +356,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>1994 - 1997</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments' %}">
               <span>
                 Director of MPS Consulting and Investment Project Preparation
                 Department</span
@@ -367,7 +369,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>1995 - 2011 (... meanwhile in between ...)</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments_st' %}">
               <span>Various international short-term assignments</span>
             </a>
           </div>
@@ -375,7 +377,7 @@
         <div class="cover__box right">
           <div class="cover__content">
             <div>1993 - 1994</div>
-            <a class="cover__position" href="#">
+            <a class="cover__position" href="{% url 'assignments' %}">
               <span>Counterpart to the EU Management Training Expert</span>
               <br /><br />
               Tacis “EC Food Distribution Study” project in Samara, Russia
