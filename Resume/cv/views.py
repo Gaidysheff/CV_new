@@ -5,7 +5,7 @@ def home(request):
     context = {
         'title': 'Home'
     }
-    return render(request, 'cv/home.html', context=context)
+    return render(request, 'cv/index.html', context=context)
 
 def educationOne(request):
     context = {
