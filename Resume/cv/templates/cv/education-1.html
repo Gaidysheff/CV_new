@@ -1,4 +1,4 @@
-{% extends 'cv/base.html' %} {% block content %}
+{% extends 'cv/base.html' %} {% load static %} {% block content %}
 
 <div class="container">
   <div class="university">
@@ -35,7 +35,7 @@
       <div class="university__diploma">
         <div class="university__diploma-icon dropdown">
           <img
-            src="../../static/cv/images/images_education/diploma_1_resized.jpg"
+            src="{% static 'cv/images/images_education/diploma_1_resized.jpg' %}"
             alt="diploma main"
           />
           <span class="click_on_image">
@@ -45,7 +45,7 @@
           <div class="dropdown-content">
             <img
               id="diploma-extended"
-              src="../../static/cv/images/images_education/diploma_1.jpg"
+              src="{% static 'cv/images/images_education/diploma_1.jpg' %}"
               alt="diploma main"
             />
             <div class="university__desc">
@@ -67,7 +67,7 @@
         </div>
         <div class="university__image">
           <img
-            src="../../static/cv/images/images_education/Navy-logo.jpg"
+            src="{% static 'cv/images/images_education/Navy-logo.jpg' %}"
             alt="Navy-logo"
           />
         </div>
@@ -77,25 +77,25 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
-                  src="../../static/cv/images/images_education/navy-01.jpg"
+                  src="{% static 'cv/images/images_education/navy-01.jpg' %}"
                   alt="navy-01.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="../../static/cv/images/images_education/navy-04.jpg"
+                  src="{% static 'cv/images/images_education/navy-04.jpg' %}"
                   alt="navy-04.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="../../static/cv/images/images_education/navy-02.jpg"
+                  src="{% static 'cv/images/images_education/navy-02.jpg' %}"
                   alt="navy-02.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="../../static/cv/images/images_education/navy-03.jpg"
+                  src="{% static 'cv/images/images_education/navy-03.jpg' %}"
                   alt="navy-03.jpg"
                 />
               </div>
@@ -113,7 +113,7 @@
 
         <div class="university__image">
           <img
-            src="../../static/cv/images/images_education/вссо-лого.jpg"
+            src="{% static 'cv/images/images_education/вссо-лого.jpg' %}"
             alt="VSSO-logo"
           />
         </div>
@@ -124,25 +124,25 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
-                  src="../../static/cv/images/images_education/stroyotryad-01.jpg"
+                  src="{% static 'cv/images/images_education/stroyotryad-01.jpg' %}"
                   alt="stroyotryad-01.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="../../static/cv/images/images_education/stroyotryad-02.jpg"
+                  src="{% static 'cv/images/images_education/stroyotryad-02.jpg' %}"
                   alt="stroyotryad-02.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="../../static/cv/images/images_education/stroyotryad-03.jpg"
+                  src="{% static 'cv/images/images_education/stroyotryad-03.jpg' %}"
                   alt="stroyotryad-03.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="../../static/cv/images/images_education/stroyotryad-04.jpg"
+                  src="{% static 'cv/images/images_education/stroyotryad-04.jpg' %}"
                   alt="stroyotryad-04.jpg"
                 />
               </div>

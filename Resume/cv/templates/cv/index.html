@@ -1,4 +1,4 @@
-{% extends 'cv/base.html' %} {% block content %}
+{% extends 'cv/base.html' %} {% load static %} {% block content %}
 
 <div class="container">
   <div class="CV_title">
@@ -9,7 +9,10 @@
 
     <article class="cover__left_side">
       <div class="cover__image">
-        <img src="../../static/cv/images/images/EUGENE-3.jpg" alt="EUGENE-3" />
+        <img
+          src="{% static 'cv/images/images/EUGENE-3.jpg' %}"
+          alt="EUGENE-3"
+        />
       </div>
       <div id="myName-smaller">
         Eugene <br />
@@ -25,7 +28,7 @@
       <div class="cover__item-title">Place of Birth:</div>
       <div class="cover__line_flag">
         <img
-          src="../../static/cv/images/images/icons8-ссср-48.png"
+          src="{% static 'cv/images/images/icons8-ссср-48.png' %}"
           alt="USSR"
           class="cover__small_flag"
         />
@@ -34,7 +37,7 @@
       <div class="cover__item-title">Nationality(ies) at birth:</div>
       <div class="cover__line_flag">
         <img
-          src="../../static/cv/images/images/icons8-ссср-48.png"
+          src="{% static 'cv/images/images/icons8-ссср-48.png' %}"
           alt="USSR"
           class="cover__small_flag"
         />
@@ -43,7 +46,7 @@
       <div class="cover__item-title">Present nationality(ies):</div>
       <div class="cover__line_flag">
         <img
-          src="../../static/cv/images/images/icons8-россия-48.png"
+          src="{% static 'cv/images/images/icons8-россия-48.png' %}"
           alt="Russia"
           class="cover__small_flag"
         />
@@ -161,117 +164,123 @@
       <div class="cover__skill-logos">
         <div class="cover__image">
           <img
-            src="../../static/cv/images/logos/python.png"
+            src="{% static 'cv/images/logos/python.png' %}"
             alt="python logo"
           />
         </div>
         <div class="cover__image">
           <img
-            src="../../static/cv/images/logos/django.png"
-            alt="django logo"
-          />
-        </div>
-        <div class="cover__image">
-          <img src="../../static/cv/images/logos/react.png" alt="react logo" />
-        </div>
-        <div class="cover__image">
-          <img src="../../static/cv/images/logos/html-w.png" alt="html logo" />
-        </div>
-        <div class="cover__image">
-          <img src="../../static/cv/images/logos/css-w.png" alt="css logo" />
-        </div>
-        <div class="cover__image">
-          <img src="../../static/cv/images/logos/js-w.png" alt="js logo" />
-        </div>
-      </div>
-      <div class="cover__skill-logos-secondary">
-        <div class="cover__image">
-          <img
-            src="../../static/cv/images/logos/secondary/rest.png"
-            alt="js logo"
-          />
-        </div>
-        <div class="cover__image">
-          <img
-            src="../../static/cv/images/logos/secondary/redux.png"
-            alt="js logo"
-          />
-        </div>
-        <div class="cover__image">
-          <img
-            src="../../static/cv/images/logos/secondary/TypeScript.png"
-            alt="js logo"
-          />
-        </div>
-        <div class="cover__image">
-          <img
-            src="../../static/cv/images/logos/secondary/postgre.png"
-            alt="css logo"
-          />
-        </div>
-        <div class="cover__image">
-          <img
-            src="../../static/cv/images/logos/secondary/sqlite.png"
-            alt="js logo"
-          />
-        </div>
-        <div class="cover__image">
-          <img
-            src="../../static/cv/images/logos/secondary/celery.png"
-            alt="python logo"
-          />
-        </div>
-        <div class="cover__image">
-          <img
-            src="../../static/cv/images/logos/secondary/redis.png"
-            alt="js logo"
-          />
-        </div>
-        <div class="cover__image">
-          <img
-            src="../../static/cv/images/logos/secondary/docker.png"
+            src="{% static 'cv/images/logos/django.png' %}"
             alt="django logo"
           />
         </div>
         <div class="cover__image">
           <img
-            src="../../static/cv/images/logos/secondary/github.png"
+            src="{% static 'cv/images/logos/react.png' %}"
             alt="react logo"
           />
         </div>
         <div class="cover__image">
           <img
-            src="../../static/cv/images/logos/secondary/sass.png"
+            src="{% static 'cv/images/logos/html-w.png' %}"
+            alt="html logo"
+          />
+        </div>
+        <div class="cover__image">
+          <img src="{% static 'cv/images/logos/css-w.png' %}" alt="css logo" />
+        </div>
+        <div class="cover__image">
+          <img src="{% static 'cv/images/logos/js-w.png' %}" alt="js logo" />
+        </div>
+      </div>
+      <div class="cover__skill-logos-secondary">
+        <div class="cover__image">
+          <img
+            src="{% static 'cv/images/logos/secondary/rest.png' %}"
+            alt="js logo"
+          />
+        </div>
+        <div class="cover__image">
+          <img
+            src="{% static 'cv/images/logos/secondary/redux.png' %}"
+            alt="js logo"
+          />
+        </div>
+        <div class="cover__image">
+          <img
+            src="{% static 'cv/images/logos/secondary/TypeScript.png' %}"
+            alt="js logo"
+          />
+        </div>
+        <div class="cover__image">
+          <img
+            src="{% static 'cv/images/logos/secondary/postgre.png' %}"
+            alt="css logo"
+          />
+        </div>
+        <div class="cover__image">
+          <img
+            src="{% static 'cv/images/logos/secondary/sqlite.png' %}"
+            alt="js logo"
+          />
+        </div>
+        <div class="cover__image">
+          <img
+            src="{% static 'cv/images/logos/secondary/celery.png' %}"
+            alt="python logo"
+          />
+        </div>
+        <div class="cover__image">
+          <img
+            src="{% static 'cv/images/logos/secondary/redis.png' %}"
+            alt="js logo"
+          />
+        </div>
+        <div class="cover__image">
+          <img
+            src="{% static 'cv/images/logos/secondary/docker.png' %}"
+            alt="django logo"
+          />
+        </div>
+        <div class="cover__image">
+          <img
+            src="{% static 'cv/images/logos/secondary/github.png' %}"
+            alt="react logo"
+          />
+        </div>
+        <div class="cover__image">
+          <img
+            src="{% static 'cv/images/logos/secondary/sass.png' %}"
             alt="sass logo"
           />
         </div>
         <div class="cover__image">
           <img
-            src="../../static/cv/images/logos/secondary/nodeJS.png"
+            src="{% static 'cv/images/logos/secondary/nodeJS.png' %}"
             alt="nodeJS logo"
           />
         </div>
         <div class="cover__image">
           <img
-            src="../../static/cv/images/logos/secondary/webpack.png"
+            src="{% static 'cv/images/logos/secondary/webpack.png' %}"
             alt="js logo"
           />
         </div>
         <div class="cover__image">
           <img
-            src="../../static/cv/images/logos/secondary/vite-js-256-logo.png"
+            src="{% static 'cv/images/logos/secondary/vite-js-256-logo.png' %}"
             alt="js logo"
           />
         </div>
         <div class="cover__image">
           <img
-            src="../../static/cv/images/logos/secondary/bootstrap.png"
+            src="{% static 'cv/images/logos/secondary/bootstrap.png' %}"
             alt="bootstrap logo"
           />
         </div>
         <div class="cover__image">
           <img
-            src="../../static/cv/images/logos/secondary/mui.png"
+            src="{% static 'cv/images/logos/secondary/mui.png' %}"
             alt="html logo"
           />
         </div>

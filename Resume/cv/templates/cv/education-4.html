@@ -1,10 +1,10 @@
-{% extends 'cv/base.html' %} {% block content %}
+{% extends 'cv/base.html' %} {% load static %} {% block content %}
 
 <div class="container">
   <div class="skillfactory">
     <div class="skillfactory__image">
       <img
-        src="../../static/cv/images/images_education/Skillfactory_Certificate.png"
+        src="{% static 'cv/images/images_education/Skillfactory_Certificate.png' %}"
         alt="Skillfactory certificate"
       />
     </div>
@@ -29,6 +29,12 @@
         </li>
         <li>DevOps (Linux, Docker)</li>
       </ol>
+    </div>
+    <div class="skillfactory__image">
+      <img
+        src="{% static 'cv/images/images_education/Diploma.png' %}"
+        alt="Skillfactory diploma"
+      />
     </div>
   </div>
 </div>

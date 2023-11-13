@@ -1,4 +1,4 @@
-{% extends 'cv/base.html' %} {% block content %}
+{% extends 'cv/base.html' %} {% load static %} {% block content %}
 
 <div class="container">
   <div class="title">Seminars where I was trained</div>
@@ -6,14 +6,14 @@
     <div class="seminars__card-one">
       <div class="certificate__icon seminars__drop">
         <img
-          src="../../static/cv/images/images_education/Seminar-01-icon.jpg"
+          src="{% static 'cv/images/images_education/Seminar-01-icon.jpg' %}"
           alt="diploma main"
           width="160"
           height="240"
         />
         <div class="seminars__drop-content-left-left">
           <img
-            src="../../static/cv/images/images_education/Seminar-01.jpg"
+            src="{% static 'cv/images/images_education/Seminar-01.jpg' %}"
             alt="diploma main"
             width="415"
             height="600"
@@ -26,14 +26,14 @@
     <div class="seminars__card-two seminars">
       <div class="certificate__icon seminars__drop">
         <img
-          src="../../static/cv/images/images_education/Seminar-02-icon.jpg"
+          src="{% static 'cv/images/images_education/Seminar-02-icon.jpg' %}"
           alt="diploma main"
           width="340"
           height="240"
         />
         <div class="seminars__drop-content-left">
           <img
-            src="../../static/cv/images/images_education/Seminar-02.jpg"
+            src="{% static 'cv/images/images_education/Seminar-02.jpg' %}"
             alt="diploma main"
             width="850"
             height="600"
@@ -46,14 +46,14 @@
     <div class="seminars__card-three seminars">
       <div class="certificate__icon seminars__drop">
         <img
-          src="../../static/cv/images/images_education/Seminar-03-icon.jpg"
+          src="{% static 'cv/images/images_education/Seminar-03-icon.jpg' %}"
           alt="diploma main"
           width="340"
           height="240"
         />
         <div class="seminars__drop-content-right">
           <img
-            src="../../static/cv/images/images_education/Seminar-03.jpg"
+            src="{% static 'cv/images/images_education/Seminar-03.jpg' %}"
             alt="diploma main"
             width="762"
             height="600"
@@ -66,14 +66,14 @@
     <div class="seminars__card-four">
       <div class="certificate__icon seminars__drop">
         <img
-          src="../../static/cv/images/images_education/Seminar-04-icon.jpg"
+          src="{% static 'cv/images/images_education/Seminar-04-icon.jpg' %}"
           alt="diploma main"
           width="160"
           height="240"
         />
         <div class="seminars__drop-content-right-right">
           <img
-            src="../../static/cv/images/images_education/Seminar-04.jpg"
+            src="{% static 'cv/images/images_education/Seminar-04.jpg' %}"
             alt="diploma main"
             width="448"
             height="600"

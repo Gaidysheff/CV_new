@@ -1,4 +1,4 @@
-{% extends 'cv/base.html' %} {% block content %}
+{% extends 'cv/base.html' %} {% load static %} {% block content %}
 
 <div class="container">
   <div class="usib">
@@ -6,13 +6,13 @@
       <div class="usib__images">
         <div class="usib__logo">
           <img
-            src="../../static/cv/images/images_education/usib-logo.jpg"
+            src="{% static 'cv/images/images_education/usib-logo.jpg' %}"
             alt="Logo of USIB"
           />
         </div>
         <div class="usib__diploma usib__dropup">
           <img
-            src="../../static/cv/images/images_education/MBA-diploma.jpg"
+            src="{% static 'cv/images/images_education/MBA-diploma.jpg' %}"
             alt="diploma main"
             width="220"
             height="150"
@@ -23,7 +23,7 @@
           >
           <div class="usib__dropup-content">
             <img
-              src="../../static/cv/images/images_education/MBA-diploma.jpg"
+              src="{% static 'cv/images/images_education/MBA-diploma.jpg' %}"
               alt="MBA diploma"
               width="865"
               height="604"
