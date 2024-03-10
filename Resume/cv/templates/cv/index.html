@@ -471,6 +471,19 @@
           </div>
         </div>
       </div>
+      <div class="cover__portfolio">
+        <div class="cover__portfolio_image">
+          <a href="{% url 'portfolio' %}">
+            <img
+              src="{% static 'cv/images/portfolio/Portfolio-red.png' %}"
+              alt="Portfolio icon"
+            />
+          </a>
+        </div>
+        <a href="{% url 'portfolio' %}" class="cover__portfolio_title"
+          >Portfolio of completed works</a
+        >
+      </div>
     </article>
   </section>
 </div>
@@ -489,7 +502,9 @@
 </footer>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">
-  Return to the Top
+  <div class="pulse">
+    <span class="material-symbols-outlined"> arrow_upward </span>
+  </div>
 </button>
 
 {% endblock content %}

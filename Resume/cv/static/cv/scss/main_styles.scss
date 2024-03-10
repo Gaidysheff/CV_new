@@ -6,6 +6,7 @@
 @import "./education_university.scss";
 @import "./education_seminars.scss";
 @import "./education_skillfactory.scss";
+@import "./portfolio.scss";
 
 /* ============================== GLOBAL ============================== */
 
@@ -199,6 +200,45 @@ body {
     grid-template-columns: repeat(5, 1fr);
     gap: 2%;
   }
+
+  &__portfolio {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+  }
+
+  &__portfolio_image {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__portfolio_title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #fc2828;
+    text-shadow: 1px 1px 2px rgb(91, 0, 0), 0 0 1em red;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+
+    &:hover {
+      color: rgb(154, 0, 0);
+      text-decoration: underline;
+      text-shadow: 1px 1px 2px rgb(204, 42, 42), 0 0 1.5rem rgb(172, 33, 33);
+    }
+
+    &:active {
+      color: #fdfcfc;
+    }
+  }
 }
 
 .Russian {
@@ -266,8 +306,8 @@ a {
   bottom: 20px;
   left: 20px;
   z-index: 99;
-  font-family: "Arial Narrow";
-  font-size: 1rem;
+  // font-family: "Arial Narrow";
+  // font-size: 1rem;
   border: none;
   outline: none;
   background-color: red;
@@ -279,6 +319,22 @@ a {
 
 #myBtn:hover {
   background-color: #555;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    font-variation-settings: "wght" 100;
+  }
+  50% {
+    font-variation-settings: "wght" 700;
+  }
+  100% {
+    font-variation-settings: "wght" 100;
+  }
 }
 
 /* ___________TIMELINE_________________ */
@@ -452,7 +508,37 @@ a {
   margin-left: -60px;
 }
 
-.tooltip-bottom:hover .tooltiptext-bottom {
+.tooltip-bottom:hover .tooltiptext-center {
+  visibility: visible;
+}
+
+.tooltip-center {
+  position: relative;
+  display: inline-block;
+  // border-bottom: 2px dotted black;
+}
+
+.tooltip-center .tooltiptext-center {
+  visibility: hidden;
+  width: 160px;
+  max-width: 400px;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 10px 10px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 40%;
+  left: 30%;
+  // margin-left: -60px;
+}
+
+.tooltip-center:hover .tooltiptext-center {
   visibility: visible;
 }
 
@@ -658,6 +744,18 @@ a {
     .slogan {
       font-size: 0.7rem;
     }
+  }
+
+  .tooltip-center .tooltiptext-center {
+    bottom: 25%;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tooltip-center .tooltiptext-center {
+    bottom: 40%;
+    left: 25%;
   }
 }
 

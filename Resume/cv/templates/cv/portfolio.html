@@ -1,0 +1,48 @@
+{% extends 'cv/base.html' %} {% load static %} {% block content %}
+<div class="container">
+  <div class="portfolio">
+    <div class="portfolio__area">
+      <div class="portfolio__title">The list of completed works</div>
+      <!-- --- Sample No.1 --- -->
+      <div class="portfolio__sample">
+        <div class="portfolio__sample_image">
+          <a href="{% url 'portfolio_createx' %}" target="_blank">
+            <span class="tooltip-center">
+            <img
+              src="{% static 'cv/images/portfolio/Createx-thumbnail.jpg' %}"
+              alt="Portfolio icon"
+            />
+            <span class="tooltiptext-center">Click to watch the Initial task of the website layout</span>
+          </a>
+        </div>
+        <div class="portfolio__link_inner">
+          <div class="portfolio__link_title font-effect-emboss">
+            Createx Homepage
+          </div>
+          <a href="#" class="portfolio__link_btn">Watch the result</a>
+        </div>
+      </div>
+      <!-- --- Sample No.2 --- -->
+      <div class="portfolio__sample">
+        <div class="portfolio__sample_image">
+          <a href="{% url 'portfolio_finsweet' %}" target="_blank">
+            <span class="tooltip-center">
+            <img
+              src="{% static 'cv/images/portfolio/Finsweet-thumbnail.jpg' %}"
+              alt="Portfolio icon"
+            />
+            <span class="tooltiptext-center">Click to watch the Initial task of the website layout</span>
+          </a>
+        </div>
+        <div class="portfolio__link_inner">
+          <div class="portfolio__link_title font-effect-emboss">
+            Finsweet Homepage
+          </div>
+          <a href="#" class="portfolio__link_btn">Watch the result</a>
+        </div>
+      </div>
+      <!-- --------- -->
+    </div>
+  </div>
+</div>
+{% endblock content %}

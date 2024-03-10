@@ -1,12 +1,15 @@
 from django.urls import path
-from .views import *
+from . import views
 
 urlpatterns = [
-    path('', home, name='home'),
-    path('university/', educationOne, name='university'),
-    path('mba/', educationTwo, name='mba'),
-    path('courses/', educationThree, name='courses'),
-    path('it_course/', educationFour, name='it'),
-    path('assignments/', assignmentsLT, name='assignments'),
-    path('assignments_st/', assignmentsST, name='assignments_st'),
+    path('', views.home, name='home'),
+    path('university/', views.educationOne, name='university'),
+    path('mba/', views.educationTwo, name='mba'),
+    path('courses/', views.educationThree, name='courses'),
+    path('it_course/', views.educationFour, name='it'),
+    path('assignments/', views.assignmentsLT, name='assignments'),
+    path('assignments_st/', views.assignmentsST, name='assignments_st'),
+    path('portfolio/', views.portfolio, name='portfolio'),
+    path('portfolio_createx/', views.portfolio_createx, name='portfolio_createx'),
+    path('portfolio_finsweet/', views.portfolio_finsweet, name='portfolio_finsweet'),
 ]

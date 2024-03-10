@@ -1,0 +1,92 @@
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: 100%;
+  min-height: 90vh;
+}
+.portfolio__course {
+  width: 80%;
+  padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: "Pattaya";
+  font-size: 2rem;
+  line-height: 1.6;
+  color: rgb(4, 57, 51);
+  margin-bottom: 50px;
+}
+.portfolio__course li {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.portfolio__course li:last-child {
+  margin-bottom: 0;
+}
+.portfolio__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .portfolio__course {
+    font-size: 1.5rem;
+  }
+  .portfolio__title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .portfolio__course {
+    font-size: 1.3rem;
+  }
+  .portfolio__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .portfolio__course {
+    font-size: 1.1rem;
+  }
+  .portfolio__title {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .portfolio__course {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+  .portfolio__title {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .portfolio__course {
+    padding: 10px 10px;
+    font-size: 0.7rem;
+  }
+  .portfolio__course li {
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+  .portfolio__title {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .portfolio__course {
+    font-size: 0.5rem;
+  }
+  .portfolio__title {
+    font-size: 0.7rem;
+  }
+}

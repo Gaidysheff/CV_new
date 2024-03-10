@@ -1,0 +1,283 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: 100%;
+  min-height: 90vh;
+
+  &__area {
+    width: 100%;
+    padding: 30px;
+    line-height: 1.6;
+    // background-color: rgba(255, 255, 255, 0.7);
+    font-family: "Pattaya";
+    color: rgb(4, 57, 51);
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 4rem;
+    text-shadow: 5px 5px 5px #aaa;
+  }
+
+  &__sample {
+    display: flex;
+    margin: 0px 0px 30px 0px;
+    justify-content: center;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__sample_image {
+    width: 50%;
+    max-width: 400px;
+    display: flex;
+    border: 1px solid red;
+    border-radius: 10px;
+    align-items: center;
+    margin-right: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  &__link_inner {
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #d20a11;
+    border-radius: 10px;
+  }
+
+  &__link_title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #de7f7f;
+  }
+
+  &__link_btn {
+    width: 80%;
+    align-self: center;
+    text-align: center;
+    background: #d20a11;
+    padding: 10px 0px;
+    font-size: 2rem;
+    color: #ebe6d6;
+    // -webkit-text-stroke: 1px #860000; /* Толщина и цвет обводки */
+    box-shadow: 5px 5px 10px #5d0808, inset -5px -5px 8px -4px #4f0707,
+      -5px -5px 10px #e45757, inset 5px 5px 8px -4px #e04b4b;
+    text-shadow: 0px 4px 3px rgba(211, 9, 9, 0.623),
+      0px 8px 13px rgba(199, 6, 6, 0.59), 0px 18px 23px rgba(211, 10, 10, 0.671);
+    cursor: pointer;
+
+    &:active {
+      box-shadow: 5px 5px 10px #490606, inset -5px -5px 8px -4px #560707,
+        inset -6px -6px 8px 0 #dc6868, -5px -5px 10px #e03e3e,
+        inset 5px 5px 8px -4px #d53131, inset 6px 6px 8px 0 #5f0a0a;
+    }
+
+    &:active {
+      font-size: 95%;
+      transition: all 0.5s;
+    }
+  }
+}
+
+.sample {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: 100%;
+  min-height: 90vh;
+
+  &__area {
+    padding: 30px;
+    font-family: "Pattaya";
+    line-height: 1.6;
+    color: rgb(4, 57, 51);
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 4rem;
+    text-shadow: 5px 5px 5px #aaa;
+  }
+
+  &__initial {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    border: 1px solid red;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// ======================== MEDIA ========================
+
+@media screen and (max-width: 1400px) {
+  .portfolio {
+    &__course {
+      font-size: 1.5rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio {
+    &__course {
+      font-size: 1.3rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__link_title {
+      font-size: 2.2rem;
+    }
+
+    &__link_btn {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolio {
+    &__course {
+      font-size: 1.1rem;
+    }
+
+    &__title {
+      font-size: 1.7rem;
+    }
+
+    &__link_title {
+      font-size: 1.5rem;
+    }
+
+    &__link_btn {
+      font-size: 1.3rem;
+    }
+
+    &__area {
+      padding: 0px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio {
+    &__course {
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+
+    &__title {
+      font-size: 1.3rem;
+    }
+
+    &__link_title {
+      font-size: 1.1rem;
+    }
+
+    &__link_btn {
+      font-size: 0.9rem;
+      padding: 5px 0px;
+    }
+
+    &__sample {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio {
+    &__course {
+      padding: 10px 10px;
+      font-size: 0.7rem;
+
+      li {
+        margin-left: 10px;
+        padding-left: 10px;
+      }
+    }
+
+    &__title {
+      font-size: 1rem;
+    }
+
+    &__sample {
+      flex-direction: column-reverse;
+    }
+
+    &__sample_image,
+    &__link_inner {
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__sample_image {
+      margin: 0px;
+      border-radius: 0px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    &__link_inner {
+      border: none;
+      border-radius: 0px;
+      padding: 20px 0px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    &__link_title {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .portfolio {
+    &__course {
+      font-size: 0.5rem;
+    }
+
+    &__title {
+      font-size: 0.7rem;
+    }
+  }
+}
