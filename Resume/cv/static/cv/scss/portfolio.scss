@@ -8,7 +8,7 @@
   &__area {
     width: 100%;
     padding: 30px;
-    line-height: 1.6;
+    line-height: 1.2;
     // background-color: rgba(255, 255, 255, 0.7);
     font-family: "Pattaya";
     color: rgb(4, 57, 51);
@@ -62,6 +62,14 @@
   &__link_title {
     text-align: center;
     font-size: 2.5rem;
+    color: #de7f7f;
+  }
+
+  &__link_subtitle {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1;
     color: #de7f7f;
   }
 
@@ -158,6 +166,10 @@
       font-size: 2.2rem;
     }
 
+    &__link_subtitle {
+      font-size: 1.2rem;
+    }
+
     &__link_btn {
       font-size: 1.8rem;
     }
@@ -176,6 +188,12 @@
 
     &__link_title {
       font-size: 1.5rem;
+      line-height: 1.6;
+    }
+
+    &__link_subtitle {
+      font-size: 1rem;
+      line-height: 1.2;
     }
 
     &__link_btn {
@@ -205,6 +223,10 @@
 
     &__link_title {
       font-size: 1.1rem;
+    }
+
+    &__link_subtitle {
+      font-size: 0.8rem;
     }
 
     &__link_btn {

@@ -69,3 +69,9 @@ def portfolio_finsweet(request):
         'title': 'Finsweet Sample'
     }
     return render(request, 'cv/portfolio_finsweet.html', context)
+
+def portfolio_diploma(request):
+    context = {
+        'title': 'My Diploma project'
+    }
+    return render(request, 'cv/portfolio_diploma.html', context)

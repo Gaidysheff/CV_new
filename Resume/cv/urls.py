@@ -12,4 +12,5 @@ urlpatterns = [
     path('portfolio/', views.portfolio, name='portfolio'),
     path('portfolio_createx/', views.portfolio_createx, name='portfolio_createx'),
     path('portfolio_finsweet/', views.portfolio_finsweet, name='portfolio_finsweet'),
+    path('portfolio_diploma/', views.portfolio_diploma, name='portfolio_diploma'),
 ]

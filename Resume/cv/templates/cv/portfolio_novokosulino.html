@@ -1,0 +1,22 @@
+{% extends 'cv/base.html' %} {% load static %} {% block content %}
+<div class="container">
+  <div class="sample">
+    <div class="sample__area">
+      <div class="sample__title">Initial task of the website layout</div>
+
+      <div class="sample__initial">
+        <img
+          src="{% static 'cv/images/portfolio/Createx.png' %}"
+          alt="sample icon"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------------------------- -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  <div class="pulse">
+    <span class="material-symbols-outlined"> arrow_upward </span>
+  </div>
+</button>
+{% endblock content %}
