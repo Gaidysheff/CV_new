@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-29 21:48+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%"
+"100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\cv\templates\cv\base.html:46
+msgid "Home"
+msgstr "Домой"
+
+#: .\cv\templates\cv\base.html:49 .\cv\templates\cv\index.html:95
+msgid "Education"
+msgstr "Образование"
+
+#: .\cv\templates\cv\base.html:54
+msgid "Saint-Petersburg State Marine Technical University"
+msgstr "Санкт-Петербургский государственный морской технический университет"
+
+#: .\cv\templates\cv\base.html:57
+msgid "The Urals-Siberia Institute of Business"
+msgstr "Урало-Сибирский институт бизнеса"
+
+#: .\cv\templates\cv\base.html:59
+msgid "Training Courses"
+msgstr "Учебные курсы"
+
+#: .\cv\templates\cv\base.html:60
+msgid "IT Course"
+msgstr "ИТ-курс"
+
+#: .\cv\templates\cv\base.html:63
+msgid "Long-Term Assignments"
+msgstr "Долгосрочные контракты"
+
+#: .\cv\templates\cv\base.html:64
+msgid "Short-Term Assignments"
+msgstr "Краткосрочные контракты"
+
+#: .\cv\templates\cv\base.html:93
+msgid "set the language"
+msgstr "установить язык"
+
+#: .\cv\templates\cv\index.html:5
+msgid "the Russian Federation"
+msgstr "Российская Федерация"
+
+#: .\cv\templates\cv\index.html:7
+msgid "Russian"
+msgstr "Русский"
+
+#: .\cv\templates\cv\index.html:9
+msgid "English"
+msgstr "Английский"
+
+#: .\cv\templates\cv\index.html:11
+msgid "German"
+msgstr "Немецкий"
+
+#: .\cv\templates\cv\index.html:13
+msgid "native"
+msgstr "родной"
+
+#: .\cv\templates\cv\index.html:18
+msgid "Curriculum Vitae"
+msgstr "Резюме"
+
+#: .\cv\templates\cv\index.html:32 .\cv\templates\cv\index.html:315
+msgid "Eugene"
+msgstr "Евгений"
+
+#: .\cv\templates\cv\index.html:34 .\cv\templates\cv\index.html:317
+msgid "Gaidyshev"
+msgstr "Гайдышев"
+
+#: .\cv\templates\cv\index.html:38
+msgid "General"
+msgstr "Общее"
+
+#: .\cv\templates\cv\index.html:40
+msgid "Date of Birth:"
+msgstr "Дата рождения:"
+
+#: .\cv\templates\cv\index.html:42
+msgid "the 1 <sup>st</sup> of December, 1970"
+msgstr "01 декабря 1970 г."
+
+#: .\cv\templates\cv\index.html:44
+msgid "Place of Birth:"
+msgstr "Место рождения:"
+
+#: .\cv\templates\cv\index.html:51
+msgid "Kuibyshev, the USSR"
+msgstr "Куйбышев, СССР"
+
+#: .\cv\templates\cv\index.html:54
+msgid "Nationality(ies) at birth:"
+msgstr "Гражданство по рождению:"
+
+#: .\cv\templates\cv\index.html:62
+msgid "the USSR"
+msgstr "СССР"
+
+#: .\cv\templates\cv\index.html:65
+msgid "Present nationality(ies):"
+msgstr "Настоящее гражданство:"
+
+#: .\cv\templates\cv\index.html:75
+msgid "Sex:"
+msgstr "Пол:"
+
+#: .\cv\templates\cv\index.html:76
+msgid "Male"
+msgstr "Мужской"
+
+#: .\cv\templates\cv\index.html:77
+msgid "Marital status:"
+msgstr "Семейное положение:"
+
+#: .\cv\templates\cv\index.html:78
+msgid "Married"
+msgstr "Женат"
+
+#: .\cv\templates\cv\index.html:79
+msgid "Permanent address:"
+msgstr "Постоянный адрес:"
+
+#: .\cv\templates\cv\index.html:80
+msgid "ul. Radischeva 10-27"
+msgstr "ул. Радищева д.10 кв.27"
+
+#: .\cv\templates\cv\index.html:81
+msgid "Ekaterinburg, 620014"
+msgstr "Екатеринбург, 620014"
+
+#: .\cv\templates\cv\index.html:86
+msgid "Contacts"
+msgstr "Контактные данные"
+
+#: .\cv\templates\cv\index.html:88
+msgid "Phone:"
+msgstr "Телефон:"
+
+#: .\cv\templates\cv\index.html:90
+msgid "E-mail:"
+msgstr "Эл. почта:"
+
+#: .\cv\templates\cv\index.html:99
+msgid ""
+"Diploma “Suma Cum Laude”, <br />Master of Economy and Management of "
+"Enterprises"
+msgstr "Диплом с отличием <br />по экономике и управлению предприятием"
+
+#: .\cv\templates\cv\index.html:102
+msgid "Diploma of Master of Business Administration"
+msgstr "Диплом Мастера Делового Администрирования (МВА)"
+
+#: .\cv\templates\cv\index.html:108
+msgid "Full Stack Web Development Course"
+msgstr "Полный курс веб-разработки"
+
+#: .\cv\templates\cv\index.html:114
+msgid "Languages"
+msgstr "Языки"
+
+#: .\cv\templates\cv\index.html:117
+msgid "READ"
+msgstr "ЧТЕНИЕ"
+
+#: .\cv\templates\cv\index.html:118
+msgid "WRITE"
+msgstr "ПИСЬМО"
+
+#: .\cv\templates\cv\index.html:119
+msgid "SPEAK"
+msgstr "РАЗГОВОР"
+
+#: .\cv\templates\cv\index.html:120
+msgid "UNDERSTAND"
+msgstr "ПОНИМАНИЕ"
+
+#: .\cv\templates\cv\index.html:182
+msgid "Skills in Web Development"
+msgstr "Опыт в веб-разработке"
+
+#: .\cv\templates\cv\index.html:321
+msgid "Profile"
+msgstr "Профиль"
+
+#: .\cv\templates\cv\index.html:325
+msgid ""
+"Direct experience in Project Cycle Management, Project Proposal Assessment, "
+"Project Monitoring and Evaluation."
+msgstr ""
+"Непосредственный опыт управления проектным циклом, оценки проектных "
+"предложений, мониторинга и оценки проектов."
+
+#: .\cv\templates\cv\index.html:328
+msgid ""
+"Institutional capacity building of Local Governments in the field of project "
+"identification, formulation and implementation."
+msgstr ""
+"Наращивание институционального потенциала местных органов власти в области "
+"определения, формулирования и реализации проектов."
+
+#: .\cv\templates\cv\index.html:331
+msgid ""
+"Experience in Business Support and Market Scanning for foreign companies "
+"willing to enter the emergency market."
+msgstr ""
+"Опыт поддержки бизнеса и анализ рынка для иностранных компаний, желающих "
+"выйти на российский рынок."
+
+#: .\cv\templates\cv\index.html:334
+msgid ""
+"29 years experience as an Expert/Consultant/Manager in various international "
+"projects, and commercial enterprises."
+msgstr ""
+"29-летний опыт работы экспертом/консультантом/менеджером в различных "
+"международных проектах и ​​коммерческих предприятиях."
+
+#: .\cv\templates\cv\index.html:337
+msgid ""
+"Human resource development of local beneficiaries of the EU funded projects "
+"for ensuring sustainability and continuation of after-project activities."
+msgstr ""
+"Развитие человеческих ресурсов местных бенефициаров проектов, финансируемых "
+"ЕС, для обеспечения устойчивости и продолжения послепроектной деятельности."
+
+#: .\cv\templates\cv\index.html:340
+msgid ""
+"Advanced development of training manuals and execution of training seminars "
+"and workshops."
+msgstr ""
+"Разработка учебных пособий и проведение обучающих семинаров и мастер-классов."
+
+#: .\cv\templates\cv\index.html:343
+msgid ""
+"Relevant experience in various Management fields: Development Strategies; "
+"Budgeting; Team building; Action Plans; Planning and Monitoring."
+msgstr ""
+"Опыт работы в различных областях менеджмента: Стратегии развития; "
+"Бюджетирование; Тимбилдинг; Планы действий; Планирование и мониторинг."
+
+#: .\cv\templates\cv\index.html:346
+msgid ""
+"Distant learning and obtaining a new profession and knowledge as Fullstack "
+"Developer based on Phyton."
+msgstr ""
+"Дистанционное обучение и получение новой профессии в качестве 'Full Stack' "
+"разработчика на Python."
+
+#: .\cv\templates\cv\index.html:351
+msgid "Experience"
+msgstr "Практический опыт"
+
+#: .\cv\templates\cv\index.html:516
+msgid "Go to top"
+msgstr "Наверх"
