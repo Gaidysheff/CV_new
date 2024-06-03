@@ -1,4 +1,49 @@
-{% extends 'cv/base.html' %} {% load static %} {% block content %}
+{% extends 'cv/base.html' %}{% load static %} {% block content %}
+<!-- ----------------  -->
+{% load i18n %}
+<!-- ----------------  -->
+{% trans 'Open to see details ...' as Open%}
+<!-- ----------------  -->
+{% trans 'Contractor' as Contractor%}
+<!-- ----------------  -->
+{% trans 'Consortium Leader' as Consortium_Leader%}
+<!-- ----------------  -->
+{% trans 'Samara' as Samara %}
+<!-- ----------------  -->
+{% trans 'Ekaterinburg' as Ekaterinburg %}
+<!-- ----------------  -->
+{% trans 'Russia' as Russia%}
+<!-- ----------------  -->
+{% trans 'Date' as Date%}
+<!-- ----------------  -->
+{% trans '(to–from)' as time%}
+<!-- ----------------  -->
+{% trans 'Location' as Location%}
+<!-- ----------------  -->
+{% trans 'Company &' as Company %}
+<!-- ----------------  -->
+{% trans 'Reference person' as Reference_person%}
+<!-- ----------------  -->
+{% trans 'Position' as Position%}
+<!-- ----------------  -->
+{% trans 'Duties' as Duties%}
+<!-- ----------------  -->
+{% trans 'Kampala' as Kampala%}
+<!-- ----------------  -->
+{% trans 'Uganda' as Uganda%}
+<!-- ----------------  -->
+{% trans 'Momdassa' as Momdassa%}
+<!-- ----------------  -->
+{% trans 'Kenya' as Kenya%}
+<!-- ----------------  -->
+{% trans 'The Reference Letter from the Contractor' as RLfC%}
+<!-- ----------------  -->
+{% trans 'Germany' as Germany%}
+<!-- ----------------  -->
+{% trans 'Supporting Letter' as Supporting_Letter%}
+<!-- ----------------  -->
+{% trans 'List of Seminars' as List_of_Seminars%}
+<!-- ----------------  -->
 
 <section class="assignments">
   <div class="container">
@@ -10,28 +55,28 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n01">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
         <div class="assignments__grid_box">
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">present</div>
+            <div class="assignments__grid_sub_item">{% trans 'present' %}</div>
             <div class="assignments__grid_sub_item">–</div>
             <div class="assignments__grid_sub_item">15.09.2014</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Ekaterinburg</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Ekaterinburg}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -53,12 +98,12 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Optima Group Ltd.
+                    {% trans 'Optima Group Ltd.' %}
                   </div>
                 </div>
               </div>
               <div class="assignments__entity">
-                Radischev str. 10-27, Ekaterinburg, 620014, Russia
+                {% trans 'Radischev str. 10-27, Ekaterinburg, 620014, Russia' %}
               </div>
               <div class="assignments__entity">
                 tel. +7-9122402110; ctamm@e1.ru
@@ -67,48 +112,45 @@
           </div>
 
           <div class="assignments__grid_item underline">
-            <div class="assignments__grid_sub_item">Manager</div>
+            <div class="assignments__grid_sub_item">{% trans 'Manager' %}</div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
               <ol class="collapsible_ol">
-                <li>Development of Strategy for the company development;</li>
                 <li>
-                  Budgeting. Elaboration of business processes and business
-                  plans;
+                  {% trans 'Development of Strategy for the company development;' %}
                 </li>
                 <li>
-                  Optimisation of capacity of storage facilities and stock;
+                  {% trans 'Budgeting. Elaboration of business processes and business plans;' %}
                 </li>
                 <li>
-                  Monitoring of action plans aimed at increasing company
-                  profitability;
+                  {% trans 'Optimisation of capacity of storage facilities and stock;' %}
                 </li>
                 <li>
-                  Elaboration of action plans aimed at increasing company
-                  efficiency and effectiveness (marketing, advertising,
-                  personnel, special actions and etc.);
-                </li>
-                <li>Organisation of efficient system of company management;</li>
-                <li>
-                  Team building, including personnel selection and development
-                  of motivation system for personnel;
+                  {% trans 'Monitoring of action plans aimed at increasing company profitability;' %}
                 </li>
                 <li>
-                  Development of action plan aimed at increasing qualification
-                  of personnel;
+                  {% trans 'Elaboration of action plans aimed at increasing company efficiency and effectiveness (marketing, advertising, personnel, special actions and etc.);' %}
                 </li>
                 <li>
-                  Carrying out marketing activities aimed at surveying the
-                  market demand and competition and also aimed at attracting new
-                  clients;
+                  {% trans 'Organisation of efficient system of company management;' %}
                 </li>
-                <li>Development of planning and reporting system;</li>
                 <li>
-                  Development of analytical reports for the company owner.
+                  {% trans 'Team building, including personnel selection and development of motivation system for personnel;' %}
+                </li>
+                <li>
+                  {% trans 'Development of action plan aimed at increasing qualification of personnel;' %}
+                </li>
+                <li>
+                  {% trans 'Carrying out marketing activities aimed at surveying the market demand and competition and also aimed at attracting
+                  new clients;' %}
+                </li>
+                <li>
+                  {% trans 'Development of planning and reporting system;' %}
+                </li>
+                <li>
+                  {% trans 'Development of analytical reports for the company owner.' %}
                 </li>
               </ol>
             </div>
@@ -125,16 +167,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n02">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -145,7 +187,9 @@
             <div class="assignments__grid_sub_item">10.07.2012</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">home based assignment</div>
+            <div class="assignments__grid_sub_item">
+              {% trans 'home based assignment' %}
+            </div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -171,7 +215,7 @@
                 </div>
               </div>
               <div class="assignments__entity">
-                1050 Winter Street, Suite 2300, Waltham, MA 02451 (the USA)
+                1050 Winter Street, Suite 2300, Waltham, MA 02451 ({% trans 'the USA' %})
               </div>
               <div class="assignments__entity">
                 rating.program.bal@lionbridge.com ; www.lionbridge.com
@@ -180,24 +224,20 @@
           </div>
 
           <div class="assignments__grid_item underline">
-            <div class="assignments__grid_sub_item">Rater</div>
+            <div class="assignments__grid_sub_item">{% trans 'Rater' %}</div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
               <ul class="collapsible_ol">
-                <li>To rate the quality of search engine results</li>
                 <li>
-                  With provided search query term that Internet users might
-                  enter into a search engine, the Internet assessor must visit a
-                  list of search results following the query term, and provide a
-                  quality rating based on the relevance of the search result to
-                  the original query.
+                  {% trans 'To rate the quality of search engine results' %}
                 </li>
                 <li>
-                  To provide a written assessment of a particular website.
+                  {% trans 'With provided search query term that Internet users might enter into a search engine, the Internet assessor must visit a list of search results following the query term, and provide a quality rating based on the relevance of the search result to the original query.' %}
+                </li>
+                <li>
+                  {% trans 'To provide a written assessment of a particular website.' %}
                 </li>
               </ul>
             </div>
@@ -214,16 +254,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n03">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -234,8 +274,8 @@
             <div class="assignments__grid_sub_item">01.09.2011</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Ekaterinburg</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Ekaterinburg}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -261,9 +301,9 @@
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:<br /></div>
+              <div class="assignments__entity">{{Reference_person}}:<br /></div>
               <div class="assignments__entity">
-                Mr. Ilia Belokriletsky, General Director
+                {% trans 'Mr. Ilia Belokriletsky, General Director' %}
               </div>
               <div class="assignments__entity">
                 Room D, 10/F., Tower A, Billion Centre, 1 Wang Kwong Road,
@@ -277,60 +317,50 @@
 
           <div class="assignments__grid_item underline">
             <div class="assignments__grid_sub_item">
-              Regional Business Development Director
+              {% trans 'Regional Business Development Director' %}
             </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
               <ol class="collapsible_ol">
                 <li>
-                  Lead the regional office by managing daily operations,
-                  developing and executing growth strategy.
+                  {% trans 'Lead the regional office by managing daily operations, developing and executing growth strategy.' %}
                 </li>
                 <li>
-                  Create, develop and generate business expansion strategies for
-                  new markets in the region of responsibility.
+                  {% trans 'Create, develop and generate business expansion strategies for new markets in the region of responsibility.' %}
                 </li>
                 <li>
-                  Overview the elaboration, preparation, implementation and
-                  evaluation of special business projects.
+                  {% trans 'Overview the elaboration, preparation, implementation and evaluation of special business projects.' %}
                 </li>
                 <li>
-                  Present and sell company products and services to current and
-                  potential clients.
+                  {% trans 'Present and sell company products and services to current and potential clients.' %}
                 </li>
                 <li>
-                  Identify sales prospects and contact the accounts as assigned.
+                  {% trans 'Identify sales prospects and contact the accounts as assigned.' %}
                 </li>
                 <li>
-                  Establish and maintain current client and potential client
-                  relationships.
+                  {% trans 'Establish and maintain current client and potential client relationships.' %}
                 </li>
                 <li>
-                  Prepare action plans and schedules to identify specific
-                  targets and to project the number of contacts to be made.
-                </li>
-                <li>Prepare presentations, proposals and sales contracts.</li>
-                <li>
-                  Develop and maintain sales materials and current product
-                  knowledge.
-                </li>
-                <li>Participate in marketing events.</li>
-                <li>
-                  Coordinate company staff to accomplish the work required to
-                  complete sales.
-                </li>
-                <li>Follow-up for collection of payment.</li>
-                <li>
-                  Monitor and report on market and competitor activities and
-                  provide relevant reports.
+                  {% trans 'Prepare action plans and schedules to identify specific targets and to project the number of contacts to be made.' %}
                 </li>
                 <li>
-                  Prepare a variety of progress monitoring and evaluation
-                  reports.
+                  {% trans 'Prepare presentations, proposals and sales contracts.' %}
+                </li>
+                <li>
+                  {% trans 'Develop and maintain sales materials and current product knowledge.' %}
+                </li>
+                <li>{% trans 'Participate in marketing events.' %}</li>
+                <li>
+                  {% trans 'Coordinate company staff to accomplish the work required to complete sales.' %}
+                </li>
+                <li>{% trans 'Follow-up for collection of payment.' %}</li>
+                <li>
+                  {% trans 'Monitor and report on market and competitor activities and provide relevant reports.' %}
+                </li>
+                <li>
+                  {% trans 'Prepare a variety of progress monitoring and evaluation reports.' %}
                 </li>
               </ol>
             </div>
@@ -347,16 +377,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n04">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -367,8 +397,8 @@
             <div class="assignments__grid_sub_item">01.03.2010</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Ekaterinburg</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Ekaterinburg}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -389,13 +419,11 @@
                       alt="Netherlads flag"
                     />
                   </div>
-                  <div class="assignments__grid_sub_item text-left">
-                    Netherlands Business Support Office (NBSO) in Ekaterinburg
-                    (RU)
+                  <div class="assignments__grid_sub_item text-left"> {%trans 'Netherlands Business Support Office (NBSO) in Ekaterinburg (RU)' %}
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:</div>
+              <div class="assignments__entity">{{Reference_person}}:</div>
               <div class="assignments__entity">
                 Mr. Joost Geijer, General Coordinator of the NBSOs
               </div>
@@ -413,126 +441,86 @@
           </div>
 
           <div class="assignments__grid_item underline">
-            <div class="assignments__grid_sub_item">Deputy Representative</div>
+            <div class="assignments__grid_sub_item">
+              {% trans 'Deputy Representative' %}
+            </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>OFFERING SUPPORT FOR TRADE AND INDUSTRY:</p>
+              <p>{% trans 'OFFERING SUPPORT FOR TRADE AND INDUSTRY:' %}</p>
               <ol class="collapsible_ol">
                 <li>
-                  Provide individual Dutch companies with front-line information
-                  and guidance as they explore the market;
+                  {% trans 'Provide individual Dutch companies with front-line information and guidance as they explore the market;' %}
                 </li>
                 <li>
-                  Investigate export and investment alternatives and enhance
-                  opportunities in these areas for Dutch companies within the
-                  relevant jurisdiction;
+                  {% trans 'Investigate export and investment alternatives and enhance opportunities in these areas for Dutch companies within the relevant jurisdiction;' %}
                 </li>
                 <li>
-                  In the event of specific import requirements from the
-                  Netherlands, provide local companies with front-line
-                  information and guidance;
+                  {% trans 'In the event of specific import requirements from the Netherlands, provide local companies with front-line information and guidance;' %}
                 </li>
                 <li>
-                  Carry out standard trade duties, for example answering trade
-                  enquiries, providing addresses and other information and
-                  networking;
+                  {% trans 'Carry out standard trade duties, for example answering trade enquiries, providing addresses and other information and networking;' %}
                 </li>
                 <li>
-                  Record the activities carried out for companies in Matchbase.
+                  {% trans 'Record the activities carried out for companies in Matchbase.' %}
                 </li>
               </ol>
-              <p>FACILITATING CONTACTS:</p>
+              <p>{% trans 'FACILITATING CONTACTS:' %}</p>
               <ul class="collapsible_ol">
                 <li>
-                  Create and maintain a network of contacts within the district
-                  in order to acquire relevant information for Dutch trade and
-                  industry;
+                  {% trans 'Create and maintain a network of contacts within the district in order to acquire relevant information for Dutch trade and industry;' %}
                 </li>
                 <li>
-                  this network should consist specifically of: municipal and
-                  provincial authorities, trade representative organisations,
-                  research and other types of institutes, commercial
-                  enterprises, utility companies and businesses, organisations
-                  and institutions that provide secondary services (accountants,
-                  lawyers, other types of consultants, etc.).
+                  {% trans 'this network should consist specifically of: municipal and provincial authorities, trade representative organisations, research and other types of institutes, commercial enterprises, utility companies and businesses, organisations and institutions that provide secondary services (accountants, lawyers, other types of consultants, etc.).' %}
                 </li>
               </ul>
-              <p>PROGRAMME/PROJECT IMPLEMENTATION:</p>
+              <p>{% trans 'PROGRAMME/PROJECT IMPLEMENTATION:' %}</p>
               <ol class="collapsible_ol">
                 <li>
-                  participation in identification missions and ToRs preparation
-                  for projects under PESP, PSOM, PSB, ORET/MILIEV, G2G, CPA,
-                  MATRA and other programmes;
+                  {% trans 'participation in identification missions and ToRs preparation for projects under PESP, PSOM, PSB, ORET/MILIEV, G2G, CPA, MATRA and other programmes;' %}
                 </li>
                 <li>
-                  Assistance in implementation of projects on the regional
-                  level;
+                  {% trans 'Assistance in implementation of projects on the regional level;' %}
                 </li>
                 <li>
-                  Participation in regular monitoring missions to the regions of
-                  the NBSO responsibility;
+                  {% trans 'Participation in regular monitoring missions to the regions of the NBSO responsibility;' %}
                 </li>
-                <li>Preparation of contributions for monitoring reports;</li>
                 <li>
-                  Ex-post evaluation of completed projects in order to measure
-                  real impact and sustainability, at the request of the NL
-                  Agency and/or the Royal Embassy of the Kingdom of the
-                  Netherlands.
+                  {% trans 'Preparation of contributions for monitoring reports;' %}
+                </li>
+                <li>
+                  {% trans 'Ex-post evaluation of completed projects in order to measure real impact and sustainability, at the request of the NL Agency and/or the Royal Embassy of the Kingdom of the Netherlands.' %}
                 </li>
               </ol>
-              <p>REPORTING:</p>
+              <p>{% trans 'REPORTING:' %}</p>
               <ol class="collapsible_ol">
                 <li>
-                  Provide Dutch trade and industry and the NFTA with information
-                  about trade and partnership opportunities by filing reports on
-                  a regular basis containing information on sectors and economic
-                  trends in the relevant region, and supply any other general
-                  information that may be relevant to Dutch trade and industry
-                  for inclusion in the NFTA's database;
+                  {% trans "Provide Dutch trade and industry and the NFTA with information about trade and partnership opportunities by filing reports on a regular basis containing information on sectors and economic trends in the relevant region, and supply any other general information that may be relevant to Dutch trade and industry for inclusion in the NFTA's database;" %}
                 </li>
                 <li>
-                  Identify and/or develop specific business prospects or leads
-                  for Dutch trade and industry and report on these to the NFTA;
+                  {% trans 'Identify and/or develop specific business prospects or leads for Dutch trade and industry and report on these to the NFTA;' %}
                 </li>
                 <li>
-                  Provide the NFTA with monthly information reports on
-                  activities being carried out in support of Dutch and local
-                  companies (the monthly internal reports);
+                  {% trans 'Provide the NFTA with monthly information reports on activities being carried out in support of Dutch and local companies (the monthly internal reports);' %}
                 </li>
                 <li>
-                  Ex-post (in 6 months) evaluation of Individual Market Scans
-                  and Partnership Matchmaking for Dutch companies in order to
-                  measure the effect of the Market Scans and expansion of Dutch
-                  companies in the Russia’s market.
+                  {% trans 'Ex-post (in 6 months) evaluation of Individual Market Scans and Partnership Matchmaking for Dutch companies in order to measure the effect of the Market Scans and expansion of Dutch companies in the Russia’s market.' %}
                 </li>
               </ol>
-              <p>EXPORT PROMOTION ACTIVITIES:</p>
+              <p>{% trans 'EXPORT PROMOTION ACTIVITIES:' %}</p>
               <ol class="collapsible_ol">
                 <li>
-                  Help to organise promotion activities (known as "Holland
-                  Promotion"), both within and outside the context of the NFTA's
-                  programmes (including PPP, UP);
+                  {% trans 'Help to organise promotion activities (known as "Holland Promotion"), both within and outside the context of the NFTA programmes (including PPP, UP);' %}
                 </li>
                 <li>
-                  Indicate in good time which promotion activities falling under
-                  "Holland Promotion" have been targeted by describing them in
-                  the annual working plan so as to ensure the NFTA's support at
-                  an early stage;
+                  {% trans 'Indicate in good time which promotion activities falling under "Holland Promotion" have been targeted by describing them in the annual working plan so as to ensure the NFTA support at an early stage;' %}
                 </li>
                 <li>
-                  Provide local companies, institutions and government
-                  organisations with information on the Dutch economy and the
-                  segments into which it is divided, in particular in the form
-                  of promotional material made available by the NFTA (Holland
-                  Economic Tribune, for example);
+                  {% trans 'Provide local companies, institutions and government organisations with information on the Dutch economy and the segments into which it is divided, in particular in the form of promotional material made available by the NFTA (Holland Economic Tribune, for example);' %}
                 </li>
                 <li>
-                  Help to organise meetings and/or seminars focusing on sharing
-                  information and promoting trade.
+                  {% trans 'Help to organise meetings and/or seminars focusing on sharing information and promoting trade.' %}
                 </li>
               </ol>
             </div>
@@ -549,16 +537,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n05">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -569,8 +557,8 @@
             <div class="assignments__grid_sub_item">12.01.2009</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Ekaterinburg</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Ekaterinburg}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -592,17 +580,16 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Non-commercial organisation “International Foundation –
-                    Legacy”
+                    {% trans 'Non-commercial organisation "International Foundation – Legacy"' %}
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:</div>
+              <div class="assignments__entity">{{Reference_person}}:</div>
               <div class="assignments__entity">
-                Mrs. Valentina Metaeva, Managing Director
+                {% trans 'Mrs. Valentina Metaeva, Managing Director' %}
               </div>
               <div class="assignments__entity">
-                str. Mira 28-340, Ekaterinburg 620002, Russia
+                {% trans 'str. Mira 28-340, Ekaterinburg 620002, Russia' %}
               </div>
               <div class="assignments__entity">
                 tel/fax +7-343-3749663; tacis@e-sky.ru
@@ -612,58 +599,43 @@
 
           <div class="assignments__grid_item underline">
             <div class="assignments__grid_sub_item">
-              Director of Fundraising Department
+              {% trans 'Director of Fundraising Department' %}
             </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>Managing team of 6 experts.</p>
+              <p>{% trans 'Managing team of 6 experts.' %}</p>
               <ol class="collapsible_ol">
                 <li>
-                  Participation in the development, implementation and
-                  evaluation of assigned projects.
-                </li>
-                <li>Monitoring and analysis of projects development.</li>
-                <li>
-                  Identification of problems and issues to be addressed and
-                  proposal of possible Concept Notes.
+                  {% trans 'Participation in the development, implementation and evaluation of assigned projects.' %}
                 </li>
                 <li>
-                  Provision of the requisite substantive support to consultative
-                  and other meetings and conferences.
+                  {% trans 'Monitoring and analysis of projects development.' %}
                 </li>
                 <li>
-                  Coordination of activities related to budget and funding and
-                  preparation of related documents/reports.
+                  {% trans 'Identification of problems and issues to be addressed and proposal of possible Concept Notes.' %}
                 </li>
                 <li>
-                  Monitoring of financial resources utilised to implement
-                  activities in accordance with the project’s budget and
-                  allotments issued.
+                  {% trans 'Provision of the requisite substantive support to consultative and other meetings and conferences.' %}
                 </li>
                 <li>
-                  Implementation of procedures to ensure that financial
-                  management controls are consistent with various donors’
-                  policies and practices, and provide guidance as appropriate.
+                  {% trans 'Coordination of activities related to budget and funding and preparation of related documents/reports.' %}
                 </li>
                 <li>
-                  Assistance in the mobilisation of resources for project
-                  activities.
+                  {% trans 'Monitoring of financial resources utilised to implement activities in accordance with the project’s budget and allotments issued.' %}
                 </li>
                 <li>
-                  Ex-post evaluation of completed projects in order to measure
-                  real impact and sustainability.
+                  {% trans 'Implementation of procedures to ensure that financial management controls are consistent with various donors’ policies and practices, and provide guidance as appropriate.' %}
                 </li>
                 <li>
-                  Manage the Department office space and oversee the
-                  identification of office needs and the maintenance of
-                  equipment, software and systems, coordinating enhancements as
-                  necessary. Maintain records and data related to tasks within
-                  the responsibility of the Fundraising Department Director.
-                  Perform other related work as required.
+                  {% trans 'Assistance in the mobilisation of resources for project activities.' %}
+                </li>
+                <li>
+                  {% trans 'Ex-post evaluation of completed projects in order to measure real impact and sustainability.' %}
+                </li>
+                <li>
+                  {% trans 'Manage the Department office space and oversee the identification of office needs and the maintenance of equipment, software and systems, coordinating enhancements as necessary. Maintain records and data related to tasks within the responsibility of the Fundraising Department Director. Perform other related work as required.' %}
                 </li>
               </ol>
             </div>
@@ -680,16 +652,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n06">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -700,8 +672,8 @@
             <div class="assignments__grid_sub_item">02.10.2006</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Ekaterinburg</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Ekaterinburg}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -723,17 +695,16 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Non-commercial organisation “International Foundation –
-                    Legacy”
+                    {% trans 'Non-commercial organisation "International Foundation – Legacy"' %}
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:</div>
+              <div class="assignments__entity">{{Reference_person}}:</div>
               <div class="assignments__entity">
-                Mrs. Valentina Metaeva, Managing Director
+                {% trans 'Mrs. Valentina Metaeva, Managing Director' %}
               </div>
               <div class="assignments__entity">
-                str. Mira 28-340, Ekaterinburg 620002, Russia
+                {% trans 'str. Mira 28-340, Ekaterinburg 620002, Russia' %}
               </div>
               <div class="assignments__entity">
                 tel/fax +7-343-3749663; tacis@e-sky.ru
@@ -742,33 +713,23 @@
           </div>
 
           <div class="assignments__grid_item underline">
-            <div class="assignments__grid_sub_item">Chief Advisor, Trainer</div>
+            <div class="assignments__grid_sub_item">
+              {% trans 'Chief Advisor, Trainer' %}
+            </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
               <ul class="collapsible_ol">
                 <li>
-                  Provision of assistance to the Local Civil Society
-                  Institutions in the development of their project concepts and
-                  preparation of project proposals for various EU programmes.
+                  {% trans 'Provision of assistance to the Local Civil Society Institutions in the development of their project concepts and preparation of project proposals for various EU programmes.'
+                  %}
                 </li>
                 <li>
-                  Development of curricula, training materials (manual for
-                  participants, presentation slides, set of hand-outs and sets
-                  of practical exercises), drafting training methodology and
-                  needs assessments for 3-day Training Seminar “Increasing
-                  competitive capacity of small business enterprises”
+                  {% trans 'Development of curricula, training materials (manual for participants, presentation slides, set of hand-outs and sets of practical exercises), drafting training methodology and needs assessments for 3-day Training Seminar "Increasing competitive capacity of small business enterprises"' %}
                 </li>
                 <li>
-                  Execution of 8 Training Seminars “Increasing competitive
-                  capacity of small business enterprises” in the framework of
-                  the regional state programme “State support to small
-                  entrepreneurship and its infrastructure in the Sverdlovsk
-                  region in 2006-2008” funded by the Sverdlovsk Government (Lot
-                  No. 2 approved by the Government Statement No. 13, 23.01.2007)
+                  {% trans 'Execution of 8 Training Seminars "Increasing competitive capacity of small business enterprises" in the framework of the regional state programme "State support to small entrepreneurship and its infrastructure in the Sverdlovsk region in 2006-2008" funded by the Sverdlovsk Government (Lot No. 2 approved by the Government Statement No. 13, 23.01.2007)' %}
                 </li>
               </ul>
             </div>
@@ -785,16 +746,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n07">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -805,8 +766,8 @@
             <div class="assignments__grid_sub_item">01.01.2006</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Ekaterinburg</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Ekaterinburg}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -828,8 +789,7 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    The Tacis Local Support Office, EuropeAid 120963/C/SV/RU
-                    “Support to the National Coordinating Unit, RF”
+                    {% trans 'The Tacis Local Support Office, EuropeAid 120963/C/SV/RU "Support to the National Coordinating Unit, RF"' %}
                   </div>
                 </div>
                 <div class="assignments__sub-entity">
@@ -840,13 +800,13 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Contractor: European Profiles SA
+                    {{Contractor}}: European Profiles SA
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:</div>
+              <div class="assignments__entity">{{Reference_person}}:</div>
               <div class="assignments__entity">
-                Dr. Dimitris Bakolas, President
+                {% trans 'Dr. Dimitris Bakolas, President' %}
               </div>
               <div class="assignments__entity">European Profiles SA</div>
               <div class="assignments__entity">
@@ -859,164 +819,127 @@
           </div>
 
           <div class="assignments__grid_item underline">
-            <div class="assignments__grid_sub_item">Regional Director</div>
+            <div class="assignments__grid_sub_item">
+              {% trans 'Regional Director' %}
+            </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>Managing team of 4 experts.</p>
+              <p>{% trans 'Managing team of 4 experts.' %}</p>
               <p class="make_bold">
-                Capacity building for Project Identification and Design.
+                {% trans 'Capacity building for Project Identification and Design.' %}
               </p>
               <p>Support to the National Coordinating Unit (NCU):</p>
               <ul class="collapsible_ol">
                 <li>
-                  Identification and recording of potential local beneficiaries
-                  and projects;
+                  {% trans 'Identification and recording of potential local beneficiaries and projects;' %}
                 </li>
                 <li>
-                  Check that the proposals for EU programmes Calls for Proposals
-                  meet the required standards of quality (Pre-assessment of the
-                  concept notes and project proposals for IBPP, EIDHR and Tempus
-                  programmes);
+                  {% trans 'Check that the proposals for EU programmes Calls for Proposals meet the required standards of quality (Pre-assessment of the concept notes and project proposals for IBPP, EIDHR and Tempus programmes);' %}
                 </li>
-                <li>Evaluation of project proposals.</li>
+                <li>{% trans 'Evaluation of project proposals.' %}</li>
               </ul>
-              <p>Support to local stakeholders:</p>
+              <p>{% trans 'Support to local stakeholders:' %}</p>
               <ul class="collapsible_ol">
                 <li>
-                  Policy advice to Regional Governments and relevant Ministries
-                  and Departments in the area of programming and cooperation
-                  with international donors.
+                  {% trans 'Policy advice to Regional Governments and relevant Ministries and Departments in the area of programming and cooperation with international donors.' %}
                 </li>
                 <li>
-                  Advice to the potential Beneficiaries on the project concept
-                  elaboration;
+                  {% trans 'Advice to the potential Beneficiaries on the project concept elaboration;' %}
                 </li>
                 <li>
-                  Assistance to the potential Beneficiaries in the development
-                  of their project proposals for various Tacis programmes;
+                  {% trans 'Assistance to the potential Beneficiaries in the development of their project proposals for various Tacis programmes;' %}
                 </li>
                 <li>
-                  Training courses on Project Cycle Management and
-                  Economic-Financial Analysis for local beneficiary
-                  institutions;
+                  {% trans 'Training courses on Project Cycle Management and Economic-Financial Analysis for local beneficiary institutions;' %}
                 </li>
                 <li>
-                  Training courses on Project Proposal Assessment and Project
-                  Implementation Management for local beneficiaries implementing
-                  local and international projects in the region;
+                  {% trans 'Training courses on Project Proposal Assessment and Project Implementation Management for local beneficiaries implementing local and international projects in the region;' %}
                 </li>
                 <li>
-                  Support to potential beneficiaries in submitting applications.
+                  {% trans 'Support to potential beneficiaries in submitting applications.' %}
                 </li>
               </ul>
-              <p class="make_bold">Support to Project Implementation</p>
-              <p>Support to the NCU:</p>
+              <p class="make_bold">
+                {% trans 'Support to Project Implementation' %}
+              </p>
+              <p>{% trans 'Support to the NCU:' %}</p>
               <ul class="collapsible_ol">
                 <li>
-                  Monthly and quarterly analysis of information and preparation
-                  of Reviews on local political, economic and social
-                  developments in the region;
+                  {% trans 'Monthly and quarterly analysis of information and preparation of Reviews on local political, economic and social developments in the region;' %}
                 </li>
                 <li>
-                  Organisational and logistic support for visits of the CEC and
-                  the Delegation officials in the regions;
+                  {% trans 'Organisational and logistic support for visits of the CEC and the Delegation officials in the regions;' %}
                 </li>
                 <li>
-                  Support on the establishment of proper lines of communication
-                  between the LSO, the NCU, the EC Delegation in Moscow, on the
-                  one hand, and the potential and current beneficiary
-                  institutions and contractors implementing current Tacis
-                  projects in the region, on the other hand;
+                  {% trans 'Support on the establishment of proper lines of communication between the LSO, the NCU, the EC Delegation in Moscow, on the one hand, and the potential and current beneficiary institutions and contractors implementing current Tacis projects in the region, on the other hand;' %}
                 </li>
                 <li>
-                  Participation in regular monitoring missions to the regions of
-                  the LSO coverage;
+                  {% trans 'Participation in regular monitoring missions to the regions of the LSO coverage;' %}
                 </li>
                 <li>
-                  Preparation of contributions for monitoring reports; (F)
-                  Ex-post evaluation of completed projects in order to measure
-                  real impact and sustainability, at the request of the NCU
-                  and/or the CEC Delegation in Moscow;
+                  {% trans 'Preparation of contributions for monitoring reports;' %}
                 </li>
                 <li>
-                  Preparation of quarterly review of Lessons Learnt in Project
-                  Implementation in the regions of the LSO responsibility.
+                  {% trans 'Ex-post evaluation of completed projects in order to measure real impact and sustainability, at the request of the NCU and/or the CEC Delegation in Moscow;' %}
+                </li>
+                <li>
+                  {% trans 'Preparation of quarterly review of Lessons Learnt in Project Implementation in the regions of the LSO responsibility.' %}
                 </li>
               </ul>
-              <p>Support to local stakeholders:</p>
+              <p>{% trans 'Support to local stakeholders:' %}</p>
               <ul class="collapsible_ol">
                 <li>
-                  Maintenance of a full database on EU and other donor projects
-                  in order to keep corporative memory on donors’ activities in
-                  the regions;
+                  {% trans 'Maintenance of a full database on EU and other donor projects in order to keep corporative memory on donors’ activities in the regions;' %}
                 </li>
                 <li>
-                  Communication and co-ordination among EU projects and among
-                  other donor projects for ensuring synergy effect in the areas
-                  of intervention.
+                  {% trans 'Communication and co-ordination among EU projects and among other donor projects for ensuring synergy effect in the areas of intervention.' %}
                 </li>
               </ul>
-              <p class="make_bold">Information and dissemination</p>
+              <p class="make_bold">
+                {% trans 'Information and dissemination' %}
+              </p>
               <p>
-                Support to the NCU: Regular information about relevant events
-                planned and implemented.
+                {% trans 'Support to the NCU: Regular information about relevant events planned and implemented.' %}
               </p>
-              <p>Support to local stakeholders:</p>
+              <p>{% trans 'Support to local stakeholders:' %}</p>
               <ul class="collapsible_ol">
                 <li>
-                  Maintenance and expansion of extensive relations with Regional
-                  Governments and relevant Ministries and Departments including
-                  establishing a network of contact persons;
+                  {% trans 'Maintenance and expansion of extensive relations with Regional Governments and relevant Ministries and Departments including establishing a network of contact persons;' %}
                 </li>
                 <li>
-                  Information to potential beneficiaries on application and
-                  selection procedures;
+                  {% trans 'Information to potential beneficiaries on application and selection procedures;' %}
                 </li>
                 <li>
-                  Maintenance of the regional database with the monitoring and
-                  evaluation reports of the projects implemented in the regions
-                  of the LSO responsibility
+                  {% trans 'Maintenance of the regional database with the monitoring and evaluation reports of the projects implemented in the regions of the LSO responsibility' %}
                 </li>
                 <li>
-                  Organisation and participation in various events (seminars,
-                  conferences, Round Tables, etc).
+                  {% trans 'Organisation and participation in various events (seminars, conferences, Round Tables, etc).' %}
                 </li>
               </ul>
-              <p class="make_bold">Facilitation</p>
+              <p class="make_bold">{% trans 'Facilitation' %}</p>
               <ul class="collapsible_ol">
                 <li>
-                  Assistance to the European Commission, the EC Delegation in
-                  Moscow and the National Coordinating Unit in the organisation
-                  and implementation of evaluation missions in the regions;
+                  {% trans 'Assistance to the European Commission, the EC Delegation in Moscow and the National Coordinating Unit in the organisation and implementation of evaluation missions in the regions;' %}
                 </li>
                 <li>
-                  Assistance to the EC Delegation in Moscow and the Tacis
-                  Monitoring Unit in monitoring the implementation of running
-                  projects in the regions.
+                  {% trans 'Assistance to the EC Delegation in Moscow and the Tacis Monitoring Unit in monitoring the implementation of running projects in the regions.' %}
                 </li>
               </ul>
               <p class="make_bold">
-                Specific training of Russian counterparts' staff for ensuring
-                the project sustainability
+                {% trans 'Specific training of Russian counterpart staff for ensuring the project sustainability' %}
               </p>
               <ul class="collapsible_ol">
                 <li>
-                  Training of the LSO counterparts' staff for the use of the
-                  Tacis procedures and systems;
+                  {% trans 'Training of the LSO counterpart staff for the use of the Tacis procedures and systems;' %}
                 </li>
                 <li>
-                  Training of the LSO counterparts' staff for the use of the
-                  Project Cycle Management, Economic-Financial Analysis, Project
-                  Proposal Assessment and Project Implementation Management
-                  methodologies.
+                  {% trans 'Training of the LSO counterpart staff for the use of the Project Cycle Management, Economic-Financial Analysis, Project Proposal Assessment and Project Implementation Management methodologies.' %}
                 </li>
               </ul>
               <p class="make_bold">
-                Development of standardised LSOs products, services and tools.
+                {% trans 'Development of standardised LSOs products, services and tools.' %}
               </p>
             </div>
           </div>
@@ -1032,16 +955,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n08">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -1052,8 +975,8 @@
             <div class="assignments__grid_sub_item">01.11.2005</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Ekaterinburg</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Ekaterinburg}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -1075,7 +998,7 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    EuropeAid “Policy Support to the National Coordinating Unit”
+                    {% trans 'EuropeAid "Policy Support to the National Coordinating Unit"' %}
                   </div>
                 </div>
                 <div class="assignments__sub-entity">
@@ -1086,7 +1009,7 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Consortium Leader: IDA Ltd (UK)
+                    {{Consortium_Leader}}: IDA Ltd (UK)
                   </div>
                 </div>
                 <div class="assignments__sub-entity">
@@ -1097,13 +1020,13 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Contractor: Atos Origin (BE)
+                    {{Contractor}}: Atos Origin (BE)
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:</div>
+              <div class="assignments__entity">{{Reference_person}}:</div>
               <div class="assignments__entity">
-                Mr. Sergios Halkidis, Project Manager
+                {% trans 'Mr. Sergios Halkidis, Project Manager' %}
               </div>
               <div class="assignments__entity">
                 tel: +30 210 82 10 895; sergios@europeanprofiles.gr
@@ -1112,164 +1035,129 @@
           </div>
 
           <div class="assignments__grid_item underline">
-            <div class="assignments__grid_sub_item">Regional Director</div>
+            <div class="assignments__grid_sub_item">
+              {% trans 'Regional Director' %}
+            </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>Managing team of 4 experts.</p>
+              <p>{% trans 'Managing team of 4 experts.' %}</p>
               <p class="make_bold">
-                Capacity building for Project Identification and Design.
+                {% trans 'Capacity building for Project Identification and Design.' %}
               </p>
-              <p>Support to the National Coordinating Unit (NCU):</p>
-              <ul class="collapsible_ol">
-                <li>
-                  Identification and recording of potential local beneficiaries
-                  and projects;
-                </li>
-                <li>
-                  Check that the proposals for EU programmes Calls for Proposals
-                  meet the required standards of quality (Pre-assessment of the
-                  concept notes and project proposals for IBPP, EIDHR and Tempus
-                  programmes);
-                </li>
-                <li>Evaluation of project proposals.</li>
-              </ul>
-              <p>Support to local stakeholders:</p>
-              <ul class="collapsible_ol">
-                <li>
-                  Policy advice to Regional Governments and relevant Ministries
-                  and Departments in the area of programming and cooperation
-                  with international donors.
-                </li>
-                <li>
-                  Advice to the potential Beneficiaries on the project concept
-                  elaboration;
-                </li>
-                <li>
-                  Assistance to the potential Beneficiaries in the development
-                  of their project proposals for various Tacis programmes;
-                </li>
-                <li>
-                  Training courses on Project Cycle Management and
-                  Economic-Financial Analysis for local beneficiary
-                  institutions;
-                </li>
-                <li>
-                  Training courses on Project Proposal Assessment and Project
-                  Implementation Management for local beneficiaries implementing
-                  local and international projects in the region;
-                </li>
-                <li>
-                  Support to potential beneficiaries in submitting applications.
-                </li>
-              </ul>
-              <p class="make_bold">Support to Project Implementation</p>
-              <p>Support to the NCU:</p>
-              <ul class="collapsible_ol">
-                <li>
-                  Monthly and quarterly analysis of information and preparation
-                  of Reviews on local political, economic and social
-                  developments in the region;
-                </li>
-                <li>
-                  Organisational and logistic support for visits of the CEC and
-                  the Delegation officials in the regions;
-                </li>
-                <li>
-                  Support on the establishment of proper lines of communication
-                  between the LSO, the NCU, the EC Delegation in Moscow, on the
-                  one hand, and the potential and current beneficiary
-                  institutions and contractors implementing current Tacis
-                  projects in the region, on the other hand;
-                </li>
-                <li>
-                  Participation in regular monitoring missions to the regions of
-                  the LSO coverage;
-                </li>
-                <li>
-                  Preparation of contributions for monitoring reports; (F)
-                  Ex-post evaluation of completed projects in order to measure
-                  real impact and sustainability, at the request of the NCU
-                  and/or the CEC Delegation in Moscow;
-                </li>
-                <li>
-                  Preparation of quarterly review of Lessons Learnt in Project
-                  Implementation in the regions of the LSO responsibility.
-                </li>
-              </ul>
-              <p>Support to local stakeholders:</p>
-              <ul class="collapsible_ol">
-                <li>
-                  Maintenance of a full database on EU and other donor projects
-                  in order to keep corporative memory on donors’ activities in
-                  the regions;
-                </li>
-                <li>
-                  Communication and co-ordination among EU projects and among
-                  other donor projects for ensuring synergy effect in the areas
-                  of intervention.
-                </li>
-              </ul>
-              <p class="make_bold">Information and dissemination</p>
               <p>
-                Support to the NCU: Regular information about relevant events
-                planned and implemented.
-              </p>
-              <p>Support to local stakeholders:</p>
-              <ul class="collapsible_ol">
-                <li>
-                  Maintenance and expansion of extensive relations with Regional
-                  Governments and relevant Ministries and Departments including
-                  establishing a network of contact persons;
-                </li>
-                <li>
-                  Information to potential beneficiaries on application and
-                  selection procedures;
-                </li>
-                <li>
-                  Maintenance of the regional database with the monitoring and
-                  evaluation reports of the projects implemented in the regions
-                  of the LSO responsibility
-                </li>
-                <li>
-                  Organisation and participation in various events (seminars,
-                  conferences, Round Tables, etc).
-                </li>
-              </ul>
-              <p class="make_bold">Facilitation</p>
-              <ul class="collapsible_ol">
-                <li>
-                  Assistance to the European Commission, the EC Delegation in
-                  Moscow and the National Coordinating Unit in the organisation
-                  and implementation of evaluation missions in the regions;
-                </li>
-                <li>
-                  Assistance to the EC Delegation in Moscow and the Tacis
-                  Monitoring Unit in monitoring the implementation of running
-                  projects in the regions.
-                </li>
-              </ul>
-              <p class="make_bold">
-                Specific training of Russian counterparts' staff for ensuring
-                the project sustainability
+                {% trans 'Support to the National Coordinating Unit (NCU):' %}
               </p>
               <ul class="collapsible_ol">
                 <li>
-                  Training of the LSO counterparts' staff for the use of the
-                  Tacis procedures and systems;
+                  {% trans 'Identification and recording of potential local beneficiaries and projects;' %}
                 </li>
                 <li>
-                  Training of the LSO counterparts' staff for the use of the
-                  Project Cycle Management, Economic-Financial Analysis, Project
-                  Proposal Assessment and Project Implementation Management
-                  methodologies.
+                  {% trans 'Check that the proposals for EU programmes Calls for Proposals meet the required standards of quality (Pre-assessment of the concept notes and project proposals for IBPP, EIDHR and Tempus programmes);' %}
+                </li>
+                <li>{% trans 'Evaluation of project proposals.' %}</li>
+              </ul>
+              <p>{% trans 'Support to local stakeholders:' %}</p>
+              <ul class="collapsible_ol">
+                <li>
+                  {% trans 'Policy advice to Regional Governments and relevant Ministries and Departments in the area of programming and cooperation with international donors.' %}
+                </li>
+                <li>
+                  {% trans 'Advice to the potential Beneficiaries on the project concept elaboration;' %}
+                </li>
+                <li>
+                  {% trans 'Assistance to the potential Beneficiaries in the development of their project proposals for various Tacis programmes;' %}
+                </li>
+                <li>
+                  {% trans 'Training courses on Project Cycle Management and Economic-Financial Analysis for local beneficiary institutions;' %}
+                </li>
+                <li>
+                  {% trans 'Training courses on Project Proposal Assessment and Project Implementation Management for local beneficiaries implementing local and international projects in the region;' %}
+                </li>
+                <li>
+                  {% trans 'Support to potential beneficiaries in submitting applications.' %}
                 </li>
               </ul>
               <p class="make_bold">
-                Development of standardised LSOs products, services and tools.
+                {% trans 'Support to Project Implementation' %}
+              </p>
+              <p>{% trans 'Support to the NCU:' %}</p>
+              <ul class="collapsible_ol">
+                <li>
+                  {% trans 'Monthly and quarterly analysis of information and preparation of Reviews on local political, economic and social developments in the region;' %}
+                </li>
+                <li>
+                  {% trans 'Organisational and logistic support for visits of the CEC and the Delegation officials in the regions;' %}
+                </li>
+                <li>
+                  {% trans 'Support on the establishment of proper lines of communication between the LSO, the NCU, the EC Delegation in Moscow, on the one hand, and the potential and current beneficiary institutions and contractors implementing current Tacis projects in the region, on the other hand;' %}
+                </li>
+                <li>
+                  {% trans 'Participation in regular monitoring missions to the regions of the LSO coverage;' %}
+                </li>
+                <li>
+                  {% trans 'Preparation of contributions for monitoring reports;' %}
+                </li>
+                <li>
+                  {% trans 'Ex-post evaluation of completed projects in order to measure real impact and sustainability, at the request of the NCU and/or the CEC Delegation in Moscow;' %}
+                </li>
+                <li>
+                  {% trans 'Preparation of quarterly review of Lessons Learnt in Project Implementation in the regions of the LSO responsibility.' %}
+                </li>
+              </ul>
+              <p>{% trans 'Support to local stakeholders:' %}</p>
+              <ul class="collapsible_ol">
+                <li>
+                  {% trans 'Maintenance of a full database on EU and other donor projects in order to keep corporative memory on donors’ activities in the regions;' %}
+                </li>
+                <li>
+                  {% trans 'Communication and co-ordination among EU projects and among other donor projects for ensuring synergy effect in the areas of intervention.' %}
+                </li>
+              </ul>
+              <p class="make_bold">
+                {% trans 'Information and dissemination' %}
+              </p>
+              <p>
+                {% trans 'Support to the NCU: Regular information about relevant events planned and implemented.' %}
+              </p>
+              <p>{% trans 'Support to local stakeholders:' %}</p>
+              <ul class="collapsible_ol">
+                <li>
+                  {% trans 'Maintenance and expansion of extensive relations with Regional Governments and relevant Ministries and Departments including establishing a network of contact persons;' %}
+                </li>
+                <li>
+                  {% trans 'Information to potential beneficiaries on application and selection procedures;' %}
+                </li>
+                <li>
+                  {% trans 'Maintenance of the regional database with the monitoring and evaluation reports of the projects implemented in the regions of the LSO responsibility' %}
+                </li>
+                <li>
+                  {% trans 'Organisation and participation in various events (seminars, conferences, Round Tables, etc).' %}
+                </li>
+              </ul>
+              <p class="make_bold">{% trans 'Facilitation' %}</p>
+              <ul class="collapsible_ol">
+                <li>
+                  {% trans 'Assistance to the European Commission, the EC Delegation in Moscow and the National Coordinating Unit in the organisation and implementation of evaluation missions in the regions;' %}
+                </li>
+                <li>
+                  {% trans 'Assistance to the EC Delegation in Moscow and the Tacis Monitoring Unit in monitoring the implementation of running projects in the regions.' %}
+                </li>
+              </ul>
+              <p class="make_bold">
+                {% trans 'Specific training of Russian counterpart staff for ensuring the project sustainability' %}
+              </p>
+              <ul class="collapsible_ol">
+                <li>
+                  {% trans 'Training of the LSO counterpart staff for the use of the Tacis procedures and systems;' %}
+                </li>
+                <li>
+                  {% trans 'Training of the LSO counterpart staff for the use of the Project Cycle Management, Economic-Financial Analysis, Project Proposal Assessment and Project Implementation Management methodologies.' %}
+                </li>
+              </ul>
+              <p class="make_bold">
+                {% trans 'Development of standardised LSOs products, services and tools.' %}
               </p>
             </div>
           </div>
@@ -1285,16 +1173,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n09">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -1305,8 +1193,8 @@
             <div class="assignments__grid_sub_item">20.05.2003</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Ekaterinburg</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Ekaterinburg}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -1328,9 +1216,7 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    The Tacis Local Support Office, EuropeAid/114754/D/SV/RU
-                    “Enhancing the Capacity of the Local Support Offices
-                    Network, RF”
+                    {% trans 'The Tacis Local Support Office, EuropeAid/114754/D/SV/RU "Enhancing the Capacity of the Local Support Offices Network, RF"' %}
                   </div>
                 </div>
                 <div class="assignments__sub-entity">
@@ -1341,13 +1227,13 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Contractor: European Profiles SA
+                    {{Contractor}}: European Profiles SA
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:</div>
+              <div class="assignments__entity">{{Reference_person}}:</div>
               <div class="assignments__entity">
-                Dr. Dimitris Bakolas, President
+                {% trans 'Dr. Dimitris Bakolas, President' %}
               </div>
               <div class="assignments__entity">European Profiles SA</div>
               <div class="assignments__entity">
@@ -1360,149 +1246,124 @@
           </div>
 
           <div class="assignments__grid_item underline">
-            <div class="assignments__grid_sub_item">Regional Director</div>
+            <div class="assignments__grid_sub_item">
+              {% trans 'Regional Director' %}
+            </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>Managing team of 4 experts.</p>
+              <p>{% trans 'Managing team of 4 experts.' %}</p>
               <p class="make_bold">
-                Capacity building for Project Identification and Design
+                {% trans 'Capacity building for Project Identification and
+                Design' %}
               </p>
-              <p>Support to the National Coordinating Unit (NCU):</p>
-              <ul class="collapsible_ol">
-                <li>
-                  Identification and recording of potential local beneficiaries
-                  and projects;
-                </li>
-                <li>
-                  Check that the proposals for EU programmes Calls for Proposals
-                  meet the required standards of quality (Pre-assessment of the
-                  concept notes and project proposals for IBPP, EIDHR and Tempus
-                  programmes);
-                </li>
-                <li>
-                  Assistance for assessment and evaluation of project proposals.
-                </li>
-              </ul>
-              <p>Support to local stakeholders:</p>
-              <ul class="collapsible_ol">
-                <li>
-                  Policy advice to Regional Governments and relevant Ministries
-                  and Departments in the area of programming and cooperation
-                  with international donors.
-                </li>
-                <li>
-                  Advice to the potential Beneficiaries on the project concept
-                  elaboration;
-                </li>
-                <li>
-                  Assistance to the potential Beneficiaries in the development
-                  of their project proposals for various Tacis programmes;
-                </li>
-                <li>
-                  Training courses on Project Cycle Management and
-                  Economic-Financial Analysis for local beneficiary institutions
-                </li>
-                <li>
-                  Training courses on Project Proposal Assessment and Project
-                  Implementation Management for local beneficiaries implementing
-                  local and international projects in the region;
-                </li>
-                <li>
-                  Support to potential beneficiaries in submitting applications.
-                </li>
-              </ul>
-              <p class="make_bold">Support to Project Implementation</p>
-              <p>Support to the National Coordinating Unit (NCU):</p>
-              <ul class="collapsible_ol">
-                <li>
-                  Monthly and quarterly analysis of information and preparation
-                  of Reviews on local political, economic and social
-                  developments in the region;
-                </li>
-                <li>
-                  Organisational and logistic support for visits of the CEC and
-                  the Delegation officials in the regions;
-                </li>
-                <li>
-                  Support on the establishment of proper lines of communication
-                  between the LSO, the NCU, the EC Delegation in Moscow, on the
-                  one hand, and the potential and current beneficiary
-                  institutions and contractors implementing current Tacis
-                  projects in the region, on the other hand;
-                </li>
-                <li>
-                  Participation in regular monitoring missions to the regions of
-                  the LSO coverage;
-                </li>
-                <li>Preparation of contributions for monitoring reports;</li>
-                <li>
-                  Ex-post evaluation of completed projects in order to measure
-                  real impact and sustainability, at the request of the NCU
-                  and/or the CEC Delegation in Moscow;
-                </li>
-                <li>
-                  Preparation of quarterly review of Lessons Learnt in Project
-                  Implementation in the regions of the LSO responsibility.
-                </li>
-              </ul>
-              <p>Support to local stakeholders:</p>
-              <ul class="collapsible_ol">
-                <li>
-                  Maintenance of a full database on EU and other donor projects
-                  in order to keep corporative memory on donors’ activities in
-                  the regions;
-                </li>
-                <li>
-                  Communication and co-ordination among EU projects and among
-                  other donor projects for ensuring synergy effect in the areas
-                  of intervention.
-                </li>
-              </ul>
-              <p class="make_bold">Information and dissemination</p>
               <p>
-                Support to the National Coordinating Unit (NCU):Regular
-                information about relevant events planned and implemented.
+                {% trans 'Support to the National Coordinating Unit (NCU):' %}
               </p>
-              <p>Support to local stakeholders:</p>
               <ul class="collapsible_ol">
                 <li>
-                  Maintenance and expansion of extensive relations with Regional
-                  Governments and relevant Ministries and Departments including
-                  establishing a network of contact persons;
+                  {% trans 'Identification and recording of potential local beneficiaries and projects;' %}
                 </li>
                 <li>
-                  Information to potential beneficiaries on application and
-                  selection procedures;
+                  {% trans 'Check that the proposals for EU programmes Calls for Proposals meet the required standards of quality (Pre-assessment of the concept notes and project proposals for IBPP, EIDHR and Tempus programmes);' %}
                 </li>
                 <li>
-                  Maintenance of the regional database with the monitoring and
-                  evaluation reports of the projects implemented in the regions
-                  of the LSO responsibility
-                </li>
-                <li>
-                  Organisation and participation in various events (seminars,
-                  conferences, Round Tables, etc).
+                  {% trans 'Assistance for assessment and evaluation of project proposals.' %}
                 </li>
               </ul>
-              <p class="make_bold">Facilitation</p>
+              <p>{% trans 'Support to local stakeholders:' %}</p>
               <ul class="collapsible_ol">
                 <li>
-                  Assistance to the European Commission, the EC Delegation in
-                  Moscow and the National Coordinating Unit in the organisation
-                  and implementation of evaluation missions in the regions;
+                  {% trans 'Policy advice to Regional Governments and relevant Ministries and Departments in the area of programming and cooperation with international donors.' %}
                 </li>
                 <li>
-                  Assistance to the EC Delegation in Moscow and the Tacis
-                  Monitoring Unit in monitoring the implementation of running
-                  projects in the regions.
+                  {% trans 'Advice to the potential Beneficiaries on the project concept elaboration;' %}
+                </li>
+                <li>
+                  {% trans 'Assistance to the potential Beneficiaries in the development of their project proposals for various Tacis programmes;' %}
+                </li>
+                <li>
+                  {% trans 'Training courses on Project Cycle Management and Economic-Financial Analysis for local beneficiary institutions' %}
+                </li>
+                <li>
+                  {% trans 'Training courses on Project Proposal Assessment and Project Implementation Management for local beneficiaries implementing local and international projects in the region;' %}
+                </li>
+                <li>
+                  {% trans 'Support to potential beneficiaries in submitting applications.' %}
                 </li>
               </ul>
               <p class="make_bold">
-                Development of standardised LSOs products, services and tools.
+                {% trans 'Support to Project Implementation' %}
+              </p>
+              <p>
+                {% trans 'Support to the National Coordinating Unit (NCU):' %}
+              </p>
+              <ul class="collapsible_ol">
+                <li>
+                  {% trans 'Monthly and quarterly analysis of information and preparation of Reviews on local political, economic and social developments in the region;' %}
+                </li>
+                <li>
+                  {% trans 'Organisational and logistic support for visits of the CEC and the Delegation officials in the regions;' %}
+                </li>
+                <li>
+                  {% trans 'Support on the establishment of proper lines of communication between the LSO, the NCU, the EC Delegation in Moscow, on the one hand, and the potential and current beneficiary institutions and contractors implementing current Tacis projects in the region, on the other hand;' %}
+                </li>
+                <li>
+                  {% trans 'Participation in regular monitoring missions to the regions of the LSO coverage;' %}
+                </li>
+                <li>
+                  {% trans 'Preparation of contributions for monitoring
+                  reports;' %}
+                </li>
+                <li>
+                  {% trans 'Ex-post evaluation of completed projects in order to measure real impact and sustainability, at the request of the NCU and/or the CEC Delegation in Moscow;' %}
+                </li>
+                <li>
+                  {% trans 'Preparation of quarterly review of Lessons Learnt in Project Implementation in the regions of the LSO responsibility.' %}
+                </li>
+              </ul>
+              <p>{% trans 'Support to local stakeholders:' %}</p>
+              <ul class="collapsible_ol">
+                <li>
+                  {% trans 'Maintenance of a full database on EU and other donor projects in order to keep corporative memory on donors’ activities in the regions;' %}
+                </li>
+                <li>
+                  {% trans 'Communication and co-ordination among EU projects and among other donor projects for ensuring synergy effect in the areas of intervention.' %}
+                </li>
+              </ul>
+              <p class="make_bold">
+                {% trans 'Information and dissemination' %}
+              </p>
+              <p>
+                {% trans 'Support to the National Coordinating Unit (NCU):Regular information about relevant events planned and implemented.' %}
+              </p>
+              <p>{% trans 'Support to local stakeholders:' %}</p>
+              <ul class="collapsible_ol">
+                <li>
+                  {% trans 'Maintenance and expansion of extensive relations with Regional Governments and relevant Ministries and Departments including establishing a network of contact persons;' %}
+                </li>
+                <li>
+                  {% trans 'Information to potential beneficiaries on application and selection procedures;' %}
+                </li>
+                <li>
+                  {% trans 'Maintenance of the regional database with the monitoring and evaluation reports of the projects implemented in the regions of the LSO responsibility' %}
+                </li>
+                <li>
+                  {% trans 'Organisation and participation in various events (seminars, conferences, Round Tables, etc).' %}
+                </li>
+              </ul>
+              <p class="make_bold">{% trans 'Facilitation' %}</p>
+              <ul class="collapsible_ol">
+                <li>
+                  {% trans 'Assistance to the European Commission, the EC Delegation in Moscow and the National Coordinating Unit in the organisation and implementation of evaluation missions in the regions;' %}
+                </li>
+                <li>
+                  {% trans 'Assistance to the EC Delegation in Moscow and the Tacis Monitoring Unit in monitoring the implementation of running projects in the regions.' %}
+                </li>
+              </ul>
+              <p class="make_bold">
+                {% trans 'Development of standardised LSOs products, services and tools.' %}
               </p>
             </div>
           </div>
@@ -1518,16 +1379,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n10">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -1538,8 +1399,8 @@
             <div class="assignments__grid_sub_item">03.06.2003</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Ekaterinburg</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Ekaterinburg}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -1561,16 +1422,16 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Joint-Stock Company “SAMIX Ekaterinburg”
+                    {% trans 'Joint-Stock Company "SAMIX Ekaterinburg"' %}
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:</div>
+              <div class="assignments__entity">{{Reference_person}}:</div>
               <div class="assignments__entity">
-                Mrs. Irina Kovalyova, Deputy Director
+                {% trans 'Mrs. Irina Kovalyova, Deputy Director' %}
               </div>
               <div class="assignments__entity">
-                per. Severniy 5, Ekaterinburg, Russia,
+                {% trans 'per. Severniy 5, Ekaterinburg, Russia,' %}
               </div>
               <div class="assignments__entity">
                 tel. +7-378-03-56; samix@r66.ru
@@ -1579,54 +1440,50 @@
           </div>
 
           <div class="assignments__grid_item underline">
-            <div class="assignments__grid_sub_item">General Director</div>
+            <div class="assignments__grid_sub_item">
+              {% trans 'General Director' %}
+            </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>Managing team of 17 specialists</p>
+              <p>{% trans 'Managing team of 17 specialists' %}</p>
               <ol class="collapsible_ol">
-                <li>Development of Strategy for the company development;</li>
                 <li>
-                  Budgeting. Elaboration of business processes and business
-                  plans;
+                  {% trans 'Development of Strategy for the company development;' %}
                 </li>
                 <li>
-                  Optimisation of capacity of storage facilities and stock;
+                  {% trans 'Budgeting. Elaboration of business processes and business plans;' %}
                 </li>
                 <li>
-                  Monitoring of action plans aimed at increasing company
-                  profitability;
+                  {% trans 'Optimisation of capacity of storage facilities' %} and stock;
                 </li>
                 <li>
-                  Elaboration of action plans aimed at increasing company
-                  efficiency and effectiveness (marketing, advertising,
-                  personnel, special actions and etc.);
-                </li>
-                <li>Organisation of efficient system of company management;</li>
-                <li>
-                  Team building, including personnel selection and development
-                  of motivation system for personnel;
+                  {% trans 'Monitoring of action plans aimed at increasing company profitability;' %}
                 </li>
                 <li>
-                  Development of action plan aimed at increasing qualification
-                  of personnel;
+                  {% trans 'Elaboration of action plans aimed at increasing company efficiency and effectiveness (marketing, advertising, personnel, special actions and etc.);' %}
                 </li>
                 <li>
-                  Carrying out marketing activities aimed at surveying the
-                  market demand and competition and also aimed at attracting new
-                  clients;
-                </li>
-                <li>Development of planning and reporting system;</li>
-                <li>
-                  Development of analytical reports for the company owner;
+                  {% trans 'Organisation of efficient system of company management;' %}
                 </li>
                 <li>
-                  Organisation and implementation of consulting/advisory
-                  missions of senior business experts from the Netherlands and
-                  Canada for the owned company.
+                  {% trans 'Team building, including personnel selection and development of motivation system for personnel;' %}
+                </li>
+                <li>
+                  {% trans 'Development of action plan aimed at increasing qualification of personnel;' %}
+                </li>
+                <li>
+                  {% trans 'Carrying out marketing activities aimed at surveying the market demand and competition and also aimed at attracting new clients;' %}
+                </li>
+                <li>
+                  {% trans 'Development of planning and reporting system;' %}
+                </li>
+                <li>
+                  {% trans 'Development of analytical reports for the company owner;' %}
+                </li>
+                <li>
+                  {% trans 'Organisation and implementation of consulting/advisory missions of senior business experts from the Netherlands and Canada for the owned company.' %}
                 </li>
               </ol>
             </div>
@@ -1643,16 +1500,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n11">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -1663,8 +1520,8 @@
             <div class="assignments__grid_sub_item">31.10.2000</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Ekaterinburg</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Ekaterinburg}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -1686,9 +1543,7 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    The Tacis Local Support Office, SCR-E/110990/C/SV/RU
-                    “Support to Local Capacity Building through Local Support
-                    Offices in the RF”
+                    {% trans 'The Tacis Local Support Office, SCR-E/110990/C/SV/RU "Support to Local Capacity Building through Local Support Offices in the RF"' %}
                   </div>
                 </div>
                 <div class="assignments__sub-entity">
@@ -1699,13 +1554,13 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Contractor: European Profiles SA
+                    {{Contractor}}: European Profiles SA
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:</div>
+              <div class="assignments__entity">{{Reference_person}}:</div>
               <div class="assignments__entity">
-                Dr. Dimitris Bakolas, President
+                {% trans 'Dr. Dimitris Bakolas, President' %}
               </div>
               <div class="assignments__entity">European Profiles SA</div>
               <div class="assignments__entity">
@@ -1719,63 +1574,49 @@
 
           <div class="assignments__grid_item underline">
             <div class="assignments__grid_sub_item">
-              Project Cycle Management Expert / Team Leader’s Counterpartner
+              {% trans 'Project Cycle Management Expert / Team Leader’s Counterpartner' %}
             </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>Assisting in management of team of 4 experts</p>
+              <p>{% trans 'Assisting in management of team of 4 experts' %}</p>
               <ul class="collapsible_ol">
                 <li>
-                  Facilitating the Tacis Coordinating Unit, the EC Delegation
-                  and the Tacis projects in the region
+                  {% trans 'Facilitating the Tacis Coordinating Unit, the EC Delegation and the Tacis projects in the region' %}
                 </li>
                 <li>
-                  Monitoring and Evaluation of Technical assistance projects at
-                  the request of the Tacis CU and the EC Delegation
+                  {% trans 'Monitoring and Evaluation of Technical assistance projects at the request of the Tacis CU and the EC Delegation' %}
                 </li>
                 <li>
-                  Ex-post evaluation of completed projects in order to measure
-                  real impact and sustainability, at the request of the NCU
-                  and/or the CEC Delegation in Moscow
+                  {% trans 'Ex-post evaluation of completed projects in order to measure real impact and sustainability, at the request of the NCU and/or the CEC Delegation in Moscow' %}
                 </li>
                 <li>
-                  Preparation of quarterly review of Lessons Learnt in Project
-                  Implementation in the regions of the LSO responsibility
+                  {% trans 'Preparation of quarterly review of Lessons Learnt in Project Implementation in the regions of the LSO responsibility' %}
                 </li>
                 <li>
-                  Maintenance of the regional database with the monitoring and
-                  evaluation reports of the projects implemented in the regions
-                  of the LSO responsibility
+                  {% trans 'Maintenance of the regional database with the monitoring and evaluation reports of the projects implemented in the regions of the LSO responsibility' %}
                 </li>
                 <li>
-                  Budget administration of the Regional Local Support Office
-                  including review of agreements and cost plans, ensuring
-                  compliance with financial regulations and rules and
-                  established policies and procedures;
+                  {% trans 'Budget administration of the Regional Local Support Office including review of agreements and cost plans, ensuring compliance with financial regulations and rules and established policies and procedures;' %}
                 </li>
                 <li>
-                  Monthly financial monitoring and preparation of budget
-                  performance reports
+                  {% trans 'Monthly financial monitoring and preparation of budget performance reports' %}
                 </li>
                 <li>
-                  Preparation of Monthly Reviews on local political, economic
-                  and social developments in the region
+                  {% trans 'Preparation of Monthly Reviews on local political, economic and social developments in the region' %}
                 </li>
-                <li>Facilitating Local Administrations and local applicants</li>
                 <li>
-                  Participation in various events (seminars, conferences, Round
-                  Tables, etc)
+                  {% trans 'Facilitating Local Administrations and local applicants' %}
                 </li>
-                <li>Capacity Building through Tacis Information Days</li>
                 <li>
-                  Training courses on Project Cycle Management and in-house PCM
-                  workshops (developing curricula, training materials; drafting
-                  training methodologies and needs assessments; organizing and
-                  delivery training – 1 and 2-day seminars).
+                  {% trans 'Participation in various events (seminars, conferences, Round Tables, etc)' %}
+                </li>
+                <li>
+                  {% trans 'Capacity Building through Tacis Information Days' %}
+                </li>
+                <li>
+                  {% trans 'Training courses on Project Cycle Management and in-house PCM workshops (developing curricula, training materials; drafting training methodologies and needs assessments; organizing and delivery training – 1 and 2-day seminars).' %}
                 </li>
               </ul>
             </div>
@@ -1792,16 +1633,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n12">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -1812,8 +1653,8 @@
             <div class="assignments__grid_sub_item">13.04.1997</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Ekaterinburg</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Ekaterinburg}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -1835,8 +1676,7 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    The Urals Tacis Technical Office, C7RUS9502 “Five Tacis
-                    Technical Offices in the RF”
+                    {% trans 'The Urals Tacis Technical Office, C7RUS9502 "Five Tacis Technical Offices in the RF"' %}
                   </div>
                 </div>
                 <div class="assignments__sub-entity">
@@ -1847,7 +1687,7 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Consortium Leader: Hifab International AB (SE)
+                    {% trans 'Consortium Leader' %}: Hifab International AB (SE)
                   </div>
                 </div>
                 <div class="assignments__sub-entity">
@@ -1858,13 +1698,13 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Contractor: Uniscience Oy (FI)
+                    {{Contractor}}: Uniscience Oy (FI)
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:</div>
+              <div class="assignments__entity">{{Reference_person}}:</div>
               <div class="assignments__entity">
-                Mr. Lars Adermalm, Project Manager
+                {% trans 'Mr. Lars Adermalm, Project Manager' %}
               </div>
               <div class="assignments__entity">
                 Hifab International AB, Rehnsgatan 20, PO Box 19090, SE-104 32
@@ -1879,67 +1719,52 @@
 
           <div class="assignments__grid_item underline">
             <div class="assignments__grid_sub_item">
-              Project Cycle Management Expert / Team Leader's Counterpartner
+              {% trans "Project Cycle Management Expert / Team Leader's Counterpartner" %}
             </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>Assisting in management of team of 4 experts</p>
+              <p>{% trans 'Assisting in management of team of 4 experts' %}</p>
               <ul class="collapsible_ol">
                 <li>
-                  Facilitating the Tacis Coordinating Unit, the EC Delegation
-                  and the Tacis projects in the region
+                  {% trans 'Facilitating the Tacis Coordinating Unit, the EC Delegation and the Tacis projects in the region' %}
                 </li>
                 <li>
-                  Organisation and participation in the evaluation missions of
-                  the EU Court of Auditors in 1997.
+                  {% trans 'Organisation and participation in the evaluation missions of the EU Court of Auditors in 1997.' %}
                 </li>
                 <li>
-                  Monitoring and Evaluation of Technical assistance projects at
-                  the request of the Tacis CU and the EC Delegation
+                  {% trans 'Monitoring and Evaluation of Technical assistance projects at the request of the Tacis CU and the EC Delegation' %}
                 </li>
                 <li>
-                  Ex-post evaluation of completed projects in order to measure
-                  real impact and sustainability, at the request of the Tacis CU
-                  and/or the CEC Delegation in Moscow
+                  {% trans 'Ex-post evaluation of completed projects in order to measure real impact and sustainability, at the request of the Tacis CU and/or the CEC Delegation in Moscow' %}
                 </li>
                 <li>
-                  Preparation of quarterly review of Lessons Learnt in Project
-                  Implementation in the regions of the TO responsibility
+                  {% trans 'Preparation of quarterly review of Lessons Learnt in Project Implementation in the regions of the TO responsibility' %}
                 </li>
                 <li>
-                  Maintenance of the regional database with the monitoring and
-                  evaluation reports of the projects implemented in the regions
-                  of the TO responsibility
+                  {% trans 'Maintenance of the regional database with the monitoring and evaluation reports of the projects implemented in the regions of the TO responsibility' %}
                 </li>
                 <li>
-                  Budget administration of the Urals Tacis Technical Office
-                  including review of agreements and cost plans, ensuring
-                  compliance with financial regulations and rules and
-                  established policies and procedures;
+                  {% trans 'Budget administration of the Urals Tacis Technical Office including review of agreements and cost plans, ensuring compliance with financial regulations and rules and established policies and procedures;' %}
                 </li>
                 <li>
-                  Monthly financial monitoring and preparation of budget
-                  performance reports
+                  {% trans 'Monthly financial monitoring and preparation of budget performance reports' %}
                 </li>
                 <li>
-                  Preparation of Monthly Reviews on local political, economic
-                  and social developments in the region
+                  {% trans 'Preparation of Monthly Reviews on local political, economic and social developments in the region' %}
                 </li>
-                <li>Facilitating Local Administrations and local applicants</li>
                 <li>
-                  Participation in various events (seminars, conferences, Round
-                  Tables, etc)
+                  {% trans 'Facilitating Local Administrations and local applicants' %}
                 </li>
-                <li>Capacity Building through Tacis Information Days</li>
                 <li>
-                  Training courses on Project Cycle Management and in-house PCM
-                  workshops (developing curricula, training materials; drafting
-                  training methodologies and needs assessments; organizing and
-                  delivery training – 1 and 2-day seminars).
+                  {% trans 'Participation in various events (seminars, conferences, Round Tables, etc)' %}
+                </li>
+                <li>
+                  {% trans 'Capacity Building through Tacis Information Days' %}
+                </li>
+                <li>
+                  {% trans 'Training courses on Project Cycle Management and in-house PCM workshops (developing curricula, training materials; drafting training methodologies and needs assessments; organizing and delivery training – 1 and 2-day seminars).' %}
                 </li>
               </ul>
             </div>
@@ -1956,20 +1781,20 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n13">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
           <div
-            class="assignments__grid_item table_head assignment_n13_position"
+            class="assignments__grid_item table_head assignment_n13_Position"
           >
-            Position
+            {{Position}}
           </div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -1980,8 +1805,8 @@
             <div class="assignments__grid_sub_item">12.01.1996</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Samara</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Samara}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -2003,56 +1828,45 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Joint Venture "Management and Production Systems" MPS Ltd.
+                    {% trans 'Joint Venture "Management and Production Systems" MPS Ltd.' %}
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:<br /></div>
+              <div class="assignments__entity">{{Reference_person}}:<br /></div>
               <div class="assignments__entity">
-                Mrs. Ljudmila Orlova, General Director
+                {% trans 'Mrs. Ljudmila Orlova, General Director' %}
               </div>
               <div class="assignments__entity">
-                str. Kuibysheva 88, Samara, 443099, Russia
+                {% trans 'str. Kuibysheva 88, Samara, 443099, Russia' %}
               </div>
               <div class="assignments__entity">tel. +7-846-332-32-02</div>
             </div>
           </div>
 
           <div class="assignments__grid_item underline">
-            <div class="assignments__grid_sub_item assignment_n13_position">
-              Director of MPS Consulting / Investment Project Preparation
-              Department
+            <div class="assignments__grid_sub_item assignment_n13_Position">
+              {% trans 'Director of MPS Consulting / Investment Project Preparation Department' %}
             </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>Managing team of 12 experts</p>
-              <p>
-                <span class="make_bold">Managing the Department</span>
-                (organisation and planning of the department activities,
-                co-ordination of activities of the departments, co-ordination of
-                relations with other departments, running monitoring of
-                activities and resources of the department);
-              </p>
+              <p>{% trans 'Managing team of 12 experts' %}</p>
               <p>
                 <span class="make_bold"
-                  >Participation in development of business-plans and
-                  feasibility studies
-                </span>
-                (analysis of viability of the developing projects, development
-                of investment proposals, analysis of bottlenecks of the
-                projects, presentation of the projects to different investment
-                and donor organisations);
-              </p>
-              <p>
-                <span class="make_bold"
-                  >Designing and implementation of Monitoring and
-                  Evaluation</span
+                  >{% trans 'Managing the Department' %}</span
                 >
-                of Technical assistance and investment projects.
+                {% trans '(organisation and planning of the department activities, co-ordination of activities of the departments, co-ordination of relations with other departments, running monitoring of activities and resources of the department);' %}
+              </p>
+              <p>
+                <span class="make_bold"
+                  >{% trans 'Participation in development of business-plans andfeasibility studies' %}</span
+                >{% trans '(analysis of viability of the developing projects, development of investment proposals, analysis of bottlenecks of the projects, presentation of the projects to different investment and donor organisations);' %}
+              </p>
+              <p>
+                <span class="make_bold"
+                  >{% trans 'Designing and implementation of Monitoring and Evaluation' %}</span
+                >{% trans 'of Technical assistance and investment projects.' %}
               </p>
             </div>
           </div>
@@ -2068,20 +1882,20 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n14">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
           <div
-            class="assignments__grid_item table_head assignment_n14_position"
+            class="assignments__grid_item table_head assignment_n14_Position"
           >
-            Position
+            {{Position}}
           </div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -2092,8 +1906,8 @@
             <div class="assignments__grid_sub_item">10.11.1994</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Samara</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Samara}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -2115,55 +1929,49 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Joint Venture "Management and Production Systems" MPS Ltd.
+                    {% trans 'Joint Venture "Management and Production Systems" MPS Ltd.' %}
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:<br /></div>
+              <div class="assignments__entity">{{Reference_person}}:<br /></div>
               <div class="assignments__entity">
-                Mrs. Ljudmila Orlova, General Director
+                {% trans 'Mrs. Ljudmila Orlova, General Director' %}
               </div>
               <div class="assignments__entity">
-                str. Kuibysheva 88, Samara, 443099, Russia
+                {% trans 'str. Kuibysheva 88, Samara, 443099, Russia' %}
               </div>
               <div class="assignments__entity">tel. +7-846-332-32-02</div>
             </div>
           </div>
 
           <div class="assignments__grid_item underline">
-            <div class="assignments__grid_sub_item assignment_n14_position">
-              Management and Economic assistant of Managing Director /
-              Co-ordinator of Experts' Pool (division) in MPS
+            <div class="assignments__grid_sub_item assignment_n14_Position">
+              {% trans "Management and Economic assistant of Managing Director / Co-ordinator of Experts' Pool (division) in MPS" %}
             </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>Assisting in management of the company of 125 people</p>
-              <p>Coordinating the work of 12 experts</p>
               <p>
-                <span class="make_bold">Managing the Experts' Pool </span
-                >(organisation and planning of the division activities,
-                co-ordination of individual experts' activities in the company,
-                co-ordination of relations with other departments, running
-                monitoring of Experts' activities in the various assignments);
+                {% trans 'Assisting in management of the company of 125 people'
+                %}
+              </p>
+              <p>{% trans 'Coordinating the work of 12 experts' %}</p>
+              <p>
+                <span class="make_bold"
+                  >{% trans "Managing the Experts' Pool" %}</span
+                >{% trans "(organisation and planning of the division activities, co-ordination of individual experts' activities in the company, co-ordination of relations with other departments, running monitoring of Experts' activities in the various assignments);" %}
               </p>
               <p>
                 <span class="make_bold"
-                  >Participation in development of business-plans and
-                  feasibility studies</span
+                  >{% trans 'Participation in development of business-plans and feasibility studies' %}</span
                 >
-                (analysis of viability of the developing projects, development
-                of investment proposals, analysis of bottlenecks of the
-                projects, presentation of the projects to different investment
-                and donor organisations);
+                {% trans '(analysis of viability of the developing projects, development of investment proposals, analysis of bottlenecks of the projects, presentation of the projects to different investment and donor organisations);' %}
               </p>
               <p>
                 <span class="make_bold"
-                  >Designing and implementation of Monitoring and Evaluation </span
-                >of Technical assistance and investment projects..
+                  >{% trans 'Designing and implementation of Monitoring and Evaluation' %}</span
+                >{% trans 'of Technical assistance and investment projects.' %}
               </p>
             </div>
           </div>
@@ -2179,16 +1987,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n15">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -2199,8 +2007,8 @@
             <div class="assignments__grid_sub_item">01.07.1994</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Samara</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Samara}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -2222,16 +2030,17 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Joint Venture "Management and Production Systems" MPS Ltd.
+                    {% trans 'Joint Venture "Management and Production Systems"
+                    MPS Ltd.' %}
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:<br /></div>
+              <div class="assignments__entity">{{Reference_person}}:<br /></div>
               <div class="assignments__entity">
-                Mrs. Ljudmila Orlova, General Director
+                {% trans 'Mrs. Ljudmila Orlova, General Director' %}
               </div>
               <div class="assignments__entity">
-                str. Kuibysheva 88, Samara, 443099, Russia
+                {% trans 'str. Kuibysheva 88, Samara, 443099, Russia' %}
               </div>
               <div class="assignments__entity">tel. +7-846-332-32-02</div>
             </div>
@@ -2239,30 +2048,26 @@
 
           <div class="assignments__grid_item underline">
             <div class="assignments__grid_sub_item">
-              Management and Economic assistant of MPS Managing Director
+              {% trans 'Management and Economic assistant of MPS Managing Director' %}
             </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>Assisting in management of the company of 125 people</p>
               <p>
-                Assistance to Managing Director and Deputy Managing Director
-                carrying out special tasks and assignments.
+                {% trans 'Assisting in management of the company of 125 people' %}
+              </p>
+              <p>
+                {% trans 'Assistance to Managing Director and Deputy Managing Director carrying out special tasks and assignments.' %}
               </p>
               <p>
                 <span class="make_bold"
-                  >Improving management performance in the company </span
-                >(introduction of performance standards for staff, setting up
-                appropriate information system, staff appraisal procedures,
-                defining strategy tasks for the company, monitoring)
+                  >{% trans 'Improving management performance in the company' %}</span
+                >{% trans '(introduction of performance standards for staff, setting up appropriate information system, staff appraisal procedures, defining strategy tasks for the company, monitoring).' %}
               </p>
               <p>
-                <span class="make_bold">Administrative work </span>(preparing
-                reports, management information, business plans, contracts,
-                proposals, business letters and other documents).
+                <span class="make_bold">{% trans 'Administrative work' %}</span
+                >{% trans '(preparing reports, management information, business plans, contracts, proposals, business letters and other documents).' %}
               </p>
             </div>
           </div>
@@ -2278,16 +2083,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n16">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -2298,8 +2103,8 @@
             <div class="assignments__grid_sub_item">01.10.1993</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Samara</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Samara}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -2321,7 +2126,7 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Tacis “EC Food Distribution Study” project
+                    {% trans 'Tacis "EC Food Distribution Study" project' %}
                   </div>
                 </div>
                 <div class="assignments__sub-entity">
@@ -2332,7 +2137,8 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Consortium Leader: Agrar und Hydrotechnik AHT (DE)
+                    {% trans 'Consortium Leader' %}: Agrar und Hydrotechnik AHT
+                    (DE)
                   </div>
                 </div>
                 <div class="assignments__sub-entity">
@@ -2343,16 +2149,16 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Contractor: Management and Production Systems Ltd.
+                    {{Contractor}}: Management and Production Systems Ltd.
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:<br /></div>
+              <div class="assignments__entity">{{Reference_person}}:<br /></div>
               <div class="assignments__entity">
-                Mrs. Ljudmila Orlova, General Director
+                {% trans 'Mrs. Ljudmila Orlova, General Director' %}
               </div>
               <div class="assignments__entity">
-                str. Kuibysheva 88, Samara, 443099, Russia
+                {% trans 'str. Kuibysheva 88, Samara, 443099, Russia' %}
               </div>
               <div class="assignments__entity">tel. +7-846-332-32-02</div>
             </div>
@@ -2360,35 +2166,27 @@
 
           <div class="assignments__grid_item underline">
             <div class="assignments__grid_sub_item">
-              Counterpart to the EU Management Training Expert
+              {% trans 'Counterpart to the EU Management Training Expert' %}
             </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
               <p>
-                Assistance in the development of a target group oriented
-                didactic concept based on Action Learning;
+                {% trans 'Assistance in the development of a target group oriented didactic concept based on Action Learning;' %}
               </p>
               <p>
                 <span class="make_bold"
-                  >Assistance in preparation and implementation of management
-                  training seminars and in development of training manuals </span
-                >(Introduction to Planning, Introduction to Time Management,
-                Introduction to Action Centred Leadership, Introduction to
-                Marketing, Introduction to Enterprise Management, General
-                Didactic Concept);
+                  >{% trans 'Assistance in preparation and implementation of management training seminars and in development of training manuals' %}</span
+                >{% trans '(Introduction to Planning, Introduction to Time Management, Introduction to Action Centred Leadership, Introduction to Marketing, Introduction to Enterprise Management, General Didactic Concept);' %}
               </p>
               <p>
-                Development of business games based on the principles of Action
-                Learning for the above mentioned subjects;
+                {% trans 'Development of business games based on the principles of Action Learning for the above mentioned subjects;' %}
               </p>
               <p>
                 <span class="make_bold"
-                  >Assistance in the organisation of Study Tours to West Europe </span
-                >for the Meat, Dairy, Farm and Wholesale & Retail Sectors.
+                  >{% trans 'Assistance in the organisation of Study Tours to West Europe' %}</span
+                >{% trans 'for the Meat, Dairy, Farm and Wholesale & Retail Sectors.' %}
               </p>
             </div>
           </div>
@@ -2404,16 +2202,16 @@
 
         <div class="assignments__grid_box">
           <div class="assignments__grid_item height_3_lines table_head">
-            Date <br />(to–from)
+            {{Date}} <br />{{time}}
           </div>
           <div class="assignments__grid_item height_3_lines table_head">
-            Location
+            {{Location}}
           </div>
           <div class="assignments__grid_item table_head assignment_n17">
-            Company & <br />Reference person
+            {{Company}} <br />{{Reference_person}}
           </div>
-          <div class="assignments__grid_item table_head">Position</div>
-          <div class="assignments__grid_item table_head">Duties</div>
+          <div class="assignments__grid_item table_head">{{Position}}</div>
+          <div class="assignments__grid_item table_head">{{Duties}}</div>
         </div>
         <hr />
         <!-- ---------------- Table content -------------------------- -->
@@ -2424,8 +2222,8 @@
             <div class="assignments__grid_sub_item">01.08.1993</div>
           </div>
           <div class="assignments__grid_item underline height_3_lines">
-            <div class="assignments__grid_sub_item">Samara</div>
-            <div class="assignments__grid_sub_item">(Russia)</div>
+            <div class="assignments__grid_sub_item">{{Samara}}</div>
+            <div class="assignments__grid_sub_item">({{Russia}})</div>
             <div class="assignments__grid_sub_item">
               <div class="assignments__image">
                 <img
@@ -2447,7 +2245,7 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Tacis “EC Food Distribution Study” project
+                    {% trans 'Tacis "EC Food Distribution Study" project' %}
                   </div>
                 </div>
                 <div class="assignments__sub-entity">
@@ -2458,7 +2256,7 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Consortium Leader: Agrar und Hydrotechnik AHT (DE)
+                    {% trans 'Consortium Leader' %}: Agrar und Hydrotechnik AHT (DE)
                   </div>
                 </div>
                 <div class="assignments__sub-entity">
@@ -2469,16 +2267,16 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    Contractor: Management and Production Systems Ltd.
+                    {{Contractor}}: Management and Production Systems Ltd.
                   </div>
                 </div>
               </div>
-              <div class="assignments__entity">Reference person:<br /></div>
+              <div class="assignments__entity">{{Reference_person}}:<br /></div>
               <div class="assignments__entity">
-                Mrs. Ljudmila Orlova, General Director
+                {% trans 'Mrs. Ljudmila Orlova, General Director' %}
               </div>
               <div class="assignments__entity">
-                str. Kuibysheva 88, Samara, 443099, Russia
+                {% trans 'str. Kuibysheva 88, Samara, 443099, Russia' %}
               </div>
               <div class="assignments__entity">tel. +7-846-332-32-02</div>
             </div>
@@ -2486,24 +2284,20 @@
 
           <div class="assignments__grid_item underline">
             <div class="assignments__grid_sub_item">
-              Assistant of the EU Management Training Expert
+              {% trans 'Assistant of the EU Management Training Expert' %}
             </div>
           </div>
           <div class="assignments__grid_item">
-            <button type="button" class="collapsible">
-              Open to see details ...
-            </button>
+            <button type="button" class="collapsible">{{Open}}</button>
             <div class="collapsible_content">
-              <p>Probation period (2 months)</p>
-              <p><span class="make_bold">OUTPUTS:</span></p>
+              <p>{% trans 'Probation period (2 months)' %}</p>
+              <p><span class="make_bold">{% trans 'OUTPUTS:' %}</span></p>
               <ul class="collapsible_ol">
                 <li>
-                  I learnt the West European principles of Action Learning
-                  Approach
+                  {% trans 'I learnt the West European principles of Action Learning Approach' %}
                 </li>
                 <li>
-                  I assisted my EU colleagues in preparation of their
-                  presentation materials in Russian
+                  {% trans 'I assisted my EU colleagues in preparation of their presentation materials in Russian' %}
                 </li>
               </ul>
             </div>
@@ -2516,8 +2310,7 @@
 
     <div class="for_button">
       <a href="{% url 'assignments_st' %}" class="button_ST-Assignments"
-        >... meanwhile in between ... Various international short-term
-        assignments</a
+        >{% trans '... meanwhile in between ... Various international short-term assignments' %}</a
       >
     </div>
 
@@ -2528,7 +2321,7 @@
           <div class="numbertext">1 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image1.jpg' %}"
-            alt="S1-Image1.jpg' %}"
+            alt="S1-Image1.jpg"
           />
         </div>
 
@@ -2536,7 +2329,7 @@
           <div class="numbertext">2 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image2.jpg' %}"
-            alt="S1-Image2.jpg' %}"
+            alt="S1-Image2.jpg"
           />
         </div>
 
@@ -2544,7 +2337,7 @@
           <div class="numbertext">3 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image3.jpg' %}"
-            alt="S1-Image3.jpg' %}"
+            alt="S1-Image3.jpg"
           />
         </div>
 
@@ -2552,7 +2345,7 @@
           <div class="numbertext">4 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image4.jpg' %}"
-            alt="S1-Image4.jpg' %}"
+            alt="S1-Image4.jpg"
           />
         </div>
 
@@ -2560,7 +2353,7 @@
           <div class="numbertext">5 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image5.jpg' %}"
-            alt="S1-Image5.jpg' %}"
+            alt="S1-Image5.jpg"
           />
         </div>
 
@@ -2568,7 +2361,7 @@
           <div class="numbertext">6 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image6.jpg' %}"
-            alt="S1-Image6.jpg' %}"
+            alt="S1-Image6.jpg"
           />
         </div>
 
@@ -2576,7 +2369,7 @@
           <div class="numbertext">7 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image7.jpg' %}"
-            alt="S1-Image7.jpg' %}"
+            alt="S1-Image7.jpg"
           />
         </div>
 
@@ -2584,7 +2377,7 @@
           <div class="numbertext">8 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image8.jpg' %}"
-            alt="S1-Image8.jpg' %}"
+            alt="S1-Image8.jpg"
           />
         </div>
 
@@ -2592,7 +2385,7 @@
           <div class="numbertext">9 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image9.jpg' %}"
-            alt="S1-Image9.jpg' %}"
+            alt="S1-Image9.jpg"
           />
         </div>
 
@@ -2600,7 +2393,7 @@
           <div class="numbertext">10 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image10.jpg' %}"
-            alt="S1-Image10.jpg' %}"
+            alt="S1-Image10.jpg"
           />
         </div>
 
@@ -2608,7 +2401,7 @@
           <div class="numbertext">11 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image11.jpg' %}"
-            alt="S1-Image11.jpg' %}"
+            alt="S1-Image11.jpg"
           />
         </div>
 
@@ -2616,7 +2409,7 @@
           <div class="numbertext">12 / 12</div>
           <img
             src="{% static 'cv/images/images/S1-Image12.jpg' %}"
-            alt="S1-Image12.jpg' %}"
+            alt="S1-Image12.jpg"
           />
         </div>
 
