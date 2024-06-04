@@ -1,4 +1,6 @@
 {% extends 'cv/base.html' %} {% load static %} {% block content %}
+<!-- ----------------  -->
+{% load i18n %}
 
 <div class="container">
   <div class="usib">
@@ -17,10 +19,9 @@
             width="220"
             height="150"
           />
-          <span class="click_on_image">
-            Move the mouse over the image below to open the dropdown
-            content.</span
-          >
+          <span class="click_on_image"
+            >{% trans 'Move the mouse over the image below to open the dropdown content.' %}
+          </span>
           <div class="usib__dropup-content">
             <img
               src="{% static 'cv/images/images_education/MBA-diploma.jpg' %}"
@@ -29,15 +30,21 @@
               height="604"
             />
             <div class="usib__description">
-              Diploma of Master of Business Administration
+              {% trans 'Diploma of Master of Business Administration' %}
             </div>
           </div>
         </div>
       </div>
       <div class="usib__titles">
-        <div class="usib__title">The Urals-Siberia Institute of Business</div>
-        <div class="usib__faculty">Master of Business Administration</div>
-        <div class="usib__year">2001-2003, Ekaterinburg, Russia</div>
+        <div class="usib__title">
+          {% trans 'The Urals-Siberia Institute of Business' %}
+        </div>
+        <div class="usib__faculty">
+          {% trans 'Master of Business Administration' %}
+        </div>
+        <div class="usib__year">
+          {% trans '2001-2003, Ekaterinburg, Russia' %}
+        </div>
       </div>
     </div>
   </div>

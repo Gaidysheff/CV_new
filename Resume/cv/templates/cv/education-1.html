@@ -1,36 +1,37 @@
 {% extends 'cv/base.html' %} {% load static %} {% block content %}
-
+<!-- ----------------  -->
+{% load i18n %}
 <div class="container">
   <div class="university">
     <div class="university__head-box">
       <div class="university__heading university-name tooltip">
-        Leningrad Shipbuilding Institute
+        {% trans 'Leningrad Shipbuilding Institute' %}
+
         <span class="tooltiptext"
-          >The Leningrad Shipbuilding Institute (LKI) was created in 1930 by
-          introducing a shipbuilding department from the Leningrad Polytechnic
-          Institute. The new institute had about 200 students after its
-          formation.</span
+          >{% trans 'The Leningrad Shipbuilding Institute (LKI) was created in 1930 by introducing a shipbuilding department from the Leningrad Polytechnic Institute. The new institute had about 200 students after its formation.' %}</span
         >
       </div>
       <div class="university__heading university-name tooltip">
-        Saint-Petersburg State Marine Technical University
+        {% trans 'Saint-Petersburg State Marine Technical University' %}
+
         <span class="tooltiptext"
-          >Санкт-Петербу́ргский госуда́рственный морско́й техни́ческий университе́т
-          (до 1990 года — Ленинградский ордена Ленина кораблестроительный
-          институт (неофициально — Корабелка), в 1990—1992 годах — Ленинградский
-          государственный морской технический университет) — высшее учебное
-          заведение технического профиля в Санкт-Петербурге. Единственное в
-          России учебное заведение, в котором на трёх основных факультетах
-          готовят морских инженеров-специалистов мирового класса по
-          проектированию, постройке и технической эксплуатации морских судов,
-          боевых надводных кораблей и подводных лодок, оружия, судовых
-          энергетических установок, приборов, технических средств обеспечения
-          разведки и добычи нефти, газа и других полезных ископаемых на морском
-          дне.</span
-        >
+          >{% trans 'St. Petersburg State Maritime Technical University (until 1990 - Leningrad Order of Lenin Shipbuilding Institute (unofficially - Korabelka), in 1990-1992 - Leningrad State Maritime Technical University) is a technical higher education institution in St. Petersburg. The only educational institution in Russia in which three main faculties train world-class marine engineers in the design, construction and technical operation of sea vessels, surface combat ships and submarines, weapons, ship power plants, instruments, technical equipment for exploration and production oil, gas and other minerals on the seabed.' %}
+        </span>
+        <!-- Санкт-Петербу́ргский госуда́рственный морско́й
+        техни́ческий университе́т (до 1990 года — Ленинградский ордена Ленина
+        кораблестроительный институт (неофициально — Корабелка), в 1990—1992
+        годах — Ленинградский государственный морской технический
+        университет) — высшее учебное заведение технического профиля в
+        Санкт-Петербурге. Единственное в России учебное заведение, в котором
+        на трёх основных факультетах готовят морских инженеров-специалистов
+        мирового класса по проектированию, постройке и технической
+        эксплуатации морских судов, боевых надводных кораблей и подводных
+        лодок, оружия, судовых энергетических установок, приборов, технических
+        средств обеспечения разведки и добычи нефти, газа и других полезных
+        ископаемых на морском дне. -->
       </div>
       <div class="university__heading faculty-name">
-        Faculty of Engineering and Economy, <br />1988-1993
+        {% trans 'Faculty of Engineering and Economy,' %} <br />1988-1993
       </div>
       <div class="university__diploma">
         <div class="university__diploma-icon dropdown">
@@ -39,9 +40,8 @@
             alt="diploma main"
           />
           <span class="click_on_image">
-            <br />Move the mouse over the image below <br />
-            to open the dropdown content.</span
-          >
+            <br />{% trans 'Move the mouse over the image below' %} <br />{% trans 'to open the dropdown content.' %}
+          </span>
           <div class="dropdown-content">
             <img
               id="diploma-extended"
@@ -49,12 +49,12 @@
               alt="diploma main"
             />
             <div class="university__desc">
-              Diploma of Master of Economy and Management of Enterprises
+              {% trans 'Diploma “Suma Cum Laude” of Master of Economy and Management of Enterprises' %}
             </div>
           </div>
         </div>
         <div class="university__specialization">
-          Master of Economy and Management of Enterprises
+          {% trans 'Master of Economy and Management of Enterprises' %}
         </div>
       </div>
     </div>
@@ -62,7 +62,8 @@
     <div class="university__gridbox">
       <div class="university__grid-item">
         <div class="university__subtitle-left">
-          Course of Naval Education <br />
+          {% trans 'Course of Naval Education' %}
+          <br />
           1990-1993
         </div>
         <div class="university__image">
@@ -107,8 +108,7 @@
 
       <div class="university__grid-item">
         <div class="university__subtitle-right">
-          Student's Construction Team <br />
-          summers of 1989 and 1990
+          {% trans "Student's Construction Team" %} <br />{% trans 'summers of 1989 and 1990' %}
         </div>
 
         <div class="university__image">
@@ -153,8 +153,7 @@
       </div>
     </div>
     <div class="university__note-for-slider">
-      ... using the left button of your mouse you can move the photo-sliders to
-      the left-and-right
+      {% trans '... using the left button of your mouse you can move the photo-sliders to the left-and-right' %}
     </div>
   </div>
 </div>

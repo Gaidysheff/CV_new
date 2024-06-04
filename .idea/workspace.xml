@@ -6,8 +6,15 @@
       <change beforePath="$PROJECT_DIR$/Resume/cv/locale/ru/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/locale/ru/LC_MESSAGES/django.mo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resume/cv/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/assignments.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/assignments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/assignments_st.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/assignments_st.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/education-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/education-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/education-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/education-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/education-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/education-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/education-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/education-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/portfolio_createx.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/portfolio_createx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/portfolio_diploma.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/portfolio_diploma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/portfolio_finsweet.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/portfolio_finsweet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume/cv/templates/cv/portfolio_novokosulino.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/cv/templates/cv/portfolio_novokosulino.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

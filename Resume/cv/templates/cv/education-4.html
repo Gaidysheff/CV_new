@@ -1,5 +1,6 @@
 {% extends 'cv/base.html' %} {% load static %} {% block content %}
-
+<!-- ----------------  -->
+{% load i18n %}
 <div class="container">
   <div class="skillfactory">
     <div class="skillfactory__image">
@@ -10,24 +11,23 @@
     </div>
 
     <div class="skillfactory__course">
-      <div class="skillfactory__title">The main sections of the course:</div>
+      <div class="skillfactory__title">
+        {% trans 'The main sections of the course:' %}
+      </div>
       <ol>
-        <li>Introduction to Python</li>
-        <li>Object Oriented Programming</li>
+        <li>{% trans 'Introduction to Python' %}</li>
+        <li>{% trans 'Object Oriented Programming' %}</li>
         <li>
-          Backend development with Python and Django (Django, PostgreSQL,
-          Celery, Redis, Django REST Framework )
+          {% trans 'Backend development with Python and Django (Django, PostgreSQL, Celery, Redis, Django REST Framework )' %}
         </li>
         <li>
-          Website layout and front-end development in JavaScript (JavaScript,
-          AJAX, HTML, CSS, SASS)
+          {% trans 'Website layout and front-end development in JavaScript (JavaScript, AJAX, HTML, CSS, SASS)' %}
         </li>
-        <li>Frontend development frameworks (React and Redux)</li>
+        <li>{% trans 'Frontend development frameworks (React and Redux)' %}</li>
         <li>
-          Full stack development (Creating a modern web application with Django
-          and React, Client-server communication via web sockets)
+          {% trans 'Full stack development (Creating a modern web application with Django and React, Client-server communication via web sockets)' %}
         </li>
-        <li>DevOps (Linux, Docker)</li>
+        <li>'DevOps (Linux, Docker)</li>
       </ol>
     </div>
     <div class="skillfactory__image">

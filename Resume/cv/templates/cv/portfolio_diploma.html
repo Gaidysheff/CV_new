@@ -1,8 +1,12 @@
 {% extends 'cv/base.html' %} {% load static %} {% block content %}
+<!-- ----------------  -->
+{% load i18n %}
 <div class="container">
   <div class="sample">
     <div class="sample__area">
-      <div class="sample__title">The screenshot of the original website</div>
+      <div class="sample__title">
+        {% trans 'The screenshot of the original website' %}
+      </div>
 
       <div class="sample__initial">
         <img

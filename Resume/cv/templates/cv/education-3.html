@@ -1,7 +1,11 @@
 {% extends 'cv/base.html' %} {% load static %} {% block content %}
+<!-- ----------------  -->
+{% load i18n %}
+<!-- ----------------  -->
+{% trans 'Certificate of Attendance' as Certificate_of_Attendance %}
 
 <div class="container">
-  <div class="title">Seminars where I was trained</div>
+  <div class="title">{% trans 'Seminars where I was trained' %}</div>
   <div class="seminars">
     <div class="seminars__card-one">
       <div class="certificate__icon seminars__drop">
@@ -18,7 +22,7 @@
             width="415"
             height="600"
           />
-          <div class="seminars__description">Certificate of Attendance</div>
+          <div class="seminars__description">{{Certificate_of_Attendance}}</div>
         </div>
       </div>
     </div>
@@ -38,7 +42,7 @@
             width="850"
             height="600"
           />
-          <div class="seminars__description">Certificate of Attendance</div>
+          <div class="seminars__description">{{Certificate_of_Attendance}}</div>
         </div>
       </div>
     </div>
@@ -58,7 +62,7 @@
             width="762"
             height="600"
           />
-          <div class="seminars__description">Certificate of Attendance</div>
+          <div class="seminars__description">{{Certificate_of_Attendance}}</div>
         </div>
       </div>
     </div>
@@ -78,7 +82,7 @@
             width="448"
             height="600"
           />
-          <div class="seminars__description">Certificate of Attendance</div>
+          <div class="seminars__description">{{Certificate_of_Attendance}}</div>
         </div>
       </div>
     </div>
