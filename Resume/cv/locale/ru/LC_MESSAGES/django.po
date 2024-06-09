@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-04 22:18+0500\n"
+"POT-Creation-Date: 2024-06-09 22:14+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,8 +29,8 @@ msgstr "Контрактор"
 
 #: .\cv\templates\cv\assignments.html:9
 #: .\cv\templates\cv\assignments.html:1686
-#: .\cv\templates\cv\assignments.html:2135
-#: .\cv\templates\cv\assignments.html:2254
+#: .\cv\templates\cv\assignments.html:2134
+#: .\cv\templates\cv\assignments.html:2253
 msgid "Consortium Leader"
 msgstr "Лидер концорциума"
 
@@ -135,7 +135,7 @@ msgstr "ООО «Оптима Групп»"
 msgid "Radischev str. 10-27, Ekaterinburg, 620014, Russia"
 msgstr "ул. Радищева 10-27, Екатеринбург, 620014, Россия"
 
-#: .\cv\templates\cv\assignments.html:115 .\cv\templates\cv\index.html:372
+#: .\cv\templates\cv\assignments.html:115 .\cv\templates\cv\index.html:371
 msgid "Manager"
 msgstr "Менеджер"
 
@@ -215,7 +215,7 @@ msgstr "Разработка аналитических отчётов для в
 msgid "home based assignment"
 msgstr "работа на дому"
 
-#: .\cv\templates\cv\assignments.html:217 .\cv\templates\cv\index.html:384
+#: .\cv\templates\cv\assignments.html:217 .\cv\templates\cv\index.html:383
 msgid "the USA"
 msgstr "США"
 
@@ -247,7 +247,7 @@ msgstr "Предоставить письменную оценку конкре�
 msgid "Mr. Ilia Belokriletsky, General Director"
 msgstr "Илья Белокрылецкий, генеральный директор"
 
-#: .\cv\templates\cv\assignments.html:319 .\cv\templates\cv\index.html:392
+#: .\cv\templates\cv\assignments.html:319 .\cv\templates\cv\index.html:391
 msgid "Regional Business Development Director"
 msgstr "Консультант по бизнес развитию и международным связям"
 
@@ -343,7 +343,7 @@ msgstr "Подготовка различных отчётов о монитор
 msgid "Netherlands Business Support Office (NBSO) in Ekaterinburg (RU)"
 msgstr "Офис поддержки бизнеса Нидерландов (NBSO) в Екатеринбурге (RU)"
 
-#: .\cv\templates\cv\assignments.html:444 .\cv\templates\cv\index.html:402
+#: .\cv\templates\cv\assignments.html:444 .\cv\templates\cv\index.html:401
 msgid "Deputy Representative"
 msgstr "Заместитель директора"
 
@@ -555,7 +555,7 @@ msgstr "Валентина Метаева, директор,"
 msgid "str. Mira 28-340, Ekaterinburg 620002, Russia"
 msgstr "ул. Мира 28-340, Екатеринбург 620002, Россия"
 
-#: .\cv\templates\cv\assignments.html:601 .\cv\templates\cv\index.html:412
+#: .\cv\templates\cv\assignments.html:601 .\cv\templates\cv\index.html:411
 msgid "Director of Fundraising Department"
 msgstr "Директор департамента фандрайзинга"
 
@@ -698,7 +698,7 @@ msgstr "доктор Димитрис Баколас, президент"
 
 #: .\cv\templates\cv\assignments.html:821
 #: .\cv\templates\cv\assignments.html:1037
-#: .\cv\templates\cv\assignments.html:1248 .\cv\templates\cv\index.html:432
+#: .\cv\templates\cv\assignments.html:1248 .\cv\templates\cv\index.html:431
 msgid "Regional Director"
 msgstr "Региональный Директор"
 
@@ -1081,7 +1081,7 @@ msgstr "Ирина Ковалёва, заместитель директора"
 msgid "per. Severniy 5, Ekaterinburg, Russia,"
 msgstr "пер. Северный 5, Екатеринбург, Россия"
 
-#: .\cv\templates\cv\assignments.html:1440 .\cv\templates\cv\index.html:422
+#: .\cv\templates\cv\assignments.html:1440 .\cv\templates\cv\index.html:421
 msgid "General Director"
 msgstr "Учредитель, Генеральный директор"
 
@@ -1114,7 +1114,7 @@ msgstr ""
 "развитии местных возможностей посредством Региональных Бюро Поддержки "
 "(Технические Офисы) в Российской Федерации»"
 
-#: .\cv\templates\cv\assignments.html:1573 .\cv\templates\cv\index.html:443
+#: .\cv\templates\cv\assignments.html:1573 .\cv\templates\cv\index.html:442
 msgid "Project Cycle Management Expert / Team Leader’s Counterpartner"
 msgstr ""
 "Эксперт по управлению проектным циклом / Контрпартнёр руководителя "
@@ -1280,22 +1280,23 @@ msgstr ""
 
 #: .\cv\templates\cv\assignments.html:1827
 #: .\cv\templates\cv\assignments.html:1928
+#: .\cv\templates\cv\assignments.html:2028
 msgid "Joint Venture \"Management and Production Systems\" MPS Ltd."
 msgstr "ООО «Системы Управления и Производства» «СМП»."
 
 #: .\cv\templates\cv\assignments.html:1833
 #: .\cv\templates\cv\assignments.html:1934
-#: .\cv\templates\cv\assignments.html:2035
-#: .\cv\templates\cv\assignments.html:2153
-#: .\cv\templates\cv\assignments.html:2271
+#: .\cv\templates\cv\assignments.html:2034
+#: .\cv\templates\cv\assignments.html:2152
+#: .\cv\templates\cv\assignments.html:2270
 msgid "Mrs. Ljudmila Orlova, General Director"
 msgstr "Людмила Орлова, Генеральный директор"
 
 #: .\cv\templates\cv\assignments.html:1836
 #: .\cv\templates\cv\assignments.html:1937
-#: .\cv\templates\cv\assignments.html:2038
-#: .\cv\templates\cv\assignments.html:2156
-#: .\cv\templates\cv\assignments.html:2274
+#: .\cv\templates\cv\assignments.html:2037
+#: .\cv\templates\cv\assignments.html:2155
+#: .\cv\templates\cv\assignments.html:2273
 msgid "str. Kuibysheva 88, Samara, 443099, Russia"
 msgstr "ул. Куйбышева 88, Самара, 443099, Россия"
 
@@ -1356,7 +1357,7 @@ msgstr ""
 "Координатор Группы Экспертов"
 
 #: .\cv\templates\cv\assignments.html:1952
-#: .\cv\templates\cv\assignments.html:2053
+#: .\cv\templates\cv\assignments.html:2052
 msgid "Assisting in management of the company of 125 people"
 msgstr "Помощь в управлении компанией из 125 человек."
 
@@ -1385,11 +1386,11 @@ msgid "Participation in development of business-plans and feasibility studies"
 msgstr ""
 "Участие в разработке бизнес-планов и технико-экономических обоснований "
 
-#: .\cv\templates\cv\assignments.html:2046
+#: .\cv\templates\cv\assignments.html:2045
 msgid "Management and Economic assistant of MPS Managing Director"
 msgstr "Помощник Управляющего директора по вопросам руководства и экономики"
 
-#: .\cv\templates\cv\assignments.html:2056
+#: .\cv\templates\cv\assignments.html:2055
 msgid ""
 "Assistance to Managing Director and Deputy Managing Director carrying out "
 "special tasks and assignments."
@@ -1397,11 +1398,11 @@ msgstr ""
 "Помощь управляющему директору и заместителю управляющего директора в "
 "проведении специальных мероприятий и контрактов."
 
-#: .\cv\templates\cv\assignments.html:2060
+#: .\cv\templates\cv\assignments.html:2059
 msgid "Improving management performance in the company"
 msgstr "Совершенствование системы управления в компании"
 
-#: .\cv\templates\cv\assignments.html:2061
+#: .\cv\templates\cv\assignments.html:2060
 msgid ""
 "(introduction of performance standards for staff, setting up appropriate "
 "information system, staff appraisal procedures, defining strategy tasks for "
@@ -1411,11 +1412,11 @@ msgstr ""
 "информационной системы, процедуры оценки персонала, определение "
 "стратегических задач компании, мониторинг)."
 
-#: .\cv\templates\cv\assignments.html:2064
+#: .\cv\templates\cv\assignments.html:2063
 msgid "Administrative work"
 msgstr "Административная работа"
 
-#: .\cv\templates\cv\assignments.html:2065
+#: .\cv\templates\cv\assignments.html:2064
 msgid ""
 "(preparing reports, management information, business plans, contracts, "
 "proposals, business letters and other documents)."
@@ -1423,16 +1424,16 @@ msgstr ""
 "(подготовка отчетов, управленческой информации, бизнес-планов, договоров, "
 "предложений, деловых писем и других документов)."
 
-#: .\cv\templates\cv\assignments.html:2124
-#: .\cv\templates\cv\assignments.html:2243
+#: .\cv\templates\cv\assignments.html:2123
+#: .\cv\templates\cv\assignments.html:2242
 msgid "Tacis \"EC Food Distribution Study\" project"
 msgstr "Проект ЕС «Сельхозпродукция: от фермы до потребителя»"
 
-#: .\cv\templates\cv\assignments.html:2164
+#: .\cv\templates\cv\assignments.html:2163 .\cv\templates\cv\index.html:476
 msgid "Counterpart to the EU Management Training Expert"
 msgstr "Контрпартнер эксперта ЕС по обучению"
 
-#: .\cv\templates\cv\assignments.html:2171
+#: .\cv\templates\cv\assignments.html:2170
 msgid ""
 "Assistance in the development of a target group oriented didactic concept "
 "based on Action Learning;"
@@ -1440,7 +1441,7 @@ msgstr ""
 "Помощь в создании целевой группы, ориентированной на обучение дидактической "
 "концепции «Обучение через действие»;"
 
-#: .\cv\templates\cv\assignments.html:2175
+#: .\cv\templates\cv\assignments.html:2174
 msgid ""
 "Assistance in preparation and implementation of management training seminars "
 "and in development of training manuals"
@@ -1448,7 +1449,7 @@ msgstr ""
 "Помощь в разработке и проведении обучающих семинаров по менеджменту и в "
 "подготовки учебных пособий "
 
-#: .\cv\templates\cv\assignments.html:2176
+#: .\cv\templates\cv\assignments.html:2175
 msgid ""
 "(Introduction to Planning, Introduction to Time Management, Introduction to "
 "Action Centred Leadership, Introduction to Marketing, Introduction to "
@@ -1458,7 +1459,7 @@ msgstr ""
 "лидерство через действие, введение в маркетинг, введение в управление "
 "предприятием, общая дидактическая концепция);"
 
-#: .\cv\templates\cv\assignments.html:2179
+#: .\cv\templates\cv\assignments.html:2178
 msgid ""
 "Development of business games based on the principles of Action Learning for "
 "the above mentioned subjects;"
@@ -1466,33 +1467,33 @@ msgstr ""
 "Разработка деловых игр, основанных на принципах “Обучение через действие” "
 "для вышеуказанных тем;"
 
-#: .\cv\templates\cv\assignments.html:2183
+#: .\cv\templates\cv\assignments.html:2182
 msgid "Assistance in the organisation of Study Tours to West Europe"
 msgstr "Помощь в организации обучающих поездок в Западную Европу"
 
-#: .\cv\templates\cv\assignments.html:2184
+#: .\cv\templates\cv\assignments.html:2183
 msgid "for the Meat, Dairy, Farm and Wholesale & Retail Sectors."
 msgstr ""
 "для специалистов мясной и молочной промышленности, фермеров и специалистов "
 "оптовой/розничной торговли."
 
-#: .\cv\templates\cv\assignments.html:2282
+#: .\cv\templates\cv\assignments.html:2281
 msgid "Assistant of the EU Management Training Expert"
 msgstr "Ассистент эксперта ЕС по обучению менеджменту"
 
-#: .\cv\templates\cv\assignments.html:2288
+#: .\cv\templates\cv\assignments.html:2287
 msgid "Probation period (2 months)"
 msgstr "Испытательный срок (2 месяца)"
 
-#: .\cv\templates\cv\assignments.html:2289
+#: .\cv\templates\cv\assignments.html:2288
 msgid "OUTPUTS:"
 msgstr "ДОСТИЖЕНИЯ:"
 
-#: .\cv\templates\cv\assignments.html:2292
+#: .\cv\templates\cv\assignments.html:2291
 msgid "I learnt the West European principles of Action Learning Approach"
 msgstr "Я изучил западноевропейские принципы подхода к обучению действием."
 
-#: .\cv\templates\cv\assignments.html:2295
+#: .\cv\templates\cv\assignments.html:2294
 msgid ""
 "I assisted my EU colleagues in preparation of their presentation materials "
 "in Russian"
@@ -1500,10 +1501,15 @@ msgstr ""
 "Я помогал своим коллегам из ЕС в подготовке их презентационных материалов на "
 "русском языке."
 
-#: .\cv\templates\cv\assignments.html:2308
+#: .\cv\templates\cv\assignments.html:2307
 msgid ""
 "... meanwhile in between ... Various international short-term assignments"
 msgstr "... тем временем ... Различные международные краткосрочные контракты."
+
+#: .\cv\templates\cv\assignments.html:2437
+#: .\cv\templates\cv\assignments_st.html:910 .\cv\templates\cv\index.html:514
+msgid "Go to Top"
+msgstr "Наверх"
 
 #: .\cv\templates\cv\assignments_st.html:71
 msgid "Kaliningrad"
@@ -1695,39 +1701,39 @@ msgid "Business seminars I carried out for SMEs"
 msgstr ""
 "Бизнес-семинары, которые я проводил для предприятий малого и среднего бизнеса"
 
-#: .\cv\templates\cv\base.html:46
+#: .\cv\templates\cv\base.html:47
 msgid "Home"
 msgstr "Домой"
 
-#: .\cv\templates\cv\base.html:49 .\cv\templates\cv\index.html:95
+#: .\cv\templates\cv\base.html:50 .\cv\templates\cv\index.html:95
 msgid "Education"
 msgstr "Образование"
 
-#: .\cv\templates\cv\base.html:54 .\cv\templates\cv\education-1.html:15
+#: .\cv\templates\cv\base.html:55 .\cv\templates\cv\education-1.html:15
 msgid "Saint-Petersburg State Marine Technical University"
 msgstr "Санкт-Петербургский государственный морской технический университет"
 
-#: .\cv\templates\cv\base.html:57 .\cv\templates\cv\education-2.html:40
+#: .\cv\templates\cv\base.html:58 .\cv\templates\cv\education-2.html:40
 msgid "The Urals-Siberia Institute of Business"
 msgstr "Урало-Сибирский институт бизнеса"
 
-#: .\cv\templates\cv\base.html:59
+#: .\cv\templates\cv\base.html:60
 msgid "Training Courses"
 msgstr "Учебные курсы"
 
-#: .\cv\templates\cv\base.html:60
+#: .\cv\templates\cv\base.html:61
 msgid "IT Course"
 msgstr "ИТ-курс"
 
-#: .\cv\templates\cv\base.html:63
+#: .\cv\templates\cv\base.html:64
 msgid "Long-Term Assignments"
 msgstr "Долгосрочные контракты"
 
-#: .\cv\templates\cv\base.html:64
+#: .\cv\templates\cv\base.html:65
 msgid "Short-Term Assignments"
 msgstr "Краткосрочные контракты"
 
-#: .\cv\templates\cv\base.html:93
+#: .\cv\templates\cv\base.html:94
 msgid "set the language"
 msgstr "установить язык"
 
@@ -2090,15 +2096,19 @@ msgstr "Практический опыт"
 msgid "Freelancer"
 msgstr "Фрилансер"
 
-#: .\cv\templates\cv\index.html:374
+#: .\cv\templates\cv\index.html:363
+msgid "(click for more information about Positions and Duties)"
+msgstr ""
+
+#: .\cv\templates\cv\index.html:373
 msgid "Optima Group (Ekaterinburg, Russia)"
 msgstr "ООО 'Оптима Групп' (Екатеринбург, Россия)"
 
-#: .\cv\templates\cv\index.html:394
+#: .\cv\templates\cv\index.html:393
 msgid "(Hong Kong) in Ekaterinburg, Russia"
 msgstr "(Гонконг) в Екатеринбурге, Россия"
 
-#: .\cv\templates\cv\index.html:404
+#: .\cv\templates\cv\index.html:403
 msgid ""
 "Netherlands Business Support Office (NBSO finded by the Government of the "
 "Netherlands) in Ekaterinburg, Russia"
@@ -2106,7 +2116,7 @@ msgstr ""
 "Офис Поддержки Бизнеса Нидерландов (NBSO, созданный правительством "
 "Нидерландов) в Екатеринбурге, Россия"
 
-#: .\cv\templates\cv\index.html:414
+#: .\cv\templates\cv\index.html:413
 msgid ""
 "Non-commercial organisation “International Foundation – Legacy” in "
 "Ekaterinburg, Russia"
@@ -2114,52 +2124,48 @@ msgstr ""
 "Некоммерческая организация «Международный Фонд – Наследие» в Екатеринбурге, "
 "Россия"
 
-#: .\cv\templates\cv\index.html:424
+#: .\cv\templates\cv\index.html:423
 msgid "JSC “SAMIX Ekaterinburg”, Russia"
 msgstr "ООО «САМИКС Екатеринбург», Россия"
 
-#: .\cv\templates\cv\index.html:434
+#: .\cv\templates\cv\index.html:433
 msgid ""
 "The Tacis Local Support Office (LSO finded by the EU) in Ekaterinburg, Russia"
 msgstr "Региональное Бюро Поддержки Тасис ЕС в Екатеринбурге, Россия"
 
-#: .\cv\templates\cv\index.html:446
+#: .\cv\templates\cv\index.html:445
 msgid ""
 "The Urals Tacis Technical Office, (Tacis TO finded by the EU) in "
 "Ekaterinburg, Russia"
 msgstr "Уральский Технический Офис Тасис ЕС в Екатеринбурге, Россия"
 
-#: .\cv\templates\cv\index.html:455
+#: .\cv\templates\cv\index.html:454
 msgid ""
 "Director of MPS Consulting and Investment Project Preparation Department"
 msgstr ""
 "Директор департамента консалтинга и подготовки инвестиционных проектов СМП"
 
-#: .\cv\templates\cv\index.html:458
+#: .\cv\templates\cv\index.html:457
 msgid "Management and Production Systems MPS Ltd. in Samara, Russia"
 msgstr "ООО «Системы менеджмента и производства (СМП)» в Самаре, Россия"
 
-#: .\cv\templates\cv\index.html:464
+#: .\cv\templates\cv\index.html:463
 msgid "(... meanwhile in between ...)"
 msgstr "(... тем временем между делом ...)"
 
-#: .\cv\templates\cv\index.html:467
+#: .\cv\templates\cv\index.html:466
 msgid "Various international short-term assignments"
 msgstr "Различные международные краткосрочные контракты"
 
-#: .\cv\templates\cv\index.html:481
+#: .\cv\templates\cv\index.html:479
 msgid "Tacis “EC Food Distribution Study” project in Samara, Russia"
 msgstr ""
 "Проект Тасис «Исследование ЕС по распределению продуктов питания в Самаре, "
 "Россия»"
 
-#: .\cv\templates\cv\index.html:496
+#: .\cv\templates\cv\index.html:494
 msgid "Portfolio of completed works"
 msgstr "Портфолио выполненных работ"
-
-#: .\cv\templates\cv\index.html:516
-msgid "Go to Top"
-msgstr "Наверх"
 
 #: .\cv\templates\cv\portfolio.html:5
 msgid "Watch the result"

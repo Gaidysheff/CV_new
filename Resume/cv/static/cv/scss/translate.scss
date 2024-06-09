@@ -1,0 +1,21 @@
+.translate {
+  &__form {
+    margin: 10px 0px;
+  }
+
+  &__btn {
+    color: red;
+    padding: 5px 15px;
+    border: 1px solid red;
+    cursor: pointer;
+  }
+
+  // &__selected {
+  //   background-color: #ff0000;
+  //   color: #fff;
+  // }
+}
+
+#language {
+  padding: 4px;
+}

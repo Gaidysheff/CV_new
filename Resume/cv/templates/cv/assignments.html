@@ -2025,8 +2025,7 @@
                     />
                   </div>
                   <div class="assignments__grid_sub_item text-left">
-                    {% trans 'Joint Venture "Management and Production Systems"
-                    MPS Ltd.' %}
+                    {% trans 'Joint Venture "Management and Production Systems" MPS Ltd.' %}
                   </div>
                 </div>
               </div>
@@ -2435,8 +2434,10 @@
   </div>
 </section>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">
-  Return to the Top
+<button onclick="topFunction()" id="myBtn" title="{% trans 'Go to Top' %}">
+  <div class="pulse">
+    <span class="material-symbols-outlined"> arrow_upward </span>
+  </div>
 </button>
 
 <!-- <script>

@@ -7,6 +7,7 @@
 @import "./education_seminars.scss";
 @import "./education_skillfactory.scss";
 @import "./portfolio.scss";
+@import "./translate.scss";
 
 /* ============================== GLOBAL ============================== */
 
@@ -31,6 +32,17 @@ body {
   margin: 0 auto;
   padding: 0 30px;
   height: auto;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: red;
+}
+
+::selection {
+  color: white;
+  background: red;
 }
 
 // ====================== COVER PAGE =================================
